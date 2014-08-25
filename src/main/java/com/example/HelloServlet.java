@@ -29,7 +29,7 @@ public class HelloServlet extends HttpServlet {
         	e.printStackTrace();
         }
         
-        String msg = dbUri.getHost() + "|" + dbUri.getPath()+"|"+dbUri.getPort();
+        String msg = dbUri.getHost() + "|" + dbUri.getPath()+"|"+dbUri.getPort()+"|"dbUri.getUserInfo().split(":")[0]+ "|" + dbUri.getUserInfo().split(":")[1];
         out.write(msg.getBytes());
         out.write("Hello Heroku Version 1".getBytes());
         out.flush();
