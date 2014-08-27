@@ -32,7 +32,8 @@ public class HelloServlet extends HttpServlet {
         
         String msg = dbUri.getHost() + "|" + dbUri.getPath()+"|"+dbUri.getPort()+"|"+dbUri.getUserInfo().split(":")[0]+ "|" + dbUri.getUserInfo().split(":")[1];
         out.write(msg.getBytes());
-        out.write("Hello Heroku Version 1".getBytes());
+        out.write(DBConnect.getConnection().getBytes());
+        //out.write("Hello Heroku Version 1".getBytes());
         out.flush();
         out.close();
     }
