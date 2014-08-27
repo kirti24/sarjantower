@@ -47,7 +47,6 @@
         }
     }
     function submit_form() {
-    	alert("Form submit");
     	$("#loginform").submit();
     }
 
