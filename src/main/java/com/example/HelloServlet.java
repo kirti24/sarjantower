@@ -34,9 +34,12 @@ public class HelloServlet extends HttpServlet {
 	        conn = DriverManager.getConnection(dbUrl, username, password);
 	        Statement stat = conn.createStatement();
 	        //out.write((conn.isClosed()+"hkjhkj").getBytes());
-	        ResultSet rs = stat.executeQuery("select count(*) from accounts");
-	        if(rs.next()){
+	        ResultSet rs = stat.executeQuery("select count(*) from BLUE.accounts");
+	        if(rs!=null){
 	        	out.write(rs.getString(1).getBytes());
+	        }
+	        else{
+	        	out.write("Null rs".getBytes());
 	        }
 	    }
 	    catch (Exception e){
