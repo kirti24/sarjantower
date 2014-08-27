@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.URI;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.logging.Logger;
 
@@ -32,11 +33,11 @@ public class HelloServlet extends HttpServlet {
 	        String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
 	        conn = DriverManager.getConnection(dbUrl, username, password);
 	        Statement stat = conn.createStatement();
-	        out.write((conn.isClosed()+"").getBytes());
-	        /*ResultSet rs = stat.executeQuery("select count(*) from accounts");
+	        //out.write((conn.isClosed()+"hkjhkj").getBytes());
+	        ResultSet rs = stat.executeQuery("select count(*) from accounts");
 	        if(rs.next()){
-	        	return rs.getString(1);
-	        }*/
+	        	out.write(rs.getString(1).getBytes());
+	        }
 	    }
 	    catch (Exception e){
 	    	e.printStackTrace();
