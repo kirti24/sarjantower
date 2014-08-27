@@ -17,10 +17,11 @@ public class DBConnect {
 	        String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
 	        conn = DriverManager.getConnection(dbUrl, username, password);
 	        Statement stat = conn.createStatement();
-	        ResultSet rs = stat.executeQuery("select count(*) from accounts");
+	        return conn.isClosed()+"";
+	        /*ResultSet rs = stat.executeQuery("select count(*) from accounts");
 	        if(rs.next()){
 	        	return rs.getString(1);
-	        }
+	        }*/
 	    }
 	    catch (Exception e){
 	    	e.printStackTrace();
@@ -36,7 +37,7 @@ public class DBConnect {
 	    		e.printStackTrace();
 	    	}
 	    }
-	    return null;
+	    //return null;
 	}
 	
 	
