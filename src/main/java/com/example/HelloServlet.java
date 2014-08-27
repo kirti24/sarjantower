@@ -31,6 +31,7 @@ public class HelloServlet extends HttpServlet {
 	        String username = dbUri.getUserInfo().split(":")[0];
 	        String password = dbUri.getUserInfo().split(":")[1];
 	        String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
+	        out.write(dbUrl.getBytes());
 	        conn = DriverManager.getConnection(dbUrl, username, password);
 	        Statement stat = conn.createStatement();
 	        //out.write((conn.isClosed()+"hkjhkj").getBytes());

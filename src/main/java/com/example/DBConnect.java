@@ -15,7 +15,7 @@ public class DBConnect {
 	        String username = dbUri.getUserInfo().split(":")[0];
 	        String password = dbUri.getUserInfo().split(":")[1];
 	        String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
-	        conn = DriverManager.getConnection(dbUrl, username, password);
+	        conn = DriverManager.getConnection(dbUrl, "czvnzbhfmzvdqe", "Rjo1YHE3a1Oe6xFDhTq0Mrq3ht");
 	        Statement stat = conn.createStatement();
 	        return conn.isClosed()+"";
 	        /*ResultSet rs = stat.executeQuery("select count(*) from accounts");
@@ -40,5 +40,8 @@ public class DBConnect {
 	    //return null;
 	}
 	
+	public static void main(String args[]) {
+		DBConnect.getConnection();
+	}
 	
 }
