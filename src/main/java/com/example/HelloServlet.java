@@ -23,6 +23,12 @@ public class HelloServlet extends HttpServlet {
             throws ServletException, IOException {
         ServletOutputStream out = resp.getOutputStream();
         
+        try {
+			Class.forName("org.postgresql.Driver");
+		} catch (ClassNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
         
         URI dbUri = null;
 		Connection conn = null;

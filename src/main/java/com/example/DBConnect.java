@@ -8,6 +8,12 @@ import java.sql.Statement;
 
 public class DBConnect {
 	public static String getConnection(){
+		try {
+			Class.forName("org.postgresql.Driver");
+		} catch (ClassNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		URI dbUri = null;
 		Connection conn = null;
 	    try{
