@@ -43,10 +43,12 @@ public class HelloServlet extends HttpServlet {
 	        }
 	    }
 	    catch (Exception e){
+	    	out.write("exception".getBytes());
 	    	e.printStackTrace();
 	    	//return null;
 	    }
 	    finally{
+	    	out.write("finally".getBytes());
 	    	try{
 	    		if(conn!=null){
 	    			conn.close();
@@ -55,13 +57,10 @@ public class HelloServlet extends HttpServlet {
 	    	catch(Exception e){
 	    		e.printStackTrace();
 	    	}
+	    	out.flush();
+	        out.close();
 	    }
         
-        
-        //out.write((DBConnect.getConnection()).getBytes());
-        //out.write("Hello Heroku Version 1".getBytes());
-        out.flush();
-        out.close();
     }
     
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
