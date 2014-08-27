@@ -27,14 +27,16 @@ public class HelloServlet extends HttpServlet {
         URI dbUri = null;
 		Connection conn = null;
 	    try{
+	    	out.write("Start".getBytes());
 	        dbUri = new URI(System.getenv("DATABASE_URL"));
+	        out.write("URI".getBytes());
 	        String username = dbUri.getUserInfo().split(":")[0];
 	        String password = dbUri.getUserInfo().split(":")[1];
 	        String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
 	        out.write(dbUrl.getBytes());
 	        conn = DriverManager.getConnection(dbUrl, username, password);
+	        out.write("Connection".getBytes());
 	        Statement stat = conn.createStatement();
-	        //out.write((conn.isClosed()+"hkjhkj").getBytes());
 	        ResultSet rs = stat.executeQuery("select count(*) from BLUE.accounts");
 	        if(rs!=null){
 	        	out.write(rs.getString(1).getBytes());
