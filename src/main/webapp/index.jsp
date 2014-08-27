@@ -26,10 +26,12 @@
             <span class="fa fa-spinner bigicon"></span>
             <h2>Login</h2>
             <div>
+            	<form method = "post" action="hello" id="loginform">
                 <input id="username" type="text" placeholder="username" onkeypress="check_values();">
                 <input id="password" type="password" placeholder="password" onkeypress="check_values();">
-                <button id="button1" class="btn btn-default wide hidden"><span class="fa fa-check med"></span></button>
+                <button id="button1" class="btn btn-default wide hidden" onkeypress="submit_form();"><span class="fa fa-check med"></span></button>
                 <span id="lock1" class="fa fa-lock medhidden redborder"></span>
+                </form>
             </div>
         </div>
     </div>
@@ -44,7 +46,10 @@
             $("#lock1").addClass("hidden").animate({ left: '250px' });;
         }
     }
-
+    function submit_form() {
+    	alert("Form submit");
+    	$("#loginform").submit();
+    }
 
 </script>
 
