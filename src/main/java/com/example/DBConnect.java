@@ -11,10 +11,9 @@ public class DBConnect {
 		URI dbUri = null;
 		Connection conn = null;
 	    try{
-	        dbUri = new URI(System.getenv("DATABASE_URL"));
-	        String username = dbUri.getUserInfo().split(":")[0];
-	        String password = dbUri.getUserInfo().split(":")[1];
-	        String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
+	        String username = "postgres";
+	        String password = "admin";
+	        String dbUrl = "jdbc:postgresql://" + "localhost" + ':' + "5432" + "/postgres";
 	        conn = DriverManager.getConnection(dbUrl, username, password);
 	        Statement stat = conn.createStatement();
 	        return conn.isClosed()+"";
@@ -40,8 +39,8 @@ public class DBConnect {
 	    //return null;
 	}
 	
-	/*public static void main(String args[]) {
+	public static void main(String args[]) {
 		DBConnect.getConnection();
-	}*/
+	}
 	
 }

@@ -46,7 +46,7 @@ public class HelloServlet extends HttpServlet {
 	        }
 	    }
 	    catch (Exception e){
-	    	out.write("exception".getBytes());
+	    	out.write(e.toString().getBytes());
 	    	e.printStackTrace();
 	    	//return null;
 	    }
