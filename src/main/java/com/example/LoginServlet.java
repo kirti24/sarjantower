@@ -35,10 +35,10 @@ public class LoginServlet extends HttpServlet {
 			//DBConnect.sessionCreate(username, req.getSession(false).getId());
 			RequestDispatcher dispatcher = req.getRequestDispatcher("/dashboard.jsp");
 			req.setAttribute("verified", "true");						
-			HttpSession session = req.getSession(false);			
+			/*HttpSession session = req.getSession(false);			
 			session.setAttribute("isAuthorised", "true");
 			session.setAttribute("user", username.toUpperCase());
-			System.out.println("Setting attribute isauth for session " + session.getId());
+			System.out.println("Setting attribute isauth for session " + session.getId());*/
 			if(dispatcher != null) dispatcher.forward(req, resp);
 			return;
 		}
