@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-public class HelloServlet extends HttpServlet {
+public class LoginServlet extends HttpServlet {
 
 
 	@Override
@@ -27,7 +27,7 @@ public class HelloServlet extends HttpServlet {
 		boolean isValid = DBConnect.loginCheck(username,password);
 		
 		if(!isValid){
-			RequestDispatcher dispatcher = req.getRequestDispatcher("/pages/login.jsp");
+			RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
 			req.setAttribute("errormessage", "Invalid Username/Password. Try again.");
 			req.getSession(false).invalidate();
 			if(dispatcher != null) dispatcher.forward(req, resp);
