@@ -21,8 +21,8 @@ public class HelloServlet extends HttpServlet {
 			throws ServletException, IOException {
 		ServletOutputStream out = resp.getOutputStream();
 		
-		String username = req.getParameter("username");
-		String password = req.getParameter("password");
+		String username = req.getAttribute("username").toString();
+		String password = req.getAttribute("password").toString();
 		out.write((username+password).getBytes());
 		boolean isValid = DBConnect.loginCheck(username,password);
 
