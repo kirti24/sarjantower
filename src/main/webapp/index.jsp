@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<%@page session="false"%>
 <html>
 <head>
     <meta charset="utf-8" />

@@ -33,7 +33,7 @@ public class LoginServlet extends HttpServlet {
 			if(dispatcher != null) dispatcher.forward(req, resp);
 		}else{
 			//DBConnect.sessionCreate(username, req.getSession(false).getId());
-			RequestDispatcher dispatcher = req.getRequestDispatcher("/index1.jsp");
+			RequestDispatcher dispatcher = req.getRequestDispatcher("/dashboard.jsp");
 			req.setAttribute("verified", "true");						
 			HttpSession session = req.getSession(false);			
 			session.setAttribute("isAuthorised", "true");
