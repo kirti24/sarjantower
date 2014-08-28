@@ -3,50 +3,68 @@ package com.example;
 import java.net.URI;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class DBConnect {
-	public static String getConnection(){
+	@SuppressWarnings("finally")
+	public static boolean loginCheck(String username,String password){
 		try {
 			Class.forName("org.postgresql.Driver");
 		} catch (ClassNotFoundException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
+
 		URI dbUri = null;
 		Connection conn = null;
-	    try{
-	        String username = "postgres";
-	        String password = "admin";
-	        String dbUrl = "jdbc:postgresql://" + "localhost" + ':' + "5432" + "/postgres";
-	        conn = DriverManager.getConnection(dbUrl, username, password);
-	        Statement stat = conn.createStatement();
-	        return conn.isClosed()+"";
-	        /*ResultSet rs = stat.executeQuery("select count(*) from accounts");
-	        if(rs.next()){
-	        	return rs.getString(1);
-	        }*/
-	    }
-	    catch (Exception e){
-	    	e.printStackTrace();
-	    	return null;
-	    }
-	    finally{
-	    	try{
-	    		if(conn!=null){
-	    			conn.close();
-	    		}
-	    	}
-	    	catch(Exception e){
-	    		e.printStackTrace();
-	    	}
-	    }
-	    //return null;
-	}
-	
-	public static void main(String args[]) {
-		DBConnect.getConnection();
+		PreparedStatement stat = null;
+		ResultSet rs = null;
+		boolean isValid = false;
+		try{
+			dbUri = new URI(System.getenv("DATABASE_URL"));
+			String dbusername = dbUri.getUserInfo().split(":")[0];
+			String dbpassword = dbUri.getUserInfo().split(":")[1];
+			String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
+			conn = DriverManager.getConnection(dbUrl, dbusername, dbpassword);
+			stat = conn.prepareStatement("select count(*) from accounts where flatno=?");
+			stat.setString(1, username);
+			rs = stat.executeQuery();
+			if(rs!=null){
+				isValid = true;
+			}
+		}
+		catch (Exception e){
+			e.printStackTrace();
+		}
+		finally{
+			try{
+				if(rs!=null){
+					rs.close();
+				}
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+			try{
+				if(stat!=null){
+					stat.close();
+				}
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+			try{
+				if(conn!=null){
+					conn.close();
+				}
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+			return isValid;
+		}
 	}
 	
 }
