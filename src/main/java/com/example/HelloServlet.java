@@ -1,11 +1,7 @@
 package com.example;
 
 import java.io.IOException;
-import java.net.URI;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
+
 
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
@@ -21,8 +17,8 @@ public class HelloServlet extends HttpServlet {
 			throws ServletException, IOException {
 		ServletOutputStream out = resp.getOutputStream();
 		
-		String username = req.getAttribute("username").toString();
-		String password = req.getAttribute("password").toString();
+		String username = req.getParameter("username");
+		String password = req.getParameter("password");
 		out.write((username+password).getBytes());
 		boolean isValid = DBConnect.loginCheck(username,password);
 
