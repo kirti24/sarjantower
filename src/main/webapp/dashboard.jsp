@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<%@page session="false"%>
 <html>
 <head>
 <title>Sarjan - Dashboard</title>
