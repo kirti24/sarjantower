@@ -27,10 +27,10 @@
             <h2>Login</h2>
             <div>
             	<form method = "post" action="hello" id="loginform">
-                <input id="username" type="text" placeholder="username" onkeypress="check_values();">
-                <input id="password" type="password" placeholder="password" onkeypress="check_values();">
-                <button id="button1" class="btn btn-default wide hidden" onkeypress="submit_form();"><span class="fa fa-check med"></span></button>
-                <span id="lock1" class="fa fa-lock medhidden redborder"></span>
+	                <input id="username" name="username" type="text" placeholder="username" onkeypress="check_values();">
+	                <input id="password" name="password" type="password" placeholder="password" onkeypress="check_values();">
+	                <button id="button1" class="btn btn-default wide hidden" onkeypress="submit_form();"><span class="fa fa-check med"></span></button>
+	                <span id="lock1" class="fa fa-lock medhidden redborder"></span>
                 </form>
             </div>
         </div>
