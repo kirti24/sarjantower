@@ -28,11 +28,13 @@ public class DBConnect {
 			String dbpassword = dbUri.getUserInfo().split(":")[1];
 			String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
 			conn = DriverManager.getConnection(dbUrl, dbusername, dbpassword);
-			stat = conn.prepareStatement("select count(*) from accounts where flatno=?");
+			stat = conn.prepareStatement("select pass from accounts where flatno=?");
 			stat.setString(1, username);
 			rs = stat.executeQuery();
-			if(rs!=null){
-				isValid = true;
+			if(rs.next()){
+				String pwd = rs.getString("pass");
+				if(pwd.equals(password))
+					isValid = true;
 			}
 		}
 		catch (Exception e){
