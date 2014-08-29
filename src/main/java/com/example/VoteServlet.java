@@ -40,15 +40,21 @@ public class VoteServlet extends HttpServlet {
 			noOfCategories++;
 			String[] fields = line.split(",");
 			for(int i=0;i<fields.length;i++){
+				String categoryValue="";
 				if(i==0){
 					categories.add(fields[i]);
+					categoryValue = req.getParameter(fields[0]);
 				}
 				if(i>0){
-					String categoryValue = req.getParameter(fields[0]);
-					out.write(categoryValue.getBytes());
+					if(categoryValue.equals(fields[i])){
+						votes.append(fields[i]+",");
+					}else{
+						votes.append("0,");
+					}
 				}
 			}
 		}
+		out.write(votes.toString().getBytes());
 
 		//String username = req.getParameter("username");
 		//String password = req.getParameter("password");
