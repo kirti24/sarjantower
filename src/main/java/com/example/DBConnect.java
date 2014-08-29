@@ -93,12 +93,12 @@ public class DBConnect {
 			stat.setString(1, username);
 			stat.setString(2, event);
 			rs = stat.executeQuery();
-			
+			sql = rs.getString(1);
 			if(rs!=null && rs.next()){
-				sql = "insert";
+				sql += "insert";
 			}
 			else{
-				sql = "update";
+				sql += "update";
 			}
 		}
 		catch (Exception e){
