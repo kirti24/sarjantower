@@ -32,5 +32,5 @@
 			}
 		}
 	}
-	out.print(sb.toString());
 %>
+<%=sb.toString()%>
