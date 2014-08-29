@@ -38,7 +38,7 @@ public class VoteServlet extends HttpServlet {
 		}
 		
 		
-		out.println(req.getParameter("user")+"|"+event+"|"+votes);
+		out.println(req.getParameter("user")+"|"+categoryList+"|"+event+"|"+votes);
 	}
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
