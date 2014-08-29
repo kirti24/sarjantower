@@ -29,7 +29,7 @@ public class VoteServlet extends HttpServlet {
 		}
 		
 		out.println(username+"|"+categoryList+"|"+event+"|"+votes);
-		String res = DBConnect.insertVote(username, event, votes.substring(0,votes.length()-2));
+		String res = DBConnect.insertVote(username, event, votes.substring(0,votes.length()-1));
 		out.println(res);
 	}
 
