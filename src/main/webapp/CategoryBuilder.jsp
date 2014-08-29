@@ -13,6 +13,7 @@
 		for(int i=0;i<fields.length;i++){
 			if(i==0){
 				categories+=fields[i];%>
+				<%=categories %>
 				<div class="row">
 				<div class="col-lg-4">
 				<div class="panel panel-primary">
