@@ -18,8 +18,7 @@ _
 <body id="body">
 
 	<%
-		if (request.getAttribute("user") == null
-				|| request.getAttribute("user") == "") {
+		if (request.getSession(false) != null) {
 			request.getSession().invalidate();
 			RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
 			if (dispatcher != null) {
