@@ -20,7 +20,7 @@ _
 	<%
 		if (request.getAttribute("user") == null
 				|| request.getAttribute("user") == "") {
-			//request.getSession().invalidate();
+			request.getSession().invalidate();
 			RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
 			if (dispatcher != null) {
 				dispatcher.forward(request, response);

@@ -9,6 +9,9 @@
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
     
+   <session-config>
+   <session-timeout>30</session-timeout> 
+</session-config>
   <servlet>
     <servlet-name>login</servlet-name>
     <servlet-class>com.example.LoginServlet</servlet-class>
