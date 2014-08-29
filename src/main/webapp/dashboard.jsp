@@ -36,7 +36,7 @@
 
 
 
-		<h1>Vote</h1>
+		<div class="page-header"><h1>Solo Dance</h1></div>
 		<form method="post" action="vote">
 
 			<jsp:include page="CategoryBuilder.jsp"></jsp:include>
