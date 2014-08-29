@@ -21,7 +21,7 @@
 		String[] fields = line.split(",");
 		for(int i=0;i<fields.length;i++){
 			if(i==0){
-				categories+=fields[i]+",";%>
+				categories+=fields[i].replace(' ', '_')+",";%>
 				<div class="row">
 				<div class="col-lg-4">
 				<div class="panel panel-primary">
@@ -38,7 +38,7 @@
 			if(i>0){%>
 				<div class="radio">
 				<label> 
-				<input type="radio" name="<%=fields[0]%>"	id="<%=fields[0]%>" value="<%=fields[i].replace(' ', '_')%>"> <%=fields[i]%> </label>
+				<input type="radio" name="<%=fields[0].replace(' ', '_')%>"	id="<%=fields[0].replace(' ', '_')%>" value="<%=fields[i].replace(' ', '_')%>"> <%=fields[i]%> </label>
 				</div>
 				<%
 			}
@@ -54,4 +54,4 @@
 <%=sb.toString()%>
 <input type="hidden" name="event" value=<%=event %>/>
 <input type="hidden" name="user" value=<%=request.getAttribute("user") %>/>
-<input type="hidden" name="categories" value=<%=categories.substring(0, categories.lastIndexOf(',')) %>/>
+<input type="hidden" name="categories" value=<%=categories %>/>
