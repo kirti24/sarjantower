@@ -41,7 +41,12 @@
 			<div class="col-lg-4">
 				<center>
 					<input type="submit" class="btn btn-info">
-					<input type="text" name="lastVote" value=<%=DBConnect.getVote(request.getAttribute("user").toString(), request.getAttribute("event").toString()) %>  />
+					<%
+					String username = request.getAttribute("user")+"";
+					String event = request.getAttribute("event")+"";
+					%>
+					<%=username+event %>
+					<input type="text" name="lastVote" value=<%=DBConnect.getVote(username, event)%>  />
 					</button>
 				</center>
 			</div>
