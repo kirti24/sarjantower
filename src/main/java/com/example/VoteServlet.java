@@ -35,11 +35,11 @@ public class VoteServlet extends HttpServlet {
 		String categoryList=req.getParameter("categories");
 		String[] categories = categoryList.split(",");
 		for(int i=0;i<categories.length;i++){
-			votes+=req.getParameter(categories[i]);
+			votes+=req.getParameter(categories[i])+",";
 		}
 		
 		out.println(username+"|"+categoryList+"|"+event+"|"+votes);
-		out.print(DBConnect.insertVote(username, event, votes));
+		out.print(DBConnect.insertVote(username, event, votes.substring(0,votes.length()-2)));
 	}
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
