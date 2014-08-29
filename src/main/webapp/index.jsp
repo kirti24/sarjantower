@@ -29,8 +29,8 @@
             	<form method = "post" action="login" id="loginform">
 	                <input id="username" name="username" type="text" placeholder="username" onkeypress="check_values();">
 	                <input id="password" name="password" type="password" placeholder="password" onkeypress="check_values();">
-	                <input type="submit" id="button1" class="btn btn-default wide hidden" onsubmit="submit_form();"><span class="fa fa-check med"></span></input>
-	                <span id="lock1" class="fa fa-lock medhidden redborder"></span>
+	                <button id="button1" class="btn btn-default wide hidden" onkeypress="submit_form();"><span class="fa fa-check med"></span></button>
+	                <button id="lock1" class="fa fa-lock medhidden redborder"></button>
                 </form>
                 <%if(request.getAttribute("errormessage") != null){%>
 					<br/><label class="alert alert-error"><%=request.getAttribute("errormessage")%></label>
