@@ -40,7 +40,7 @@
 
 
 		<div class="page-header"><h1>Solo Dance</h1></div>
-		<form method="post" action="vote">
+		<form method="get" action="vote">
 
 			<jsp:include page="CategoryBuilder.jsp"></jsp:include>
 			<br />

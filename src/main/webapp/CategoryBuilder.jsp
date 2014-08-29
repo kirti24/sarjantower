@@ -24,7 +24,7 @@
 			}
 			if(i>0){
 				sb.append("<div class=\"radio\">");
-				sb.append("<label> <input type=\"radio\" name=\""+fields[0]+"\"	id=\""+fields[0]+"\" value=\""+fields[i]+"\"> "+fields[i]+" </label>");
+				sb.append("<label> <input type=\"radio\" name=\""+fields[0]+"\"	id=\""+fields[0]+"\" value=\""+fields[i].replace(' ', '_')+"\"> "+fields[i]+" </label>");
 				sb.append("</div>");
 			}
 			if(i==fields.length-1){
