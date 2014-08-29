@@ -89,7 +89,7 @@ public class DBConnect {
 			String dbpassword = dbUri.getUserInfo().split(":")[1];
 			String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
 			conn = DriverManager.getConnection(dbUrl, dbusername, dbpassword);
-			stat = conn.prepareStatement("select pass from votes where flatno=? and event=?");
+			stat = conn.prepareStatement("select * from votes where flatno=? and event=?");
 			stat.setString(1, username);
 			stat.setString(2, event);
 			rs = stat.executeQuery();
