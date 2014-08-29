@@ -15,6 +15,9 @@ import javax.servlet.http.HttpSession;
 
 public class LoginServlet extends HttpServlet {
 
+	public LoginServlet() {
+        super();
+    }
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
@@ -36,10 +39,10 @@ public class LoginServlet extends HttpServlet {
 			RequestDispatcher dispatcher = req.getRequestDispatcher("/dashboard.jsp");
 			req.setAttribute("verified", "true");		
 			req.setAttribute("user", username);
-			/*HttpSession session = req.getSession(false);			
+			HttpSession session = req.getSession(false);			
 			session.setAttribute("isAuthorised", "true");
 			session.setAttribute("user", username.toUpperCase());
-			System.out.println("Setting attribute isauth for session " + session.getId());*/
+			System.out.println("Setting attribute isauth for session " + session.getId());
 			if(dispatcher != null) dispatcher.forward(req, resp);
 			return;
 		}
