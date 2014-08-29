@@ -46,8 +46,6 @@ _
 			<input type="submit" name="eventname" class="btn btn-primary" value="Group Dance">
 		</form>
 		
-		<jsp:include page="votingForm.jsp"></jsp:include>
-			
 		<br />
 		<br />
 	</div>

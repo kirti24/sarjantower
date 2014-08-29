@@ -41,7 +41,7 @@ public class LoginServlet extends HttpServlet {
 			req.setAttribute("user", username);
 			HttpSession session = req.getSession(false);			
 			session.setAttribute("isAuthorised", "true");
-			session.setAttribute("user", username.toUpperCase());
+			session.setAttribute("user", username);
 			System.out.println("Setting attribute isauth for session " + session.getId());
 			if(dispatcher != null) dispatcher.forward(req, resp);
 			return;

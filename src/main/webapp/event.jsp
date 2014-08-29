@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-_
 <%@page session="false"%>
 <html>
 <head>
@@ -34,11 +33,6 @@ _
 
 
 		<jsp:include page="header.jsp"></jsp:include>
-		
-		<%if(request.getAttribute("status") != null){
-			if(request.getAttribute("status") == "true"){%>
-				<br/><label class="alert alert-success">Your vote has been registered! Keep voting.</label>
-		<%	}
 		}%>
 		SOLO
 		<jsp:include page="votingForm.jsp"></jsp:include>
