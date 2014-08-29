@@ -45,7 +45,7 @@ public class VoteServlet extends HttpServlet {
 					out.write(fields[i].getBytes());
 					categories.add(fields[i]);
 					categoryValue = req.getParameter(fields[i]);
-					out.write(categoryValue.getBytes());
+					//out.write(categoryValue.getBytes());
 				}
 				if(i>0){
 					if(categoryValue.equals(fields[i].replace(' ', '_'))){
@@ -68,8 +68,8 @@ public class VoteServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
+		/*RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
 		if(dispatcher != null) dispatcher.forward(req, resp);
-		return;		
+		return;	*/	
 	}
 }
