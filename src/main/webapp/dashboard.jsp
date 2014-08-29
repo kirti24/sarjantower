@@ -40,6 +40,7 @@
 		}%>
 		
 		<form method="post" action="event">
+			<input type="hidden" name="username" value=<%=request.getAttribute("user") %>>
 			<input type="submit" name="eventname" class="btn btn-primary" value="Solo Dance">
 			<input type="submit" name="eventname" class="btn btn-primary" value="Group Dance">
 		</form>

@@ -19,10 +19,10 @@ public class EventFormServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		ServletOutputStream out = resp.getOutputStream();
-
+		String username = req.getParameter("username");
 		String eventname = req.getParameter("eventname");
 		req.setAttribute("event", eventname);
-		req.setAttribute("user", req.getAttribute("user"));
+		req.setAttribute("user", username);
 		RequestDispatcher dispatcher = req.getRequestDispatcher("/event.jsp");
 		req.setAttribute("voteStatus", "true");
 		if(dispatcher != null) dispatcher.forward(req, resp);
