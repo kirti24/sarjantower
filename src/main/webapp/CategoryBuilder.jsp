@@ -12,8 +12,7 @@
 		String[] fields = line.split(",");
 		for(int i=0;i<fields.length;i++){
 			if(i==0){
-				categories+=fields[i];%>
-				<%=categories %>
+				categories+=fields[i]+",";%>
 				<div class="row">
 				<div class="col-lg-4">
 				<div class="panel panel-primary">
@@ -41,6 +40,8 @@
 			}
 		}
 	}
+	
 	request.setAttribute("Categories", categories);
 %>
+<%=categories%>
 <%=sb.toString()%>
