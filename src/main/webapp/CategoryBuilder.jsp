@@ -11,7 +11,7 @@
 		String[] fields = line.split(",");
 		for(int i=0;i<fields.length;i++){
 			if(i==0){
-				sb.append("<div class=\"row\">")
+				sb.append("<div class=\"row\">");
 				sb.append("<div class=\"col-lg-4\">");
 				sb.append("<div class=\"panel panel-primary\">");
 				sb.append("<div class=\"panel-heading\">");
