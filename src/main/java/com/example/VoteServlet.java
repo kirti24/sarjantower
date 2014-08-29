@@ -42,8 +42,9 @@ public class VoteServlet extends HttpServlet {
 			for(int i=0;i<fields.length;i++){
 				String categoryValue="";
 				if(i==0){
+					out.write(fields[i].getBytes());
 					categories.add(fields[i]);
-					categoryValue = req.getParameter(fields[0]);
+					categoryValue = req.getParameter(fields[i]);
 				}
 				if(i>0){
 					if(categoryValue.equals(fields[i].replace(' ', '_'))){
