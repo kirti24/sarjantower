@@ -12,7 +12,7 @@
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav navbar-right">
-				<li>Signed in as <%=request.getAttribute("user") %></li>
+				<li>Signed in as <%=request.getSession(false).getAttribute("user") %></li>
 				<li><a href="signout.jsp" class="glyphicon glyphicon-off">LogOut</a></li>
 			</ul>
 		</div>
