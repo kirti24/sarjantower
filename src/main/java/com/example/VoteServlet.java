@@ -30,7 +30,7 @@ public class VoteServlet extends HttpServlet {
 		ServletOutputStream out = resp.getOutputStream();
 
 		StringBuilder votes = new StringBuilder();
-		String categories = req.getAttribute("Categories").toString();
+		String categories = req.getAttribute("Categories")+"";
 		String line;
 		
 		int noOfCategories=0;
