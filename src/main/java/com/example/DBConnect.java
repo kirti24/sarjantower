@@ -92,8 +92,8 @@ public class DBConnect {
 			conn = DriverManager.getConnection(dbUrl, dbusername, dbpassword);
 			stat = conn.prepareStatement("WITH upsert as (update votes set publicvote=? where flatno=? and event=? RETURNING *) INSERT INTO VOTES (flatno,event,publicvote) SELECT ?,?,? WHERE NOT EXISTS (SELECT * FROM UPSERT)");
 			stat.setString(1, vote);
-			stat.setString(2, event);
-			stat.setString(3, username);
+			stat.setString(2, username);
+			stat.setString(3, event);
 			stat.setString(4, username);
 			stat.setString(5, event);
 			stat.setString(6, vote);
