@@ -29,20 +29,16 @@ public class VoteServlet extends HttpServlet {
 			throws ServletException, IOException {
 		ServletOutputStream out = resp.getOutputStream();
 
-		StringBuilder votes = new StringBuilder();
-		
-		BufferedReader reader = new BufferedReader(new FileReader(
-				"src/main/webapp/Participants.txt"));
-		StringBuilder sb = new StringBuilder();
-		String line;
-		String category="";
-		
-		while ((line = reader.readLine()) != null) {
-			category = line.substring(0,line.indexOf(','));
-			//out.print(category);
-			out.println(req.getParameter(category));
+		String votes = "";
+		String event=req.getParameter("event");
+		String categoryList=req.getParameter("categories");
+		String[] categories = categoryList.split(",");
+		for(int i=0;i<categories.length;i++){
+			votes+=req.getParameter(categories[i]+",");
 		}
 		
+		
+		out.println(req.getAttribute("user")+"|"+event+"|"+votes);
 	}
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)

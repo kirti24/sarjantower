@@ -7,8 +7,13 @@
 	StringBuilder sb = new StringBuilder();
 	String line;
 	String categories="";
-
+	String event="";
+	boolean eventSet=false;
 	while ((line = reader.readLine()) != null) {
+		if(!eventSet){
+			event = line.toString();
+			eventSet=true;
+		}
 		String[] fields = line.split(",");
 		for(int i=0;i<fields.length;i++){
 			if(i==0){
@@ -41,7 +46,7 @@
 		}
 	}
 	
-	request.setAttribute("Categories", categories);
 %>
-<%=categories%>
 <%=sb.toString()%>
+<input type="hidden" name="event" value=<%=event %>/>
+<input type="hidden" name="categories" value=<%=categories.substring(0, categories.lastIndexOf(',')) %>/>
