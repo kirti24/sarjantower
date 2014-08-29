@@ -26,8 +26,10 @@
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<p class="navbar-text navbar-right">
-						Signed in as <%=request.getAttribute("user") %> | <a class="glyphicon glyphicon-off"/>
+						Signed in as <%=request.getAttribute("user") %> |
+						<a class="glyphicon glyphicon-off">&nbsp;LogOut</a> 
 					</p>
+					
 				</div>
 			</div>
 		</nav>
