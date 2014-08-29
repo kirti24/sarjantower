@@ -11,12 +11,23 @@
 		String[] fields = line.split(",");
 		for(int i=0;i<fields.length;i++){
 			if(i==0){
-				sb.append("<h3>"+fields[i]+"</h3>");
+				sb.append("<div class=\"col-lg-4\">");
+				sb.append("<div class=\"panel panel-primary\">");
+				sb.append("<div class=\"panel-heading\">");
+				sb.append("<h3 class=\"panel-title\">");
+				sb.append("<i class=\"fa fa-magnet\"></i>"+fields[i]);
+				sb.append("</h3></div>");
 			}
-			else{
+			if(i==1){
+				sb.append("<div class=\"panel-body\">");
+			}
+			if(i>0){
 				sb.append("<div class=\"radio\">");
 				sb.append("<label> <input type=\"radio\" name=\""+fields[0]+"\"	id=\""+fields[0]+"\" value=\""+fields[i]+"\"> "+fields[i]+" </label>");
 				sb.append("</div>");
+			}
+			if(i==fields.length-1){
+				sb.append("</div></div></div>");
 			}
 		}
 	}
