@@ -1,4 +1,5 @@
-<!DOCTYPE HTML>_
+<!DOCTYPE HTML>
+_
 <%@page session="false"%>
 <html>
 <head>
@@ -16,51 +17,28 @@
 
 <body id="body">
 
-<%	
-		if(request.getAttribute("user") == null || request.getAttribute("user") == ""){
+	<%
+		if (request.getAttribute("user") == null
+				|| request.getAttribute("user") == "") {
 			//request.getSession().invalidate();
 			RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
-			if (dispatcher != null)
-			{
+			if (dispatcher != null) {
 				dispatcher.forward(request, response);
 				return;
 			}
 		}
 	%>
 
-<br/>
+	<br />
 	<div class="container">
 
 
-		<nav class="navbar navbar-default" role="navigation">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#">Sarjan Voting</a>
-				</div>
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<p class="navbar-text navbar-right">
-						Signed in as <%=request.getAttribute("user") %> &nbsp;|&nbsp; <a href="#" class="glyphicon glyphicon-off">LogOut</a> 
-					</p>
-					
-				</div>
-			</div>
-		</nav>
+		<jsp:include page="header.jsp"></jsp:include>
 
 
-		<form method="post" action="vote">
 
-			<jsp:include page="CategoryBuilder.jsp"></jsp:include>
-			<br />
-			<div class="col-lg-4">
-				<center>
-					<input type="submit" class="btn btn-info">
-					</button>
-				</center>
-			</div>
-
-		</form>
-		<br/><br/>
+		<br />
+		<br />
 	</div>
 </body>
 </html>
