@@ -29,6 +29,7 @@ public class VoteServlet extends HttpServlet {
 			throws ServletException, IOException {
 		ServletOutputStream out = resp.getOutputStream();
 
+		String username = req.getParameter("user");
 		String votes = "";
 		String event=req.getParameter("event");
 		String categoryList=req.getParameter("categories");
@@ -37,8 +38,8 @@ public class VoteServlet extends HttpServlet {
 			votes+=req.getParameter(categories[i]);
 		}
 		
-		
-		out.println(req.getParameter("user")+"|"+categoryList+"|"+event+"|"+votes);
+		out.println(username+"|"+categoryList+"|"+event+"|"+votes);
+		out.print(DBConnect.insertVote(username, event, votes));
 	}
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
