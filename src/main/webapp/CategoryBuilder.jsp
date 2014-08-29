@@ -8,7 +8,12 @@
 	String line;
 
 	while ((line = reader.readLine()) != null) {
-		sb.append(line + "\n");
+		String[] fields = line.split(",");
+		for(int i=0;i<fields.length;i++){
+			if(i==0){
+				sb.append("<h3>"+fields[i]+"</h3>");
+			}
+		}
 	}
 	out.println(sb.toString());
 %>
