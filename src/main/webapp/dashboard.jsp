@@ -20,19 +20,7 @@
 	<h1>Vote</h1>
 	<form>
 		<div class="row">
-			<h3>Category 1</h3>
-			<div class="radio">
-				<label> <input type="radio" name="optionsRadios"
-					id="optionsRadios1" value="option1" checked> Option one is
-					this and that&mdash;be sure to include why it's great
-				</label>
-			</div>
-			<div class="radio">
-				<label> <input type="radio" name="optionsRadios"
-					id="optionsRadios2" value="option2"> Option two can be
-					something else and selecting it will deselect option one
-				</label>
-			</div>
+			<jsp:include page="CategoryBuilder.jsp"></jsp:include>
 		</div>
 		</form>
 	</div>
