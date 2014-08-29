@@ -13,6 +13,10 @@
 		if(!eventSet){
 			event = line.toString();
 			eventSet=true;
+			%>
+			<div class="page-header"><h1><%=event %></h1></div>
+			<%
+			continue;
 		}
 		String[] fields = line.split(",");
 		for(int i=0;i<fields.length;i++){
