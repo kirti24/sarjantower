@@ -94,7 +94,7 @@ public class DBConnect {
 			stat.setString(1, username);
 			stat.setString(2, event);
 			stat.setString(3, vote);
-			stat.executeUpdate();
+			return stat.executeUpdate()+"";
 		}
 		catch (Exception e){
 			e.printStackTrace();
@@ -124,7 +124,7 @@ public class DBConnect {
 			catch(Exception e){
 				e.printStackTrace();
 			}
-			return sql;
+			return "finally";
 		}
 	}
 	
