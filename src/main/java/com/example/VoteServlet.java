@@ -39,14 +39,9 @@ public class VoteServlet extends HttpServlet {
 		
 		while ((line = reader.readLine()) != null) {
 			category = line.substring(0,line.indexOf(','));
-			out.print(category);
+			//out.print(category);
+			out.println(req.getParameter(category));
 		}
-		
-		int noOfCategories=10;
-		for(int i=0;i<noOfCategories;i++){
-			String ans = req.getParameter("Category"+1);
-		}
-		
 		
 	}
 
