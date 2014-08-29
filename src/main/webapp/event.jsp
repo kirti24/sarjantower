@@ -41,14 +41,12 @@
 			<div class="col-lg-4">
 				<center>
 					<input type="submit" class="btn btn-info">
+				</center>
 					<%
 					String username = request.getAttribute("user")+"";
 					String event = request.getAttribute("event")+"";
 					%>
-					<%=username+event %>
-					<input type="text" name="lastVote" value=<%=DBConnect.getVote(username, event)%>  />
-					</button>
-				</center>
+					<input type="hidden" name="lastVote" value=<%=DBConnect.getVote(username, event)%>  />
 			</div>
 
 		</form>

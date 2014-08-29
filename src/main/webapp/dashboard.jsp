@@ -33,9 +33,10 @@
 
 		<jsp:include page="header.jsp"></jsp:include>
 		
-		<%if(request.getAttribute("status") != null){
-			if(request.getAttribute("status") == "true"){%>
+		<%if(request.getAttribute("voteStatus") != null){
+			if(request.getAttribute("voteStatus") == "true"){%>
 				<br/><label class="alert alert-success">Your vote has been registered! Keep voting.</label>
+				<br/>
 		<%	}
 		}%>
 		
