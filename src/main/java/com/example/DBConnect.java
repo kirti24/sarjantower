@@ -89,12 +89,13 @@ public class DBConnect {
 			String dbpassword = dbUri.getUserInfo().split(":")[1];
 			String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
 			conn = DriverManager.getConnection(dbUrl, dbusername, dbpassword);
-			stat = conn.prepareStatement("WITH upsert as (update votes set publicvote=? where flatno=? RETURNING *) INSERT INTO VOTES (flatno,event,publicvote) SELECT ?,?,? WHERE NOT EXISTS (SELECT * FROM UPSERT)");
+			stat = conn.prepareStatement("WITH upsert as (update votes set publicvote=? where flatno=? and event=? RETURNING *) INSERT INTO VOTES (flatno,event,publicvote) SELECT ?,?,? WHERE NOT EXISTS (SELECT * FROM UPSERT)");
 			stat.setString(1, vote);
-			stat.setString(2, username);
+			stat.setString(2, event);
 			stat.setString(3, username);
-			stat.setString(4, event);
-			stat.setString(5, vote);
+			stat.setString(4, username);
+			stat.setString(5, event);
+			stat.setString(6, vote);
 			return stat.executeUpdate()+"";
 		}
 		catch (Exception e){
