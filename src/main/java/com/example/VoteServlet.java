@@ -36,6 +36,9 @@ public class VoteServlet extends HttpServlet {
 		
 		int noOfCategories=0;
 		
+		String ans = req.getParameter("Category1");
+		out.println(ans);
+		
 		while ((line = reader.readLine()) != null) {
 			noOfCategories++;
 			String[] fields = line.split(",");
