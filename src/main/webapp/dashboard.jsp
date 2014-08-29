@@ -21,7 +21,10 @@
 		<form method="post" action="vote">
 			<div class="row">
 				<jsp:include page="CategoryBuilder.jsp"></jsp:include>
-				<br /> <input type="submit">
+				<br />
+				<center>
+				<input type="submit" class="btn btn-info"></button>
+				</center>
 			</div>
 		</form>
 	</div>
