@@ -3,7 +3,7 @@
 <%@page session="false"%>
 <%
 	BufferedReader reader = new BufferedReader(new FileReader(
-			"src/main/webapp/Participants.txt"));
+			"src/main/webapp/"+request.getAttribute("event")+".txt"));
 	StringBuilder sb = new StringBuilder();
 	String line;
 	String categories="";

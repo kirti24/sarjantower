@@ -32,8 +32,6 @@
 
 
 		<jsp:include page="header.jsp"></jsp:include>
-		}%>
-		SOLO
 		<jsp:include page="votingForm.jsp"></jsp:include>
 			
 		<br />
