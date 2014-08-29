@@ -21,12 +21,11 @@ public class EventFormServlet extends HttpServlet {
 		ServletOutputStream out = resp.getOutputStream();
 
 		String eventname = req.getParameter("eventname");
-		
-		out.println(eventname);
-		/*RequestDispatcher dispatcher = req.getRequestDispatcher("/dashboard.jsp");
+		req.setAttribute("event", eventname);
+		RequestDispatcher dispatcher = req.getRequestDispatcher("/event.jsp");
 		req.setAttribute("voteStatus", "true");
 		if(dispatcher != null) dispatcher.forward(req, resp);
-		return;*/
+		return;
 		
 	}
 
