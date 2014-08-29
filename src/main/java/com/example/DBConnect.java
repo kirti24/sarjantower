@@ -70,7 +70,7 @@ public class DBConnect {
 	}
 
 	@SuppressWarnings("finally")
-	public static String insertVote(String username,String event, String vote){
+	public static int insertVote(String username,String event, String vote){
 		try {
 			Class.forName("org.postgresql.Driver");
 		} catch (ClassNotFoundException e1) {
@@ -83,6 +83,7 @@ public class DBConnect {
 		PreparedStatement stat = null;
 		ResultSet rs = null;
 		String sql = "";
+		int i=0;
 		try{
 			dbUri = new URI(System.getenv("DATABASE_URL"));
 			String dbusername = dbUri.getUserInfo().split(":")[0];
@@ -96,7 +97,7 @@ public class DBConnect {
 			stat.setString(4, username);
 			stat.setString(5, event);
 			stat.setString(6, vote);
-			return stat.executeUpdate()+"";
+			i = stat.executeUpdate();
 		}
 		catch (Exception e){
 			e.printStackTrace();
@@ -126,7 +127,7 @@ public class DBConnect {
 			catch(Exception e){
 				e.printStackTrace();
 			}
-			return "finally";
+			return i;
 		}
 	}
 	
