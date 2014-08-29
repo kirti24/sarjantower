@@ -94,14 +94,7 @@ public class DBConnect {
 			stat.setString(1, username);
 			stat.setString(2, event);
 			stat.setString(3, vote);
-			rs = stat.executeQuery();
-			sql = rs.getString(1);
-			if(rs!=null && rs.next()){
-				sql += "insert";
-			}
-			else{
-				sql += "update";
-			}
+			stat.executeUpdate();
 		}
 		catch (Exception e){
 			e.printStackTrace();
