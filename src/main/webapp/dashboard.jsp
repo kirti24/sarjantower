@@ -35,7 +35,7 @@ _
 
 		<jsp:include page="header.jsp"></jsp:include>
 
-		<jsp:include page="CategoryBuilder.jsp"></jsp:include>
+		<jsp:include page="eventForm.jsp"></jsp:include>
 
 		<br />
 		<br />
