@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-<%@page session="false"%>
 <html>
 <head>
 <title>Sarjan - Dashboard</title>
@@ -15,19 +14,39 @@
 </head>
 
 <body id="body">
-
+<br/>
 	<div class="container">
+
+
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Sarjan Voting</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<p class="navbar-text navbar-right">
+						Signed in as <%=request.getAttribute("user") %>
+					</p>
+				</div>
+			</div>
+		</nav>
+
+
+
+
 		<h1>Vote</h1>
 		<form method="post" action="vote">
-			
-				<jsp:include page="CategoryBuilder.jsp"></jsp:include>
-				<br />
-				<div class="col-lg-4">
+
+			<jsp:include page="CategoryBuilder.jsp"></jsp:include>
+			<br />
+			<div class="col-lg-4">
 				<center>
-				<input type="submit" class="btn btn-info"></button>
+					<input type="submit" class="btn btn-info">
+					</button>
 				</center>
-				</div>
-			
+			</div>
+
 		</form>
 	</div>
 </body>
