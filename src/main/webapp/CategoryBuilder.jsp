@@ -52,6 +52,6 @@
 	
 %>
 <%=sb.toString()%>
-<input type="hidden" name="event" value=<%=event %>/>
+<input type="hidden" name="event" value="<%=event %>"/>
 <input type="hidden" name="user" value=<%=request.getAttribute("user") %> />
 <input type="hidden" name="categories" value=<%=categories.substring(0,categories.length()-1) %>/>
