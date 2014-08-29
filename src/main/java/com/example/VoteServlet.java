@@ -29,43 +29,13 @@ public class VoteServlet extends HttpServlet {
 			throws ServletException, IOException {
 		ServletOutputStream out = resp.getOutputStream();
 
-		BufferedReader reader = new BufferedReader(new FileReader("src/main/webapp/Participants.txt"));
 		StringBuilder votes = new StringBuilder();
-		Vector<String> categories = new Vector();
+		String categories = req.getAttribute("Categories").toString();
 		String line;
 		
 		int noOfCategories=0;
-		
 		String ans = req.getParameter("Category1");
-		out.println(ans);
-		
-		while ((line = reader.readLine()) != null) {
-			noOfCategories++;
-			String[] fields = line.split(",");
-			for(int i=0;i<fields.length;i++){
-				String categoryValue="";
-				if(i==0){
-					out.write(fields[i].getBytes());
-					categories.add(fields[i]);
-					categoryValue = req.getParameter(fields[i]);
-					//out.write(categoryValue.getBytes());
-				}
-				if(i>0){
-					if(categoryValue.equals(fields[i].replace(' ', '_'))){
-						out.write("match".getBytes());
-						votes.append(fields[i]+",");
-					}else{
-						votes.append("0,");
-					}
-				}
-			}
-		}
-		out.write(votes.toString().getBytes());
-
-		//String username = req.getParameter("username");
-		//String password = req.getParameter("password");
-		//out.write((username+password).getBytes());
-
+		out.println(categories+"|"+ans);
 
 	}
 

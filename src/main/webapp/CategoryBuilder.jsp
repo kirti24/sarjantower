@@ -6,11 +6,13 @@
 			"src/main/webapp/Participants.txt"));
 	StringBuilder sb = new StringBuilder();
 	String line;
+	String categories="";
 
 	while ((line = reader.readLine()) != null) {
 		String[] fields = line.split(",");
 		for(int i=0;i<fields.length;i++){
 			if(i==0){
+				categories+=fields[i];
 				sb.append("<div class=\"row\">");
 				sb.append("<div class=\"col-lg-4\">");
 				sb.append("<div class=\"panel panel-primary\">");
@@ -32,5 +34,6 @@
 			}
 		}
 	}
+	request.setAttribute("Categories", categories);
 %>
 <%=sb.toString()%>
