@@ -22,9 +22,11 @@
 			
 				<jsp:include page="CategoryBuilder.jsp"></jsp:include>
 				<br />
+				<div class="col-lg-4">
 				<center>
 				<input type="submit" class="btn btn-info"></button>
 				</center>
+				</div>
 			
 		</form>
 	</div>
