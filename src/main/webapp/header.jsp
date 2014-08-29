@@ -11,7 +11,7 @@
 			<a class="navbar-brand" href="dashboard.jsp">Sarjan Online Voting</a>
 		</div>
 		<ul class="nav navbar-nav">
-			<li>Signed in as <%=request.getSession(false).getAttribute("user") %></li>
+			<!-- <li>Signed in as <%=request.getSession(false).getAttribute("user") %></li>  -->
 			<li><a href="signout.jsp" class="glyphicon glyphicon-off">LogOut</a></li>
 		</ul>
 		<!--/.nav-collapse -->
