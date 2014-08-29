@@ -94,7 +94,7 @@ public class DBConnect {
 			stat.setString(2, event);
 			rs = stat.executeQuery();
 			
-			if(rs.next()){
+			if(rs!=null && rs.next()){
 				sql = "insert";
 			}
 			else{
