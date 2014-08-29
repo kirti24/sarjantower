@@ -3,7 +3,7 @@
 
 <%
 	BufferedReader reader = new BufferedReader(new FileReader(
-			"Participants.txt"));
+			"src/main/webapp/Participants.txt"));
 	StringBuilder sb = new StringBuilder();
 	String line;
 
