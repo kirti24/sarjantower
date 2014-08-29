@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-_
 <%@page session="false"%>
 <html>
 <head>

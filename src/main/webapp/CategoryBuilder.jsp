@@ -1,6 +1,6 @@
 <%@page import="java.io.FileReader"%>
 <%@page import="java.io.BufferedReader"%>
-
+<%@page session="false"%>
 <%
 	BufferedReader reader = new BufferedReader(new FileReader(
 			"src/main/webapp/Participants.txt"));
