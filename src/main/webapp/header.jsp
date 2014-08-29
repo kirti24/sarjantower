@@ -7,12 +7,11 @@
 					class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#">Sarjan Online Voting</a>
+			<a class="navbar-brand" href="dashboard.jsp">Sarjan Online Voting</a>
 		</div>
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav navbar-right">
 				<li>Signed in as <%=request.getAttribute("user") %></li>
-				<li class="divider-vertical"></li>
 				<li><a href="signout.jsp" class="glyphicon glyphicon-off">LogOut</a></li>
 			</ul>
 		</div>

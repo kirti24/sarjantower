@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<%@page import="com.example.DBConnect"%>
 <%@page session="false"%>
 <html>
 <head>
@@ -31,7 +32,6 @@
 	<br />
 	<div class="container">
 
-
 		<jsp:include page="header.jsp"></jsp:include>
 
 		<form method="post" action="vote">
@@ -41,6 +41,7 @@
 			<div class="col-lg-4">
 				<center>
 					<input type="submit" class="btn btn-info">
+					<input type="text" name="lastVote" value=<%=DBConnect.getVote(request.getAttribute("user"), request.getAttribute("event")) %>  />
 					</button>
 				</center>
 			</div>
