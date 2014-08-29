@@ -34,11 +34,26 @@ _
 
 
 		<jsp:include page="header.jsp"></jsp:include>
-
+		
+		<%if(request.getAttribute("status") != null){
+			if(request.getAttribute("status") == "true"){%>
+				<br/><label class="alert alert-success">Your vote has been registered! Keep voting.</label>
+		<%	}
+		}%>
+		
+		<form method="post" action="votingForm.jsp">
+			<input type="submit" class="btn btn-default">Solo Dance
+			<input type="hidden" name="event" value="Solo Dance" />
+		</form>
+		
 		<jsp:include page="eventForm.jsp"></jsp:include>
-
+			
 		<br />
 		<br />
 	</div>
+	
+	<script type="text/javascript">
+	 	
+	</script>
 </body>
 </html>
