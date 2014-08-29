@@ -69,6 +69,7 @@ public class DBConnect {
 		}
 	}
 
+	@SuppressWarnings("finally")
 	public static String insertVote(String username,String event, String vote){
 		try {
 			Class.forName("org.postgresql.Driver");
