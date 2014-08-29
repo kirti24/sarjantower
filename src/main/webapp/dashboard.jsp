@@ -1,4 +1,5 @@
-<!DOCTYPE HTML>
+<!DOCTYPE HTML>_
+<%@page session="false"%>
 <html>
 <head>
 <title>Sarjan - Dashboard</title>
@@ -14,6 +15,19 @@
 </head>
 
 <body id="body">
+
+<%	
+		if(request.getSession(false) == null){
+			//request.getSession().invalidate();
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
+			if (dispatcher != null)
+			{
+				dispatcher.forward(request, response);
+				return;
+			}
+		}
+	%>
+
 <br/>
 	<div class="container">
 
