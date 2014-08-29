@@ -19,5 +19,14 @@
     <url-pattern>/login</url-pattern>
   </servlet-mapping>
 
+  <servlet>
+    <servlet-name>vote</servlet-name>
+    <servlet-class>com.example.VoteServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>vote</servlet-name>
+    <url-pattern>/vote</url-pattern>
+  </servlet-mapping>
 
 </web-app>
