@@ -31,5 +31,14 @@
     <servlet-name>vote</servlet-name>
     <url-pattern>/vote</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>eventform</servlet-name>
+    <servlet-class>com.example.EventFormServlet</servlet-class>
+  </servlet>
 
+  <servlet-mapping>
+    <servlet-name>eventform</servlet-name>
+    <url-pattern>/event</url-pattern>
+  </servlet-mapping>
 </web-app>

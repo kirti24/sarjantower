@@ -41,12 +41,12 @@ _
 		<%	}
 		}%>
 		
-		<form method="post" action="votingForm.jsp">
-			<input type="submit" class="btn btn-default">Solo Dance
-			<input type="hidden" name="event" value="Solo Dance" />
+		<form method="post" action="event">
+			<input type="submit" name="eventname" class="btn btn-primary" value="Solo Dance">
+			<input type="submit" name="eventname" class="btn btn-primary" value="Group Dance">
 		</form>
 		
-		<jsp:include page="eventForm.jsp"></jsp:include>
+		<jsp:include page="votingForm.jsp"></jsp:include>
 			
 		<br />
 		<br />
