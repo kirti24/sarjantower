@@ -34,11 +34,11 @@ public class VoteServlet extends HttpServlet {
 		String categoryList=req.getParameter("categories");
 		String[] categories = categoryList.split(",");
 		for(int i=0;i<categories.length;i++){
-			votes+=req.getParameter(categories[i]+",");
+			votes+=req.getParameter(categories[i]);
 		}
 		
 		
-		out.println(req.getAttribute("user")+"|"+event+"|"+votes);
+		out.println(req.getParameter("user")+"|"+event+"|"+votes);
 	}
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
