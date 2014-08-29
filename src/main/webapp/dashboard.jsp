@@ -19,13 +19,13 @@
 	<div class="container">
 		<h1>Vote</h1>
 		<form method="post" action="vote">
-			<div class="row">
+			
 				<jsp:include page="CategoryBuilder.jsp"></jsp:include>
 				<br />
 				<center>
 				<input type="submit" class="btn btn-info"></button>
 				</center>
-			</div>
+			
 		</form>
 	</div>
 </body>
