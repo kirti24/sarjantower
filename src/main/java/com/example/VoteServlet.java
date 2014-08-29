@@ -35,6 +35,7 @@ public class VoteServlet extends HttpServlet {
 		
 		RequestDispatcher dispatcher = req.getRequestDispatcher("/dashboard.jsp");
 		req.setAttribute("voteStatus", "true");
+		req.setAttribute("user", username);
 		if(dispatcher != null) dispatcher.forward(req, resp);
 		return;
 		
