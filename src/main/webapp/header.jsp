@@ -20,3 +20,8 @@
 	</div>
 	<!--/.container-fluid -->
 </div>
+
+<style>
+.navbar {
+  margin-bottom: 20px;
+}</style>
