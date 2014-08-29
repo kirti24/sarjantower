@@ -30,13 +30,25 @@ public class VoteServlet extends HttpServlet {
 		ServletOutputStream out = resp.getOutputStream();
 
 		StringBuilder votes = new StringBuilder();
-		String categories = req.getAttribute("Categories")+"";
-		String line;
 		
-		int noOfCategories=0;
-		String ans = req.getParameter("Category1");
-		out.println(categories+"|"+ans);
-
+		
+		BufferedReader reader = new BufferedReader(new FileReader(
+				"src/main/webapp/Participants.txt"));
+		StringBuilder sb = new StringBuilder();
+		String line;
+		String category="";
+		
+		while ((line = reader.readLine()) != null) {
+			category = line.substring(0,line.indexOf(','));
+			out.print(category);
+		}
+		
+		int noOfCategories=10;
+		for(int i=0;i<noOfCategories;i++){
+			String ans = req.getParameter("Category"+1);
+		}
+		
+		
 	}
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
