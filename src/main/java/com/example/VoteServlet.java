@@ -31,7 +31,6 @@ public class VoteServlet extends HttpServlet {
 
 		StringBuilder votes = new StringBuilder();
 		
-		
 		BufferedReader reader = new BufferedReader(new FileReader(
 				"src/main/webapp/Participants.txt"));
 		StringBuilder sb = new StringBuilder();
