@@ -127,11 +127,11 @@
 							</tr>
 							
 							<tr class="info">
-								<td>Total</td>
-								<td>11</td>
-								<td>30</td>
-								<td>18</td>
-								<td>15</td>
+								<td><b>Total</b></td>
+								<td><b>11</b></td>
+								<td><b>30</b></td>
+								<td><b>18</b></td>
+								<td><b>15</b></td>
 							</tr>
 							
 						</tbody>
