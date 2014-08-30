@@ -60,7 +60,7 @@
 			var list_array = prevList.split(",");
 			for(var i=0;i<list_array.length;i++){
 				if(list_array[i]!="null")
-					$("'#"+list_array[i]+"'").attr('checked',true);
+					$(list_array[i]).attr('checked',true);
 			}
 		});
 	</script>
