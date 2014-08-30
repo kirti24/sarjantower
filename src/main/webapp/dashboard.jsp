@@ -43,9 +43,9 @@
 		<div class="col-lg-4">
 			<div class="row">
 				<form method="post" action="event">
-					<input type="submit" name="eventname" class="btn btn-primary" value="Solo Dance"><br/>
-					<input type="submit" name="eventname" class="btn btn-primary" value="Group Dance" disabled><br/>
-					<input type="submit" name="eventname" class="btn btn-primary" value="Fancy Dress" disabled><br/>
+					<input type="submit" name="eventname" class="btn btn-primary" value="Solo Dance"><br/><br/>
+					<input type="submit" name="eventname" class="btn btn-primary" value="Group Dance" disabled><br/><br/>
+					<input type="submit" name="eventname" class="btn btn-primary" value="Fancy Dress" disabled><br/><br/>
 				</form>
 			</div>
 		</div>
