@@ -43,8 +43,8 @@
 					<input type="submit" class="btn btn-info">
 				</center>
 					<%
-					String username = request.getAttribute("user")+"";
-					String event = request.getAttribute("event")+"";
+					String username = request.getSession(false).getAttribute("user").toString();
+					String event = request.getAttribute("event").toString();
 					%>
 					<input type="hidden" name="lastVote" value=<%=DBConnect.getVote(username, event)%>  />
 			</div>
