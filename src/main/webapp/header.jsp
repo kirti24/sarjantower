@@ -10,7 +10,8 @@
 			<a class="navbar-brand" href="dashboard.jsp">Sarjan Ganpati Festival 2014</a>
 		</div>
 		<ul class="nav navbar-nav">
-			<li><a href="dashboard.jsp">Home</a></li>
+			<li><a href="dashboard.jsp">Home</a>
+			</li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
 			<!-- <li>Signed in as <%=request.getSession(false).getAttribute("user") %></li>  -->

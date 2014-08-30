@@ -22,27 +22,33 @@ public class LoginServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		ServletOutputStream out = resp.getOutputStream();
-		
-		String username = req.getParameter("username");
-		String password = req.getParameter("password");
-		out.write((username+password).getBytes());
-		boolean isValid = DBConnect.loginCheck(username,password);
-		
-		if(!isValid){
-			RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
-			req.setAttribute("errormessage", "Invalid Username/Password. Try again.");
-			req.getSession(false).invalidate();
-			if(dispatcher != null) dispatcher.forward(req, resp);
-		}else{
-			//DBConnect.sessionCreate(username, req.getSession(false).getId());
-			RequestDispatcher dispatcher = req.getRequestDispatcher("/dashboard.jsp");
-			req.setAttribute("verified", "true");
-			req.setAttribute("user", username);
-			HttpSession session = req.getSession(false);			
-			session.setAttribute("isAuthorised", "true");
-			session.setAttribute("user", username);
-			System.out.println("Setting attribute isauth for session " + session.getId());
+		try{
+			ServletOutputStream out = resp.getOutputStream();
+			
+			String username = req.getParameter("username");
+			String password = req.getParameter("password");
+			out.write((username+password).getBytes());
+			boolean isValid = DBConnect.loginCheck(username,password);
+			
+			if(!isValid){
+				RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
+				req.setAttribute("errormessage", "Invalid Username/Password. Try again.");
+				req.getSession(false).invalidate();
+				if(dispatcher != null) dispatcher.forward(req, resp);
+			}else{
+				//DBConnect.sessionCreate(username, req.getSession(false).getId());
+				RequestDispatcher dispatcher = req.getRequestDispatcher("/dashboard.jsp");
+				req.setAttribute("verified", "true");
+				req.setAttribute("user", username);
+				HttpSession session = req.getSession(false);			
+				session.setAttribute("isAuthorised", "true");
+				session.setAttribute("user", username);
+				System.out.println("Setting attribute isauth for session " + session.getId());
+				if(dispatcher != null) dispatcher.forward(req, resp);
+				return;
+			}
+		}catch(Exception e){
+			RequestDispatcher dispatcher = req.getRequestDispatcher("/error.jsp");
 			if(dispatcher != null) dispatcher.forward(req, resp);
 			return;
 		}
