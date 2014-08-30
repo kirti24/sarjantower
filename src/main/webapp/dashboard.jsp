@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <%@page session="false"%>
+<%@page errorPage="error.jsp" isErrorPage="false"%>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -44,6 +45,7 @@
 				<form method="post" action="event">
 					<input type="submit" name="eventname" class="btn btn-primary" value="Solo Dance">
 					<input type="submit" name="eventname" class="btn btn-primary" value="Group Dance" disabled>
+					<input type="submit" name="eventname" class="btn btn-primary" value="Fancy Dress" disabled>
 				</form>
 			</div>
 		</div>

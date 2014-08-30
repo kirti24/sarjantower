@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <%@page import="com.example.DBConnect"%>
 <%@page session="false"%>
+<%@page errorPage="error.jsp" isErrorPage="false"%>
 <html>
 <head>
 <title>Sarjan - Dashboard</title>

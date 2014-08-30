@@ -1,3 +1,4 @@
+<%@page errorPage="error.jsp" isErrorPage="false"%>
 <%@page import="com.example.DBConnect"%>
 <%@page import="java.io.FileReader"%>
 <%@page import="java.io.BufferedReader"%>

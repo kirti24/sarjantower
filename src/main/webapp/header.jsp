@@ -1,4 +1,3 @@
-<%@page session="false"%>
 <div class="navbar navbar-default" role="navigation">
 	<div class="container-fluid">
 		<div class="navbar-header">

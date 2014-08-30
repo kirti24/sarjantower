@@ -1,3 +1,4 @@
+<%@page errorPage="error.jsp" isErrorPage="false"%>
 <!DOCTYPE html>
 <html>
 <head>
