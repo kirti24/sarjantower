@@ -55,14 +55,7 @@
 	</div>
 
 	<script type="text/javascript">
-		$(function (){
-			var prevList = <%=DBConnect.getVote(username, event) %> ;
-			var list_array = prevList.split(",");
-			for(var i=0;i<list_array.length;i++){
-				if(list_array[i]!="null")
-					$('#'+list_array[i]).prop('checked',true);
-			}
-		});
+		
 	</script>
 </body>
 </html>
