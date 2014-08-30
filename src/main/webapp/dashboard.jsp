@@ -125,6 +125,15 @@
 								<td>-</td>
 								<td>-</td>
 							</tr>
+							
+							<tr class="info">
+								<td>Total</td>
+								<td>-</td>
+								<td>10</td>
+								<td>-</td>
+								<td>-</td>
+							</tr>
+							
 						</tbody>
 					</table>
 				</div>
