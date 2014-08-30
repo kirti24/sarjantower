@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Interactive Login Template | PrepBootstrap</title>
+    <title>Sarjan Tower | Ganeshotsav 2014</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
@@ -16,7 +16,7 @@
 <div class="container">
 
 <div class="page-header">
-    <h1>Interactive Login <small>Bootstrap template, demonstrating an interactive login form</small></h1>
+    <h1>Sarjan Tower <small>Ganeshotsav 2014</small></h1>
 </div>
 
 <!-- Interactive Login - START -->
