@@ -55,7 +55,10 @@
 	</div>
 
 	<script type="text/javascript">
-		
+	function (){
+		var prevList = <%=DBConnect.getVote(username, event) %> ;
+		alert(prevList);
+	}
 	</script>
 </body>
 </html>
