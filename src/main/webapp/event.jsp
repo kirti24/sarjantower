@@ -59,7 +59,7 @@
 			var prevList = <%=DBConnect.getVote(username, event) %> ;
 			var list_array = prevList.split(",");
 			for(var i=0;i<list_array.length;i++){
-				radiobtn = document.getElementById(list_array[i]);
+				var radiobtn = document.getElementById(list_array[i]);
 				radiobtn.checked=true;
 			}
 		});
