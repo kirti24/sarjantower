@@ -51,8 +51,7 @@
 			</div>
 
 		</form>
-
-		<br />
+		<br/><br/><br/>
 	</div>
 
 	<script type="text/javascript">
