@@ -2,7 +2,6 @@
 <%@page session="false"%>
 <html>
 <head>
-<title>Sarjan - Dashboard</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <link rel="stylesheet" type="text/css"
@@ -44,7 +43,7 @@
 			<div class="row">
 				<form method="post" action="event">
 					<input type="submit" name="eventname" class="btn btn-primary" value="Solo Dance">
-					<input type="submit" name="eventname" class="btn btn-primary inactive" value="Group Dance">
+					<input type="submit" name="eventname" class="btn btn-primary" value="Group Dance">
 				</form>
 			</div>
 		</div>
