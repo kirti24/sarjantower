@@ -1,10 +1,12 @@
+<%@page import="com.example.DBConnect"%>
 <%@page import="java.io.FileReader"%>
 <%@page import="java.io.BufferedReader"%>
 <%@page session="false"%>
 <%
+	String prevList="";
 	BufferedReader reader = new BufferedReader(new FileReader(
 			"src/main/webapp/"+request.getAttribute("event").toString().replace(' ', '_')+".txt"));
-	StringBuilder sb = new StringBuilder();
+	
 	String line;
 	String categories="";
 	String event="";
@@ -16,6 +18,7 @@
 			%>
 			<div class="page-header"><h1><%=event %></h1></div>
 			<%
+			prevList = DBConnect.getVote(request.getSession(false).getAttribute("user").toString(), event);
 			continue;
 		}
 		String[] fields = line.split(",");
@@ -29,6 +32,7 @@
 				<h3 class="panel-title">
 				<i class="fa fa-magnet"></i><%=fields[i]%>
 				</h3></div>
+				<%=prevList %>
 				<%
 			}
 			if(i==1){%>
@@ -41,7 +45,7 @@
 				String inputId=category+"|"+participant;%>
 				<div class="radio">
 				<label> 
-				<input type="radio" name="<%=category%>"	id="<%=inputId%>" value="<%=inputId%>"> <%=fields[i]%> </label>
+				<input type="radio" name="<%=category%>"	id="<%=inputId%>" value="<%=inputId%>" <% if(prevList.contains(inputId)){%> checked <%}  %>> <%=fields[i]%> </label>
 				</div>
 				<%
 			}
@@ -54,7 +58,6 @@
 	}
 	
 %>
-<%=sb.toString()%>
 <input type="hidden" name="event" value="<%=event %>"/>
 <input type="hidden" name="user" value=<%=request.getSession(false).getAttribute("user") %> />
 <input type="hidden" name="categories" value=<%=categories.substring(0,categories.length()-1) %> />
