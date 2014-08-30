@@ -70,14 +70,14 @@
 							<td>29-Aug</td>
 							<td>Manish Bajaj</td>
 							<td>9:27 PM</td>
-							<td>YES</td>
+							<td><i class="glyphicon glyphicon-ok"></i></td>
 						</tr>
 						<tr>
 							<td>2</td>
 							<td>29-Aug</td>
 							<td>Ishaan Jalan</td>
 							<td>10:39 PM</td>
-							<td>NO</td>
+							<td><i class="glyphicon glyphicon-remove"></i></td>
 						</tr>
 					</tbody>
 				</table>
