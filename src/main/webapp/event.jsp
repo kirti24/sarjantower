@@ -30,10 +30,11 @@
 	%>
 
 	<br />
+	
 	<div class="container">
-
+		
 		<jsp:include page="header.jsp"></jsp:include>
-
+		
 		<form method="post" action="vote">
 
 			<jsp:include page="CategoryBuilder.jsp"></jsp:include>
@@ -55,10 +56,10 @@
 	</div>
 
 	<script type="text/javascript">
-	function (){
-		var prevList = <%=DBConnect.getVote(username, event) %> ;
-		alert(prevList);
-	}
+		function (){
+			var prevList = <%=DBConnect.getVote(username, event) %> ;
+			alert(prevList);
+		}
 	</script>
 </body>
 </html>
