@@ -128,10 +128,10 @@
 							
 							<tr class="info">
 								<td>Total</td>
-								<td>-</td>
-								<td>10</td>
-								<td>-</td>
-								<td>-</td>
+								<td>11</td>
+								<td>30</td>
+								<td>18</td>
+								<td>15</td>
 							</tr>
 							
 						</tbody>
