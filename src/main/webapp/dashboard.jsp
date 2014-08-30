@@ -40,13 +40,47 @@
 		<%	}
 		}%>
 		
-		<div class="col-lg-4">
-			<div class="row">
+		
+		<div class="row">
+			<div class="col-lg-4">
 				<form method="post" action="event">
-					<input type="submit" name="eventname" class="btn btn-primary" value="Solo Dance"><br/><br/>
-					<input type="submit" name="eventname" class="btn btn-primary" value="Group Dance" disabled><br/><br/>
-					<input type="submit" name="eventname" class="btn btn-primary" value="Fancy Dress" disabled><br/><br/>
+					<fieldset>
+						<legend>Voting</legend>
+						<input type="submit" name="eventname" class="btn btn-primary" value="Solo Dance"><br/><br/>
+						<input type="submit" name="eventname" class="btn btn-primary" value="Group Dance" disabled><br/><br/>
+						<input type="submit" name="eventname" class="btn btn-primary" value="Fancy Dress" disabled><br/><br/>
+					</fieldset>
 				</form>
+			</div>
+			<div class="col-lg-6">
+				<h3>Quiz Results</h3>
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Date</th>
+							<th>Name</th>
+							<th>Time</th>
+							<th>Correct</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>29-Aug</td>
+							<td>Manish Bajaj</td>
+							<td>9:27 PM</td>
+							<td>YES</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>29-Aug</td>
+							<td>Ishaan Jalan</td>
+							<td>10:39 PM</td>
+							<td>NO</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 		

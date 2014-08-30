@@ -7,7 +7,7 @@
 					class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="dashboard.jsp">Sarjan Online Voting</a>
+			<a class="navbar-brand" href="dashboard.jsp">Sarjan Ganpati Festival 2014</a>
 		</div>
 		<ul class="nav navbar-nav navbar-right">
 			<!-- <li>Signed in as <%=request.getSession(false).getAttribute("user") %></li>  -->
