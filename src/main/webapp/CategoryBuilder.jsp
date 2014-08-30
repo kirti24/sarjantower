@@ -35,10 +35,13 @@
 				<div class="panel-body">
 				<%
 			}
-			if(i>0){%>
+			if(i>0){
+				String category=fields[0].replace(' ', '_');
+				String participant=fields[i].replace(' ', '_');
+				String inputId=category+"|"+participant;%>
 				<div class="radio">
 				<label> 
-				<input type="radio" name="<%=fields[0].replace(' ', '_')%>"	id="<%=fields[0].replace(' ', '_')%>" value="<%=fields[i].replace(' ', '_')%>"> <%=fields[i]%> </label>
+				<input type="radio" name="<%=inputId%>"	id="<%=category%>" value="<%=inputId%>"> <%=fields[i]%> </label>
 				</div>
 				<%
 			}
