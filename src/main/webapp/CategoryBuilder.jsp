@@ -31,7 +31,7 @@
 				<div class="panel panel-primary">
 				<div class="panel-heading">
 				<h3 class="panel-title">
-				<i class="fa fa-magnet"></i><%=fields[i]%>
+				<i class="fa fa-magnet"></i>&nbsp;<%=fields[i]%>
 				</h3></div>
 				<%
 			}
