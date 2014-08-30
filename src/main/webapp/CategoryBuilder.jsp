@@ -41,7 +41,7 @@
 				String inputId=category+"|"+participant;%>
 				<div class="radio">
 				<label> 
-				<input type="radio" name="<%=inputId%>"	id="<%=category%>" value="<%=inputId%>"> <%=fields[i]%> </label>
+				<input type="radio" name="<%=category%>"	id="<%=inputId%>" value="<%=inputId%>"> <%=fields[i]%> </label>
 				</div>
 				<%
 			}
