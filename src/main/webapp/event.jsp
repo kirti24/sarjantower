@@ -57,7 +57,11 @@
 	<script type="text/javascript">
 		$(function (){
 			var prevList = <%=DBConnect.getVote(username, event) %> ;
-			alert(prevList);
+			var list_array = prevList.split(",");
+			for(var i=0;i<list_array.length;i++){
+				radiobtn = document.getElementById(list_array[i]);
+				radiobtn.checked=true;
+			}
 		});
 	</script>
 </body>

@@ -40,10 +40,14 @@
 		<%	}
 		}%>
 		
-		<form method="post" action="event">
-			<input type="submit" name="eventname" class="btn btn-primary" value="Solo Dance">
-			<input type="submit" name="eventname" class="btn btn-primary" value="Group Dance">
-		</form>
+		<div class="col-lg-4">
+			<div class="row">
+				<form method="post" action="event">
+					<input type="submit" name="eventname" class="btn btn-primary" value="Solo Dance">
+					<input type="submit" name="eventname" class="btn btn-primary" value="Group Dance">
+				</form>
+			</div>
+		</div>
 		
 		<br />
 		<br />
