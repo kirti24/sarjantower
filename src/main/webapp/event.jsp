@@ -59,8 +59,8 @@
 			var prevList = <%=DBConnect.getVote(username, event) %> ;
 			var list_array = prevList.split(",");
 			for(var i=0;i<list_array.length;i++){
-				alert(list_array[i]);
-				document.getElementById(list_array[i]).checked=true;
+				if(list_array[i]!="null")
+					document.getElementById(list_array[i]).checked=true;
 			}
 		});
 	</script>
