@@ -32,7 +32,6 @@
 				<h3 class="panel-title">
 				<i class="fa fa-magnet"></i><%=fields[i]%>
 				</h3></div>
-				<%=prevList %>
 				<%
 			}
 			if(i==1){%>
