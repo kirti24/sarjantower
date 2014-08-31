@@ -50,7 +50,29 @@
 
 		<%
 			ArrayList<FlatVotes> fv = DBConnect.getAdminData();
+		ArrayList<FlatVotes> count = DBConnect.getAdminDataCount();
 		%>
+		
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th>Event</th>
+					<th>Count</th>
+				</tr>
+			</thead>
+			<tbody>
+				<%
+					for (int i = 0; i < fv.size(); i++) {
+				%>
+				<tr>
+					<td><%=count.get(i).getEvent()%></td>
+					<td><%=count.get(i).getFlatno()%></td>
+				</tr>
+				<%
+					}
+				%>
+			</tbody>
+		</table>
 
 		<table class="table table-bordered table-striped">
 			<thead>
