@@ -273,7 +273,7 @@ public class DBConnect {
 			stat = conn.prepareStatement("select event,count(*) as totalcount from votes where flatno!='admin' group by event");
 			rs = stat.executeQuery();
 			while(rs.next()){
-				fv.add(new FlatVotes(rs.getString("totalcount"),rs.getString("event")));
+				fv.add(new FlatVotes(rs.getInt("totalcount")+"",rs.getString("event")));
 			}
 		}
 		catch (Exception e){
