@@ -12,6 +12,12 @@
 		<ul class="nav navbar-nav">
 			<li><a href="dashboard.jsp">Home</a>
 			</li>
+			<%
+			String user = (String)request.getSession(false).getAttribute("user");
+			if(user.equalsIgnoreCase("admin")){ %>
+				<li><a href="admin.jsp">Admin</a>
+				</li>
+			<%} %>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
 			<!-- <li>Signed in as <%=request.getSession(false).getAttribute("user") %></li>  -->

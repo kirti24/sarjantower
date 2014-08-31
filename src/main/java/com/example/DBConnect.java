@@ -6,6 +6,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
 
 public class DBConnect {
 	@SuppressWarnings("finally")
@@ -188,6 +189,64 @@ public class DBConnect {
 				e.printStackTrace();
 			}
 			return publicvote;
+		}
+	}
+	
+	@SuppressWarnings("finally")
+	public static ArrayList<FlatVotes> getAdminData(){
+		try {
+			Class.forName("org.postgresql.Driver");
+		} catch (ClassNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+
+		URI dbUri = null;
+		Connection conn = null;
+		PreparedStatement stat = null;
+		ResultSet rs = null;
+		ArrayList<FlatVotes> fv = new ArrayList<FlatVotes>();
+		try{
+			dbUri = new URI(System.getenv("DATABASE_URL"));
+			String dbusername = dbUri.getUserInfo().split(":")[0];
+			String dbpassword = dbUri.getUserInfo().split(":")[1];
+			String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
+			conn = DriverManager.getConnection(dbUrl, dbusername, dbpassword);
+			stat = conn.prepareStatement("select flatno,event from votes where flatno!='admin' order by event,flatno");
+			rs = stat.executeQuery();
+			while(rs.next()){
+				fv.add(new FlatVotes(rs.getString("flatno"), rs.getString("event")));
+			}
+		}
+		catch (Exception e){
+			e.printStackTrace();
+		}
+		finally{
+			try{
+				if(rs!=null){
+					rs.close();
+				}
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+			try{
+				if(stat!=null){
+					stat.close();
+				}
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+			try{
+				if(conn!=null){
+					conn.close();
+				}
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+			return fv;
 		}
 	}
 	
