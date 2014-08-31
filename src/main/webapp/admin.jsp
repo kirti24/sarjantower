@@ -62,7 +62,7 @@
 			</thead>
 			<tbody>
 				<%
-					for (int i = 0; i < fv.size(); i++) {
+					for (int i = 0; i < count.size(); i++) {
 				%>
 				<tr>
 					<td><%=count.get(i).getEvent()%></td>
