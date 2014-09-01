@@ -7,12 +7,7 @@
 				<input type="submit" name="eventname" class="btn btn-primary"
 					value="Solo Dance"><br /> <br /> 
 				<input type="submit"
-					name="eventname" class="btn btn-primary" value="Group Dance" disabled><br /> <br />
-				
-				<%if(request.getSession(false).getAttribute("user").toString().equalsIgnoreCase("admin")){ %>
-				<input type="submit"
-					name="eventname" class="btn btn-primary" value="Group Dance"><br /> <br />
-				<%} %>
+					name="eventname" class="btn btn-primary" value="Group Dance" ><br /> <br />
 				<input type="submit"
 					name="eventname" class="btn btn-primary" value="Fancy Dress"
 					disabled>
