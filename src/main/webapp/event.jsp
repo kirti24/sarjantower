@@ -62,7 +62,7 @@
 					<td><a href="https://i.imgur.com/HuuQGrr.jpg" target="_blank">Silencer</a></td>
 				</tr>
 				<tr>
-					<td><a href="#" target="_blank">Nautanki</a></td>
+					<td><a href="http://i.imgur.com/lkZ2wCL.jpg" target="_blank">Nautanki</a></td>
 					<td><a href="https://i.imgur.com/wLXWngs.jpg" target="_blank">Seth Uncle and Aunty</a></td>
 					<td><a href="https://i.imgur.com/E6NpUtF.jpg" target="_blank">Bhabhiya</a></td>
 				</tr>
