@@ -1,6 +1,6 @@
 Group Dance
-Sr,Advait Aditya and Varshil
-Upto 4th,Meshwa and Melric,Meshwa and Palak,Vidhi Anvesha and Manishka
-Upto 7th,Aryan and Vidhi,Advik and Ishaan,Aryan and Advik,Aryan and Radhika,Vidhi and Radhika
+Sr,Advait-Aditya-Varshil
+Upto 4th,Meshwa-Melric,Meshwa-Palak,Vidhi-Anvesha-Manishka
+Upto 7th,Aryan-Vidhi,Advik-Ishaan,Aryan-Advik,Aryan-Radhika,Vidhi-Radhika
 College,The Unknowns,Unity Group,Silencer,Nautanki
 Parents,Seth Uncle and Aunty,Bhabhiya
