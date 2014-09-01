@@ -7,7 +7,7 @@
 				<input type="submit" name="eventname" class="btn btn-primary"
 					value="Solo Dance"><br /> <br /> 
 				<input type="submit"
-					name="eventname" class="btn btn-primary" value="Group Dance" ><br /> <br />
+					name="eventname" class="btn btn-primary" value="Group Dance" disabled><br /> <br />
 				<input type="submit"
 					name="eventname" class="btn btn-primary" value="Fancy Dress"
 					disabled>
