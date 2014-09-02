@@ -175,7 +175,7 @@
 					</tr>
 					<tr>
 						<td>11</td>
-						<td>01-Sep/td>
+						<td>01-Sep</td>
 						<td>Saloni Agarwal</td>
 						<td>10:05 PM</td>
 						<td><i class="glyphicon glyphicon-ok"></i></td>
