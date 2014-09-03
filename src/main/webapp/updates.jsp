@@ -16,6 +16,82 @@
 		</form>
 	</div>
 	<div class="col-lg-6">
+	
+		<div class="row">
+			<h3>Antakshri Scores</h3>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Team A</th>
+						<th>Team B</th>
+						<th>Team C</th>
+						<th>Team D</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>20</td>
+						<td>20</td>
+						<td>20</td>
+						<td>20</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>60</td>
+						<td>60</td>
+						<td>60</td>
+						<td>60</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>20</td>
+						<td>0</td>
+						<td>20</td>
+						<td>20</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>60 + 10</td>
+						<td>60</td>
+						<td>30</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>60 + 10</td>
+						<td>60</td>
+						<td>30</td>
+						<td>60</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>40</td>
+						<td>0</td>
+						<td>80 + 25</td>
+						<td>40</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>20</td>
+						<td>60 + 10 - 5</td>
+						<td>40 + 10</td>
+						<td>40 + 10 + 10</td>
+					</tr>
+
+					<tr class="info">
+						<td><b>Total</b></td>
+						<td><b>300</b></td>
+						<td><b>265</b></td>
+						<td><b>315</b></td>
+						<td><b>290</b></td>
+					</tr>
+
+				</tbody>
+			</table>
+		</div>
+	
 		<div class="row">
 			<h3>Scavenger Hunt Scores (as of 29-Aug)</h3>
 			<table class="table table-bordered">
@@ -185,6 +261,48 @@
 						<td>01-Sep</td>
 						<td>Harsha Agarwal</td>
 						<td>10:06 PM</td>
+						<td><i class="glyphicon glyphicon-ok"></i></td>
+					</tr>
+					<tr class="active">
+						<td>13</td>
+						<td>02-Sep</td>
+						<td>Kirti Agarwal</td>
+						<td>10:09 PM</td>
+						<td><i class="glyphicon glyphicon-remove"></i></td>
+					</tr>
+					<tr class="active">
+						<td>14</td>
+						<td>02-Sep</td>
+						<td>Kovid Prabhakar</td>
+						<td>10:11 PM</td>
+						<td><i class="glyphicon glyphicon-remove"></i></td>
+					</tr>
+					<tr class="active">
+						<td>15</td>
+						<td>02-Sep</td>
+						<td>Sushmita Agarwal</td>
+						<td>10:12 PM</td>
+						<td><i class="glyphicon glyphicon-remove"></i></td>
+					</tr>
+					<tr class="active">
+						<td>16</td>
+						<td>02-Sep</td>
+						<td>Vijay Rathi</td>
+						<td>10:12 PM</td>
+						<td><i class="glyphicon glyphicon-remove"></i></td>
+					</tr>
+					<tr class="active">
+						<td>17</td>
+						<td>02-Sep</td>
+						<td>Nidhi Rajpurohit</td>
+						<td>10:42 PM</td>
+						<td><i class="glyphicon glyphicon-remove"></i></td>
+					</tr>
+					<tr class="active">
+						<td>18</td>
+						<td>03-Sep</td>
+						<td>Drex Franco</td>
+						<td>08:43 AM</td>
 						<td><i class="glyphicon glyphicon-ok"></i></td>
 					</tr>
 				</tbody>
