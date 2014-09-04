@@ -16,7 +16,66 @@
 		</form>
 	</div>
 	<div class="col-lg-6">
-	
+		
+		<div class="row">
+			<h3>Treasure Hunt Scores</h3>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Team A</th>
+						<th>Team B</th>
+						<th>Team C</th>
+						<th>Team D</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Mascott Round</td>
+						<td>40</td>
+						<td>50</td>
+						<td>30</td>
+						<td>20</td>
+					</tr>
+					<tr>
+						<td>Social Media Code</td>
+						<td>-</td>
+						<td>-</td>
+						<td>20</td>
+						<td>20</td>
+					</tr>
+					<tr>
+						<td>QR Code</td>
+						<td>20</td>
+						<td>30</td>
+						<td>40</td>
+						<td>50</td>
+					</tr>
+					<tr>
+						<td>Water Task - Make a word</td>
+						<td>20</td>
+						<td>40</td>
+						<td>30</td>
+						<td>50</td>
+					</tr>
+					<tr>
+						<td>Questionnaire</td>
+						<td>10</td>
+						<td>10</td>
+						<td>10</td>
+						<td>10</td>
+					</tr>
+					<tr class="info">
+						<td><b>Total</b></td>
+						<td><b>90</b></td>
+						<td><b>130</b></td>
+						<td><b>130</b></td>
+						<td><b>150</b></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
 		<div class="row">
 			<h3>Antakshri Scores</h3>
 			<table class="table table-bordered">
