@@ -22,7 +22,7 @@
 			
 			<%if(request.getSession(false).getAttribute("user").toString().equalsIgnoreCase("admin")){ %>
 			<h4><a href="#" onclick="toggle('TreasureHuntWinners')">Click to show/hide winners list</a></h4>
-			<div id="TreasureHuntWinners" style="display: hidden">
+			<div id="TreasureHuntWinners" style="display: none">
 				<table class="table table-bordered">
 					<tbody>
 						<tr>
@@ -41,10 +41,10 @@
 						<tr>
 							<td>Navin Somani</td>
 							<td>Darshan Chaubey</td>
-							<td>Biyala Uncle</td>
+							<td>Mr. JP Biyala</td>
 						</tr>
 						<tr>
-							<td>Rathi Uncle</td>
+							<td>Mr. Vijay Rathi</td>
 							<td>Nakshatra Chopde</td>
 							<td>Naman Bajaj</td>
 						</tr>
@@ -60,11 +60,11 @@
 						</tr>
 						<tr>
 							<td>Yashika Agarwal</td>
-							<td>Kamal Uncle</td>
+							<td>Mr. Kamal</td>
 							<td>Ayush</td>
 						</tr>
 						<tr>
-							<td>Alpa Gupta</td>
+							<td>Mrs. Alpa Gupta</td>
 							<td>Naitik</td>
 							<td></td>
 						</tr>
