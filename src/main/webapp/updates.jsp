@@ -23,7 +23,7 @@
 			<%if(request.getSession(false).getAttribute("user").toString().equalsIgnoreCase("admin")){ %>
 			<h4><a href="#" onclick="toggle('TreasureHuntWinners')">Click to show/hide winners list</a></h4>
 			<div id="TreasureHuntWinners" style="display: hidden">
-				<table class="table table-bordered table-stripped">
+				<table class="table table-bordered">
 					<tbody>
 						<tr>
 							<td colspan="3">Treasure Hunt Winners List</td>
