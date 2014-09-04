@@ -18,10 +18,6 @@
 		<div class="row">
 			<h3>Treasure Hunt Scores</h3>
 
-			<%
-				if (request.getSession(false).getAttribute("user").toString()
-						.equalsIgnoreCase("admin")) {
-			%>
 			<h4>
 				<a href="#" onclick="toggle('TreasureHuntWinners')">Click to
 					show/hide winners list</a>
@@ -75,9 +71,7 @@
 					</tbody>
 				</table>
 			</div>
-			<%
-				}
-			%>
+
 			<table class="table table-bordered">
 				<thead>
 					<tr>
@@ -138,10 +132,6 @@
 
 		<div class="row">
 			<h3>Antakshri Scores</h3>
-			<%
-				if (request.getSession(false).getAttribute("user").toString()
-						.equalsIgnoreCase("admin")) {
-			%>
 			<h4>
 				<a href="#" onclick="toggle('AntakshriWinners')">Click to
 					show/hide winners list</a>
@@ -190,10 +180,6 @@
 					</tbody>
 				</table>
 			</div>
-			<%
-				}
-			%>
-
 
 			<table class="table table-bordered">
 				<thead>
