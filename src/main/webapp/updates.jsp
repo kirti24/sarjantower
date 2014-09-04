@@ -26,7 +26,7 @@
 				<table class="table table-bordered">
 					<tbody>
 						<tr>
-							<td colspan="3">Treasure Hunt Winners List</td>
+							<td colspan="3"><b>Treasure Hunt Winners List</b></td>
 						</tr>
 						<tr>
 							<td>Kirti Agarwal</td>
