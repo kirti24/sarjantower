@@ -19,6 +19,19 @@
 		
 		<div class="row">
 			<h3>Treasure Hunt Scores</h3>
+			
+			<%if(request.getSession(false).getAttribute("user").toString().equalsIgnoreCase("admin")){ %>
+			<h4><a href="#" onclick="toggle('TreasureHuntWinners')">Click to show/hide winners list</a></h4>
+			<div id="TreasureHuntWinners">
+				<table class="table table-bordered table-stripped">
+					<tbody>
+						<tr>
+							<td>Winner</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<%} %>
 			<table class="table table-bordered">
 				<thead>
 					<tr>
@@ -369,3 +382,14 @@
 		</div>
 	</div>
 </div>
+
+
+<script type="text/javascript">
+    function toggle(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+</script>
