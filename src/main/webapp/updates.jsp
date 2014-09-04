@@ -1,27 +1,31 @@
-<%@page session="false" %>
+<%@page session="false"%>
 <div class="row">
 	<div class="col-lg-4">
 		<form method="post" action="event">
 			<fieldset>
 				<legend>Voting</legend>
 				<input type="submit" name="eventname" class="btn btn-primary"
-					value="Solo Dance"><br /> <br /> 
-				<input type="submit"
-					name="eventname" class="btn btn-primary" value="Group Dance" ><br /> <br />
-				<input type="submit"
-					name="eventname" class="btn btn-primary" value="Fancy Dress"
-					disabled>
-				<br /> <br />
+					value="Solo Dance"><br /> <br /> <input type="submit"
+					name="eventname" class="btn btn-primary" value="Group Dance"><br />
+				<br /> <input type="submit" name="eventname"
+					class="btn btn-primary" value="Fancy Dress" disabled> <br />
+				<br />
 			</fieldset>
 		</form>
 	</div>
 	<div class="col-lg-6">
-		
+
 		<div class="row">
 			<h3>Treasure Hunt Scores</h3>
-			
-			<%if(request.getSession(false).getAttribute("user").toString().equalsIgnoreCase("admin")){ %>
-			<h4><a href="#" onclick="toggle('TreasureHuntWinners')">Click to show/hide winners list</a></h4>
+
+			<%
+				if (request.getSession(false).getAttribute("user").toString()
+						.equalsIgnoreCase("admin")) {
+			%>
+			<h4>
+				<a href="#" onclick="toggle('TreasureHuntWinners')">Click to
+					show/hide winners list</a>
+			</h4>
 			<div id="TreasureHuntWinners" style="display: none">
 				<table class="table table-bordered">
 					<tbody>
@@ -71,7 +75,9 @@
 					</tbody>
 				</table>
 			</div>
-			<%} %>
+			<%
+				}
+			%>
 			<table class="table table-bordered">
 				<thead>
 					<tr>
@@ -128,10 +134,18 @@
 				</tbody>
 			</table>
 		</div>
-		
-		
-		<%if(request.getSession(false).getAttribute("user").toString().equalsIgnoreCase("admin")){ %>
-			<h4><a href="#" onclick="toggle('AntakshriWinners')">Click to show/hide winners list</a></h4>
+
+
+		<div class="row">
+			<h3>Antakshri Scores</h3>
+			<%
+				if (request.getSession(false).getAttribute("user").toString()
+						.equalsIgnoreCase("admin")) {
+			%>
+			<h4>
+				<a href="#" onclick="toggle('AntakshriWinners')">Click to
+					show/hide winners list</a>
+			</h4>
 			<div id="AntakshriWinners" style="display: none">
 				<table class="table table-bordered">
 					<tbody>
@@ -176,11 +190,11 @@
 					</tbody>
 				</table>
 			</div>
-			<%} %>
-		
-		
-		<div class="row">
-			<h3>Antakshri Scores</h3>
+			<%
+				}
+			%>
+
+
 			<table class="table table-bordered">
 				<thead>
 					<tr>
@@ -253,7 +267,7 @@
 				</tbody>
 			</table>
 		</div>
-	
+
 		<div class="row">
 			<h3>Scavenger Hunt Scores (as of 29-Aug)</h3>
 			<table class="table table-bordered">
@@ -475,11 +489,11 @@
 
 
 <script type="text/javascript">
-    function toggle(id) {
-       var e = document.getElementById(id);
-       if(e.style.display == 'block')
-          e.style.display = 'none';
-       else
-          e.style.display = 'block';
-    }
+	function toggle(id) {
+		var e = document.getElementById(id);
+		if (e.style.display == 'block')
+			e.style.display = 'none';
+		else
+			e.style.display = 'block';
+	}
 </script>
