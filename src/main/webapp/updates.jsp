@@ -22,11 +22,51 @@
 			
 			<%if(request.getSession(false).getAttribute("user").toString().equalsIgnoreCase("admin")){ %>
 			<h4><a href="#" onclick="toggle('TreasureHuntWinners')">Click to show/hide winners list</a></h4>
-			<div id="TreasureHuntWinners">
+			<div id="TreasureHuntWinners" style="display: hidden">
 				<table class="table table-bordered table-stripped">
 					<tbody>
 						<tr>
-							<td>Winner</td>
+							<td colspan="3">Treasure Hunt Winners List</td>
+						</tr>
+						<tr>
+							<td>Kirti Agarwal</td>
+							<td>Deepika Chaudhary</td>
+							<td>Mayank Agarwal</td>
+						</tr>
+						<tr>
+							<td>Sumit Biyani</td>
+							<td>Manish Bajaj</td>
+							<td>Shubhangi Bajoria</td>
+						</tr>
+						<tr>
+							<td>Navin Somani</td>
+							<td>Darshan Chaubey</td>
+							<td>Biyala Uncle</td>
+						</tr>
+						<tr>
+							<td>Rathi Uncle</td>
+							<td>Nakshatra Chopde</td>
+							<td>Naman Bajaj</td>
+						</tr>
+						<tr>
+							<td>Pratik Rathi</td>
+							<td>Raj Agarwal</td>
+							<td>Advik</td>
+						</tr>
+						<tr>
+							<td>Kshama Dhanuka</td>
+							<td>Pooja Dhanuka</td>
+							<td>Prerna</td>
+						</tr>
+						<tr>
+							<td>Yashika Agarwal</td>
+							<td>Kamal Uncle</td>
+							<td>Ayush</td>
+						</tr>
+						<tr>
+							<td>Alpa Gupta</td>
+							<td>Naitik</td>
+							<td></td>
 						</tr>
 					</tbody>
 				</table>
