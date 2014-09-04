@@ -129,6 +129,56 @@
 			</table>
 		</div>
 		
+		
+		<%if(request.getSession(false).getAttribute("user").toString().equalsIgnoreCase("admin")){ %>
+			<h4><a href="#" onclick="toggle('AntakshriWinners')">Click to show/hide winners list</a></h4>
+			<div id="AntakshriWinners" style="display: none">
+				<table class="table table-bordered">
+					<tbody>
+						<tr>
+							<td colspan="3"><b>Antakshri Winners List</b></td>
+						</tr>
+						<tr>
+							<td>Mrs. Suman Biyala</td>
+							<td>Mrs. Mantri</td>
+							<td>Mrs. Anita Mantri</td>
+						</tr>
+						<tr>
+							<td>Sushmita Agarwal</td>
+							<td>Akrati Biyala</td>
+							<td>Shreya Malsariya</td>
+						</tr>
+						<tr>
+							<td>Sneha Somani</td>
+							<td>Varun Agarwal</td>
+							<td>Gaurav Bagaria</td>
+						</tr>
+						<tr>
+							<td>Hemant Tulsiyan</td>
+							<td>Ashish Parasrampuria</td>
+							<td>Mrs. Deepa Toshniwal</td>
+						</tr>
+						<tr>
+							<td>Radhika Jhunjhunwala</td>
+							<td>Mrs. Sarda</td>
+							<td>Mr. Rajpurohit</td>
+						</tr>
+						<tr>
+							<td>Mrs. Chanda</td>
+							<td>Aditya Jhunjhunwala</td>
+							<td>Priyanshu Mondal</td>
+						</tr>
+						<tr>
+							<td>Jyoti Keyal</td>
+							<td>Rashmi Sharma</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<%} %>
+		
+		
 		<div class="row">
 			<h3>Antakshri Scores</h3>
 			<table class="table table-bordered">
