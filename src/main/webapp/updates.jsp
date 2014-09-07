@@ -6,7 +6,7 @@
 				<legend>Voting</legend>
 				<input type="submit" name="eventname" class="btn btn-primary"
 					value="Solo Dance" 
-					<%if(request.getSession(false).getAttribute("user").toString().equalsIgnoreCase("admin")){ %> enabled <% }else {%> disabled <%} %>>
+					<%if(!request.getSession(false).getAttribute("user").toString().equalsIgnoreCase("admin")){ %>  <% }else {%> disabled <%} %>>
 					<br /> <br /> 
 					<input type="submit"
 					name="eventname" class="btn btn-primary" value="Group Dance" disabled><br />
