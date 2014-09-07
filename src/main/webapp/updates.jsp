@@ -26,7 +26,7 @@
 					class="btn btn-primary" value="Fancy Dress" >
 					<%}else{ %> 
 				<input type="submit" name="eventname"
-					class="btn btn-primary" value="Fancy Dress" disabled> 
+					class="btn btn-primary" value="Fancy Dress" > 
 				<%} %>
 				<br />
 				<br />
@@ -485,6 +485,41 @@
 						<td>03-Sep</td>
 						<td>Drex Franco</td>
 						<td>08:43 AM</td>
+						<td><i class="glyphicon glyphicon-ok"></i></td>
+					</tr>
+					<tr>
+						<td>19</td>
+						<td>04-Sep</td>
+						<td>Kovid Prabhakar</td>
+						<td>10:22 PM</td>
+						<td><i class="glyphicon glyphicon-ok"></i></td>
+					</tr>
+					<tr>
+						<td>20</td>
+						<td>04-Sep</td>
+						<td>Abhinav Mantri</td>
+						<td>10:23 PM</td>
+						<td><i class="glyphicon glyphicon-ok"></i></td>
+					</tr>
+					<tr>
+						<td>21</td>
+						<td>04-Sep</td>
+						<td>Nidhi Rajpurohit</td>
+						<td>10:33 PM</td>
+						<td><i class="glyphicon glyphicon-ok"></i></td>
+					</tr>
+					<tr>
+						<td>22</td>
+						<td>04-Sep</td>
+						<td>Hitesh Bohra</td>
+						<td>10:36 PM</td>
+						<td><i class="glyphicon glyphicon-ok"></i></td>
+					</tr>
+					<tr>
+						<td>23</td>
+						<td>04-Sep</td>
+						<td>Saloni Agarwal</td>
+						<td>10:49 PM</td>
 						<td><i class="glyphicon glyphicon-ok"></i></td>
 					</tr>
 				</tbody>
