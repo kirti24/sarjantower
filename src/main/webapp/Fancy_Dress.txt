@@ -3,4 +3,5 @@ Age 0-1,Pulkit Jalan
 Age 2-3,Anika Garg,Panav Jalan
 Age 4-5,Naitik Keyal,Aditya Jhunjhunwala,Varshil Patel,Advait Chaubey
 Age 6-8,Nandlal Dhanuka,Ameya Salunke
-Age 9+,Kshama Dhanuka,Priyanshu Mondal,Radhika Jhunjhunwala,Prachi Keyal,Aryan-Vidhi-Darshan,Meshwa Sheth,Ishaan-Advik,Melric,Ramesh-Suresh
+Age 9-10,Kshama Dhanuka,Priyanshu Mondal,Radhika Jhunjhunwala,Prachi Keyal,Meshwa Sheth
+Age 10+,Aryan-Vidhi-Darshan,Ishaan-Advik,Melric,Ramesh-Suresh
