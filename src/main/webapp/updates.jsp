@@ -21,11 +21,14 @@
 					<%} %>
 					<br />
 				<br /> 
-				
-				<%if(request.getSession(false).getAttribute("user").toString().equalsIgnoreCase("admin")) %>
-				
+				<% if(request.getSession(false).getAttribute("user").toString().equalsIgnoreCase("admin")){ %>
 				<input type="submit" name="eventname"
-					class="btn btn-primary" value="Fancy Dress" disabled> <br />
+					class="btn btn-primary" value="Fancy Dress" >
+					<%}else{ %> 
+				<input type="submit" name="eventname"
+					class="btn btn-primary" value="Fancy Dress" disabled> 
+				<%} %>
+				<br />
 				<br />
 			</fieldset>
 		</form>
