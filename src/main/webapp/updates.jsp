@@ -5,9 +5,16 @@
 			<fieldset>
 				<legend>Voting</legend>
 				<input type="submit" name="eventname" class="btn btn-primary"
-					value="Solo Dance" disabled><br /> <br /> <input type="submit"
+					value="Solo Dance" 
+					<%if(request.getSession(false).getAttribute("user").toString().equalsIgnoreCase("admin")){ %> enabled <% }else {%> disabled <%} %>>
+					<br /> <br /> 
+					<input type="submit"
 					name="eventname" class="btn btn-primary" value="Group Dance" disabled><br />
-				<br /> <input type="submit" name="eventname"
+				<br /> 
+				
+				<%if(request.getSession(false).getAttribute("user").toString().equalsIgnoreCase("admin")) %>
+				
+				<input type="submit" name="eventname"
 					class="btn btn-primary" value="Fancy Dress" disabled> <br />
 				<br />
 			</fieldset>
