@@ -26,7 +26,7 @@
 					class="btn btn-primary" value="Fancy Dress" >
 					<%}else{ %> 
 				<input type="submit" name="eventname"
-					class="btn btn-primary" value="Fancy Dress" > 
+					class="btn btn-primary" value="Fancy Dress" disabled> 
 				<%} %>
 				<br />
 				<br />
