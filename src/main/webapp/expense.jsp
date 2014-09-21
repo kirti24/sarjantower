@@ -58,9 +58,10 @@
 			<tbody>
 				<tr>
 					<form method="post">
-						<td>
-							<input type="text" id="item" name="item" value="ITEM" />
-						</td>
+						<td> <input type="text" id="item" name="item" /> </td>
+						<td> <input type="text" id="amount" name="amount" /> </td>
+						<td> <input type="text" id="paidby" name="paidby" /> </td>
+						<td> <input type="text" id="category" name="category" /> </td>
 					</form>
 				</tr>
 			</tbody>
