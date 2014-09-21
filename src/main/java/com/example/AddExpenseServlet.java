@@ -33,6 +33,10 @@ public class AddExpenseServlet extends HttpServlet {
 		
 		
 		
+		RequestDispatcher dispatcher = req.getRequestDispatcher("/expense.jsp");
+		if(dispatcher != null) dispatcher.forward(req, resp);
+		return;
+		
 	}
 
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)

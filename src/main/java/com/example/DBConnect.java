@@ -6,6 +6,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 
 public class DBConnect {
@@ -275,6 +276,68 @@ public class DBConnect {
 			while(rs.next()){
 				fv.add(new FlatVotes(rs.getInt("totalcount")+"",rs.getString("event")));
 			}
+		}
+		catch (Exception e){
+			e.printStackTrace();
+		}
+		finally{
+			try{
+				if(rs!=null){
+					rs.close();
+				}
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+			try{
+				if(stat!=null){
+					stat.close();
+				}
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+			try{
+				if(conn!=null){
+					conn.close();
+				}
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+			return fv;
+		}
+	}
+	
+	@SuppressWarnings("finally")
+	public static ArrayList<FlatVotes> addExpense(String category, String item, double amount, String paidby){
+		try {
+			Class.forName("org.postgresql.Driver");
+		} catch (ClassNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+
+		URI dbUri = null;
+		Connection conn = null;
+		PreparedStatement stat = null;
+		ResultSet rs = null;
+		ArrayList<FlatVotes> fv = new ArrayList<FlatVotes>();
+		try{
+			dbUri = new URI(System.getenv("DATABASE_URL"));
+			String dbusername = dbUri.getUserInfo().split(":")[0];
+			String dbpassword = dbUri.getUserInfo().split(":")[1];
+			String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
+			conn = DriverManager.getConnection(dbUrl, dbusername, dbpassword);
+			stat = conn.prepareStatement("insert into expenses values(?,?,?,?,?)");
+			
+			stat.setString(1, category);
+			stat.setString(2, item);
+			stat.setDouble(3, amount);
+			stat.setString(4, paidby);
+			stat.setTimestamp(5, new Timestamp(new java.util.Date().getTime()));
+			rs = stat.executeQuery();
+			
 		}
 		catch (Exception e){
 			e.printStackTrace();
