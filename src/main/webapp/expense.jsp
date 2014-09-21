@@ -57,12 +57,12 @@
 			</thead>
 			<tbody>
 				<tr>
-					<form method="post">
+					<form method="post" action="dashboard.jsp" id="expenseform">
 						<td> <input type="text" id="item" name="item" /> </td>
 						<td> <input type="text" id="amount" name="amount" /> </td>
 						<td> <input type="text" id="paidby" name="paidby" /> </td>
 						<td> <input type="text" id="category" name="category" />
-						<a class="glyphicon glyphicon-plus"  /> </td>
+						<a class="glyphicon glyphicon-plus" onclick="submit_form();"/> </td>
 					</form>
 				</tr>
 			</tbody>
@@ -73,5 +73,16 @@
 		</form>
 				
 	</div>
+	
+	
+	<script type="text/javascript">
+
+	    function submit_form() {
+	    	$("#expenseform").submit();
+	    }
+
+	</script>
+	
+	
 </body>
 </html>
