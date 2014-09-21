@@ -62,7 +62,7 @@
 						<td> <input type="text" id="amount" name="amount" /> </td>
 						<td> <input type="text" id="paidby" name="paidby" /> </td>
 						<td> <input type="text" id="category" name="category" />
-						<input class="glyphicon glyphicon-plus"  /> </td>
+						<a class="glyphicon glyphicon-plus"  /> </td>
 					</form>
 				</tr>
 			</tbody>
