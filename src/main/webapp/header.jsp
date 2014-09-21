@@ -17,6 +17,8 @@
 			if(user.equalsIgnoreCase("admin")){ %>
 				<li><a href="admin.jsp">Admin</a>
 				</li>
+				<li><a href="expense.jsp">Expenses</a>
+				</li>
 			<%} %>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
