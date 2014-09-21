@@ -31,9 +31,7 @@ public class AddExpenseServlet extends HttpServlet {
 		
 		out.println(item+"|"+amount+"|"+paidby+"|"+category);
 		
-		RequestDispatcher dispatcher = req.getRequestDispatcher("/expense.jsp");
-		if(dispatcher != null) dispatcher.forward(req, resp);
-		return;
+		
 		
 	}
 
