@@ -57,7 +57,7 @@
 			</thead>
 			<tbody>
 				<tr>
-					<form method="post" action="dashboard.jsp" id="expenseform">
+					<form method="post" action="addexpense" id="expenseform">
 						<td> <input type="text" id="item" name="item" /> </td>
 						<td> <input type="text" id="amount" name="amount" /> </td>
 						<td> <input type="text" id="paidby" name="paidby" /> </td>

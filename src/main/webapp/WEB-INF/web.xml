@@ -41,4 +41,14 @@
     <servlet-name>eventform</servlet-name>
     <url-pattern>/event</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>addexpenseform</servlet-name>
+    <servlet-class>com.example.AddExpenseServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>addexpenseform</servlet-name>
+    <url-pattern>/addexpense</url-pattern>
+  </servlet-mapping>
 </web-app>
