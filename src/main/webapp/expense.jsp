@@ -75,7 +75,7 @@
 
 				<tr>
 					<td><%=expenselist.get(i).getItem() %></td>
-					<td><%=expenselist.get(i).getAmount() %></td>
+					<td>Rs. <%=expenselist.get(i).getAmount() %></td>
 					<td><%=expenselist.get(i).getPaidby() %></td>
 					<td><%=expenselist.get(i).getCategory() %></td>
 				</tr>
@@ -84,7 +84,7 @@
 
 				<tr>
 					<td>TOTAL</td>
-					<td colspan="3"><%=total %></td>
+					<td colspan="3"><b>Rs. <%=total %></b></td>
 				</tr>
 
 			</tbody>
