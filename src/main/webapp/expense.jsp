@@ -82,7 +82,7 @@
 
 				<%} %>
 
-				<tr>
+				<tr class="active">
 					<td>TOTAL</td>
 					<td colspan="3"><b>Rs. <%=total %></b></td>
 				</tr>
