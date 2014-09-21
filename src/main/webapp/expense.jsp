@@ -67,17 +67,25 @@
 					</form>
 				</tr>
 
-				<% ArrayList<ExpenseList> expenselist = DBConnect.getExpense(); 
-					for(int i=0;i<expenselist.size();i++){ %>
-					
-					<tr>
-						<td><%=expenselist.get(i).getItem() %></td>
-						<td><%=expenselist.get(i).getAmount() %></td>
-						<td><%=expenselist.get(i).getPaidby() %></td>
-						<td><%=expenselist.get(i).getCategory() %></td>
-					</tr>
+				<% ArrayList<ExpenseList> expenselist = DBConnect.getExpense();
+					double total = 0;
+					for(int i=0;i<expenselist.size();i++){
+						total+=expenselist.get(i).getAmount();
+						%>
+
+				<tr>
+					<td><%=expenselist.get(i).getItem() %></td>
+					<td><%=expenselist.get(i).getAmount() %></td>
+					<td><%=expenselist.get(i).getPaidby() %></td>
+					<td><%=expenselist.get(i).getCategory() %></td>
+				</tr>
 
 				<%} %>
+
+				<tr>
+					<td>TOTAL</td>
+					<td colspan="3"><%=total %></td>
+				</tr>
 
 			</tbody>
 		</table>
