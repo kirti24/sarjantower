@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<%@page import="com.example.ExpenseList"%>
 <%@page import="com.example.DBConnect"%>
 <%@page import="com.example.FlatVotes"%>
 <%@page import="java.util.ArrayList"%>
@@ -45,7 +46,7 @@
 	<br />
 	<div class="container">
 		<jsp:include page="header.jsp"></jsp:include>
-		
+
 		<table class="table table-bordered">
 			<thead>
 				<tr>
@@ -58,23 +59,34 @@
 			<tbody>
 				<tr>
 					<form method="post" action="addexpense" id="expenseform">
-						<td> <input type="text" id="item" name="item" /> </td>
-						<td> <input type="text" id="amount" name="amount" /> </td>
-						<td> <input type="text" id="paidby" name="paidby" /> </td>
-						<td> <input type="text" id="category" name="category" />
-						<a class="glyphicon glyphicon-plus" onclick="submit_form();"/> </td>
+					<td><input type="text" id="item" name="item" /></td>
+					<td><input type="text" id="amount" name="amount" /></td>
+					<td><input type="text" id="paidby" name="paidby" /></td>
+					<td><input type="text" id="category" name="category" /> <a
+						class="glyphicon glyphicon-plus" onclick="submit_form();" /></td>
 					</form>
 				</tr>
+
+				<% ArrayList<ExpenseList> expenselist = DBConnect.getExpense(); 
+					for(int i=0;i<expenselist.size();i++){ %>
+					
+					<tr>
+						<td><%=expenselist.get(i).getItem() %></td>
+						<td><%=expenselist.get(i).getAmount() %></td>
+						<td><%=expenselist.get(i).getPaidby() %></td>
+						<td><%=expenselist.get(i).getCategory() %></td>
+					</tr>
+
+				<%} %>
+
 			</tbody>
 		</table>
-		
-		<form method="post">
-			
-		</form>
-				
+
+		<form method="post"></form>
+
 	</div>
-	
-	
+
+
 	<script type="text/javascript">
 
 	    function submit_form() {
@@ -82,7 +94,7 @@
 	    }
 
 	</script>
-	
-	
+
+
 </body>
 </html>
