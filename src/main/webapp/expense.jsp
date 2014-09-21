@@ -46,7 +46,7 @@
 	<div class="container">
 		<jsp:include page="header.jsp"></jsp:include>
 		
-		<table class="table">
+		<table class="table table-bordered">
 			<thead>
 				<tr>
 					<td>Item Description</td>
@@ -56,6 +56,13 @@
 				</tr>
 			</thead>
 			<tbody>
+				<tr>
+					<form method="post">
+						<td>
+							<input type="text" id="item" name="item" value="ITEM" />
+						</td>
+					</form>
+				</tr>
 			</tbody>
 		</table>
 		
