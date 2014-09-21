@@ -310,7 +310,7 @@ public class DBConnect {
 	}
 	
 	@SuppressWarnings("finally")
-	public static void addExpense(String category, String item, double amount, String paidby){
+	public static ArrayList<ExpenseList> addExpense(String category, String item, double amount, String paidby){
 		try {
 			Class.forName("org.postgresql.Driver");
 		} catch (ClassNotFoundException e1) {
@@ -322,6 +322,7 @@ public class DBConnect {
 		Connection conn = null;
 		PreparedStatement stat = null;
 		ResultSet rs = null;
+		ArrayList<ExpenseList> expenselist = new ArrayList<ExpenseList>();
 		try{
 			dbUri = new URI(System.getenv("DATABASE_URL"));
 			String dbusername = dbUri.getUserInfo().split(":")[0];
@@ -336,6 +337,12 @@ public class DBConnect {
 			stat.setString(4, paidby);
 			stat.setTimestamp(5, new Timestamp(new java.util.Date().getTime()));
 			rs = stat.executeQuery();
+			
+			stat = conn.prepareStatement("select category, item, amount, paidby order by updatedt desc");
+			rs = stat.executeQuery();
+			while(rs.next()){
+				expenselist.add(new ExpenseList(rs.getString("category"), rs.getString("item"), rs.getDouble("amount"), rs.getString("paidby"), rs.getTimestamp("updatedt")));
+			}
 			
 		}
 		catch (Exception e){
@@ -366,6 +373,7 @@ public class DBConnect {
 			catch(Exception e){
 				e.printStackTrace();
 			}
+			return expenselist;
 		}
 	}
 	

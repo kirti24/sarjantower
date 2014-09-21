@@ -1,5 +1,6 @@
 package com.example;
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -31,11 +32,12 @@ public class AddExpenseServlet extends HttpServlet {
 		
 		out.println(item+"|"+amount+"|"+paidby+"|"+category);
 		
-		DBConnect.addExpense(category, item, amount, paidby);
+		ArrayList<ExpenseList> expenselist = DBConnect.addExpense(category, item, amount, paidby);
 		
-		RequestDispatcher dispatcher = req.getRequestDispatcher("/expense.jsp");
+		out.println(expenselist.toString());
+		/*RequestDispatcher dispatcher = req.getRequestDispatcher("/expense.jsp");
 		if(dispatcher != null) dispatcher.forward(req, resp);
-		return;
+		return;*/
 		
 	}
 
