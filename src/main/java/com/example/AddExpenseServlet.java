@@ -31,7 +31,7 @@ public class AddExpenseServlet extends HttpServlet {
 		
 		out.println(item+"|"+amount+"|"+paidby+"|"+category);
 		
-		
+		DBConnect.addExpense(category, item, amount, paidby);
 		
 		RequestDispatcher dispatcher = req.getRequestDispatcher("/expense.jsp");
 		if(dispatcher != null) dispatcher.forward(req, resp);
