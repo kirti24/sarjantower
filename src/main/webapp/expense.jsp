@@ -46,7 +46,7 @@
 	<div class="container">
 		<jsp:include page="header.jsp"></jsp:include>
 		
-		<table>
+		<table class="table">
 			<thead>
 				<tr>
 					<td>Item Description</td>
