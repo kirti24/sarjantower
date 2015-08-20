@@ -328,7 +328,7 @@ public class DBConnect {
 			String dbpassword = dbUri.getUserInfo().split(":")[1];
 			String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
 			conn = DriverManager.getConnection(dbUrl, dbusername, dbpassword);
-			stat = conn.prepareStatement("insert into expenses(category,item,amount,paidby) values(?,?,?,?,?)");
+			stat = conn.prepareStatement("insert into expenses(category,item,amount,paidby,updatedt) values(?,?,?,?,?)");
 			
 			stat.setString(1, category);
 			stat.setString(2, item);
