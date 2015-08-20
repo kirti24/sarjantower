@@ -24,14 +24,15 @@ public class AddExpenseServlet extends HttpServlet {
 		String item = req.getParameter("item");
 		String amtString = req.getParameter("amount");
 		double amount = 0; 
-		if(amtString!=null & !amtString.equalsIgnoreCase("")){
+		if(amtString!=null && !amtString.equalsIgnoreCase("") ){
 			amount = Double.parseDouble(amtString);
 		}
 		String paidby = req.getParameter("paidby");
 		String category = req.getParameter("category");
 		
 		out.println(item+"|"+amount+"|"+paidby+"|"+category);
-		DBConnect.addExpense(category, item, amount, paidby);
+		if (amount>0 && item.length()>0 && paidby.length()>0 && category.length()>0)
+			DBConnect.addExpense(category, item, amount, paidby);
 		
 		RequestDispatcher dispatcher = req.getRequestDispatcher("/expense.jsp");
 		if(dispatcher != null) dispatcher.forward(req, resp);
