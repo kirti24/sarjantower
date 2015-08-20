@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="10;url=https://sarjantower.heroku.com; charset=ISO-8859-1">
-<title>Error</title>
+<title>Sarjan Tower | Ganpati Festival 2015</title>
 
 <link rel="stylesheet" type="text/css"
 	href="bootstrap/css/bootstrap.min.css" />

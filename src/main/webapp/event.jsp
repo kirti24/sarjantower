@@ -4,7 +4,7 @@
 <%@page errorPage="error.jsp" isErrorPage="false"%>
 <html>
 <head>
-<title>Sarjan - Dashboard</title>
+<title>Sarjan Tower - Dashboard | Ganpati Festival 2015</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <link rel="stylesheet" type="text/css"

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+<title>Sarjan Tower | Ganpati Festival 2015</title>
 <link rel="stylesheet" type="text/css"
 	href="bootstrap/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css"
