@@ -61,5 +61,9 @@
 	<script type="text/javascript">
 	 	
 	</script>
+	<script src="dist/js/vendor/jquery.min.js"></script>
+    <script src="dist/js/vendor/video.js"></script>
+    <script src="dist/js/flat-ui.min.js"></script>
+    <script src="docs/assets/js/application.js"></script>
 </body>
 </html>
