@@ -30,10 +30,13 @@ public class AddExpenseServlet extends HttpServlet {
 		String paidby = req.getParameter("paidby");
 		String category = req.getParameter("category");
 		
-		
+		out.println(item+"|"+amount+"|"+paidby+"|"+category);
 		if (amount>0 && item.length()>0 && paidby.length()>0 && category.length()>0){
-			out.println(item+"|"+amount+"|"+paidby+"|"+category);
+			
 			DBConnect.addExpense(category, item, amount, paidby);
+		}
+		else {
+			req.setAttribute("errormessage", "Values Missing");
 		}
 		
 		RequestDispatcher dispatcher = req.getRequestDispatcher("/expense.jsp");
