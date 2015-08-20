@@ -17,7 +17,7 @@
 <div class="container">
 
 <div class="page-header">
-    <h1>Sarjan Tower <small>Ganpati Festival 2014</small></h1>
+    <h1>Sarjan Tower <small>Ganpati Festival 2015</small></h1>
 </div>
 
 <!-- Interactive Login - START -->
