@@ -10,7 +10,7 @@
 			<a class="navbar-brand" href="dashboard.jsp">Sarjan Ganpati Festival 2015</a>
 		</div>
 		<ul class="nav navbar-nav">
-			<li><a href="dashboard.jsp">Home</a>
+			<li><a href="dashboard.jsp" class="fui-home">Home</a>
 			</li>
 			<%
 			String user = (String)request.getSession(false).getAttribute("user");
