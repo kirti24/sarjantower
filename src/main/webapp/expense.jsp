@@ -53,7 +53,7 @@
 	<div class="container">
 		<jsp:include page="header.jsp"></jsp:include>
 		<%if(request.getAttribute("errormessage") != null){%>
-			<br/><label class="alert alert-error"><%=request.getAttribute("errormessage")%></label>
+			<label class="alert alert-error"><%=request.getAttribute("errormessage")%></label>
 		<%}%>
 		<table class="table table-bordered">
 			<thead>
@@ -86,7 +86,7 @@
 					<td>Rs. <%=expenselist.get(i).getAmount() %></td>
 					<td><%=expenselist.get(i).getPaidby() %></td>
 					<td><span style="float:left"><%=expenselist.get(i).getCategory() %></span> 
-					<span style="float:right"><a class="fui-cross" onclick="delete_record();" /></span></td>
+					<span style="float:right"><a class="fui-cross" onclick="delete_record(<%=expenselist.get(i).getID() %>);" /></span></td>
 				</tr>
 
 				<%} %>
@@ -108,6 +108,10 @@
 
 	    function submit_form() {
 	    	$("#expenseform").submit();
+	    }
+	    
+	    function delete_record(int id) {
+	    	alert(id);
 	    }
 
 	</script>

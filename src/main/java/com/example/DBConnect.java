@@ -390,10 +390,10 @@ public class DBConnect {
 			String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
 			conn = DriverManager.getConnection(dbUrl, dbusername, dbpassword);
 			
-			stat = conn.prepareStatement("select category, item, amount, paidby, updatedt from expenses order by updatedt desc");
+			stat = conn.prepareStatement("select ID, category, item, amount, paidby, updatedt from expenses order by updatedt desc");
 			rs = stat.executeQuery();
 			while(rs.next()){
-				expenselist.add(new ExpenseList(rs.getString("category"), rs.getString("item"), rs.getDouble("amount"), rs.getString("paidby"), rs.getTimestamp("updatedt")));
+				expenselist.add(new ExpenseList(rs.getInt("ID"), rs.getString("category"), rs.getString("item"), rs.getDouble("amount"), rs.getString("paidby"), rs.getTimestamp("updatedt")));
 			}
 			
 		}
