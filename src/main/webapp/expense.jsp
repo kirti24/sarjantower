@@ -46,7 +46,9 @@
 	<br />
 	<div class="container">
 		<jsp:include page="header.jsp"></jsp:include>
-
+		<%if(request.getAttribute("errormessage") != null){%>
+			<br/><label class="alert alert-error"><%=request.getAttribute("errormessage")%></label>
+		<%}%>
 		<table class="table table-bordered">
 			<thead>
 				<tr>
