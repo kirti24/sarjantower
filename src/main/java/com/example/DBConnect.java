@@ -271,7 +271,7 @@ public class DBConnect {
 			String dbpassword = dbUri.getUserInfo().split(":")[1];
 			String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
 			conn = DriverManager.getConnection(dbUrl, dbusername, dbpassword);
-			stat = conn.prepareStatement("select event,count(*) as totalcount from votes where flatno!='admin' group by event");
+			stat = conn.prepareStatement("select event,count(1) as totalcount from votes where flatno!='admin' group by event");
 			rs = stat.executeQuery();
 			while(rs.next()){
 				fv.add(new FlatVotes(rs.getInt("totalcount")+"",rs.getString("event")));
@@ -328,7 +328,7 @@ public class DBConnect {
 			String dbpassword = dbUri.getUserInfo().split(":")[1];
 			String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
 			conn = DriverManager.getConnection(dbUrl, dbusername, dbpassword);
-			stat = conn.prepareStatement("insert into expenses values(?,?,?,?,?)");
+			stat = conn.prepareStatement("insert into expenses(category,item,amount,paidby) values(?,?,?,?,?)");
 			
 			stat.setString(1, category);
 			stat.setString(2, item);

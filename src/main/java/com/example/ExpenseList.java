@@ -3,6 +3,7 @@ package com.example;
 import java.sql.Timestamp;
 
 public class ExpenseList {
+	private int ID;
 	private String category;
 	private String item;
 	private double amount;
@@ -25,6 +26,9 @@ public class ExpenseList {
 	}
 	public void setAmount(double amount) {
 		this.amount = amount;
+	}
+	public String getID() {
+		return ID;
 	}
 	public String getPaidby() {
 		return paidby;
