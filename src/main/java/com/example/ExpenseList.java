@@ -42,9 +42,10 @@ public class ExpenseList {
 	public void setTs(Timestamp ts) {
 		this.ts = ts;
 	}
-	public ExpenseList(String category, String item, double amount,
+	public ExpenseList(int ID, String category, String item, double amount,
 			String paidby, Timestamp ts) {
 		super();
+		this.ID = ID;
 		this.category = category;
 		this.item = item;
 		this.amount = amount;
