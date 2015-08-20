@@ -109,10 +109,7 @@
 	    function submit_form() {
 	    	$("#expenseform").submit();
 	    }
-	    
-	    function delete_record(int id) {
-	    	alert(id);
-	    }
+	   
 
 	</script>
 
