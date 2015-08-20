@@ -36,7 +36,7 @@ public class AddExpenseServlet extends HttpServlet {
 			DBConnect.addExpense(category, item, amount, paidby);
 		}
 		else {
-			req.setAttribute("errormessage", "Values Missing");
+			req.setAttribute("errormessage", "Values Missing !!");
 		}
 		
 		RequestDispatcher dispatcher = req.getRequestDispatcher("/expense.jsp");
