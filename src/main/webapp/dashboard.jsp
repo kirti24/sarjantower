@@ -47,7 +47,7 @@
 		%>
 
 
-		<jsp:include page="updates.jsp"></jsp:include>
+		<!-- <jsp:include page="updates.jsp"></jsp:include> -->
 
 		<br /> <br />
 	</div>
