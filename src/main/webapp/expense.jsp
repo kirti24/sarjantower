@@ -71,7 +71,7 @@
 					<td><input type="text" id="amount" name="amount" /></td>
 					<td><input type="text" id="paidby" name="paidby" /></td>
 					<td><input type="text" id="category" name="category" /> <a
-						class="glyphicon glyphicon-plus" onclick="submit_form();" /></td>
+						class="fui-plus" onclick="submit_form();" /></td>
 					</form>
 				</tr>
 
