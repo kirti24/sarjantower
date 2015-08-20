@@ -85,8 +85,8 @@
 					<td><%=expenselist.get(i).getItem() %></td>
 					<td>Rs. <%=expenselist.get(i).getAmount() %></td>
 					<td><%=expenselist.get(i).getPaidby() %></td>
-					<td><%=expenselist.get(i).getCategory() %> <right><a
-						class="fui-cross" onclick="submit_form();" /></right></td>
+					<td><%=expenselist.get(i).getCategory() %> <div style="right"><a
+						class="fui-cross" onclick="" /></div></td>
 				</tr>
 
 				<%} %>
