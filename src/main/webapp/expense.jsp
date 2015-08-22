@@ -112,7 +112,7 @@
 	    
 	    function delete_record(i) {
 	    	<%
-	    	request.setAttribute("expenseid", i)
+	    	//request.setAttribute("expenseid", i);
 	    	RequestDispatcher dispatcher = request.getRequestDispatcher("/deleteexpense");
 			if (dispatcher != null) {
 				dispatcher.forward(request, response);
