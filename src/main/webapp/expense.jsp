@@ -93,7 +93,7 @@
 					<input type="hidden" name="expenseid" value="<%=expenselist.get(i).getID() %>"/>
 					</td>
 					<td><%=expenselist.get(i).getTs() %></td>
-					<td><input type="submit" class="btn btn-block btn-sm btn-danger" value="Delete" /></td>
+					<td><input type="submit" class="btn btn-block btn-md btn-danger" value="Delete" /></td>
 					</form>
 					
 				</tr>
