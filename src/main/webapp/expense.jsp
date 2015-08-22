@@ -111,7 +111,7 @@
 	    }
 	    
 	    function delete_record() {
-	    	
+	    	alert(this);
 	    }
 
 	</script>
