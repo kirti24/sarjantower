@@ -1,5 +1,5 @@
 <div class="pallete-item">
-	<dl class="palette palette-turquoise">
+	<dl class="palette palette-turquoise" onclick="2014.jsp">
 		<dt>2014</dt>
 		<dd>&nbsp;</dd>
 	</dl>
