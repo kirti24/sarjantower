@@ -25,14 +25,14 @@ public class DeleteExpenseServlet extends HttpServlet {
 		String expenseid = req.getParameter("expenseid");
 		System.out.println(expenseid);
 		out.println(expenseid);
-//		if (expenseid>0){
-			
-//			DBConnect.addExpense(category, item, amount, paidby);
-//		}
+		if (expenseid.length()>0){
+			int id = (int)expenseid;
+			DBConnect.deleteExpense(id);
+		}
 		
-//		RequestDispatcher dispatcher = req.getRequestDispatcher("/expense.jsp");
-//		if(dispatcher != null) dispatcher.forward(req, resp);
-//		return;
+		RequestDispatcher dispatcher = req.getRequestDispatcher("/expense.jsp");
+		if(dispatcher != null) dispatcher.forward(req, resp);
+		return;
 		
 	}
 
