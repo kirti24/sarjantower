@@ -1,6 +1,6 @@
 <div class="pallete-item">
-	<dl class="palette palette-turquoise" onclick="2014.jsp">
-		<dt>2014</dt>
+	<dl class="palette palette-turquoise">
+		<dt><a href="2014.jsp" style="text-decoration: none;">2014</a></dt>
 		<dd>&nbsp;</dd>
 	</dl>
 </div>
