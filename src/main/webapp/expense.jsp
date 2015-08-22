@@ -1,4 +1,5 @@
 <!DOCTYPE HTML>
+<%@page import="javax.swing.text.Document"%>
 <%@page import="com.example.ExpenseList"%>
 <%@page import="com.example.DBConnect"%>
 <%@page import="com.example.FlatVotes"%>
@@ -71,7 +72,7 @@
 					<td><input type="text" id="amount" name="amount" /></td>
 					<td><input type="text" id="paidby" name="paidby" /></td>
 					<td><input type="text" id="category" name="category" /> <a
-						class="fui-plus" onclick="submit_form();" /></td>
+						class="fui-plus" id="add" onclick="submit_form();" /></td>
 					</form>
 				</tr>
 
@@ -86,7 +87,10 @@
 					<td>Rs. <%=expenselist.get(i).getAmount() %></td>
 					<td><%=expenselist.get(i).getPaidby() %></td>
 					<td><span style="float:left"><%=expenselist.get(i).getCategory() %></span>
-					<span style="float:right"><a class="fui-cross" onclick='/deleteexpense?expenseid="<%=expenselist.get(i).getID() %>"' /></span></td>
+					<form action="deleteexpense" id="<%=expenselist.get(i).getID()%>">
+					<span style="float:right"><a class="fui-cross" onclick='delete_form();' /></span>
+					</form>
+					</td>
 				</tr>
 
 				<%} %>
@@ -110,16 +114,9 @@
 	    	$("#expenseform").submit();
 	    }
 	    
-	    function delete_record(i) {
-	    	<%
-	    	//request.setAttribute("expenseid", i);
-	    	/*
-	    	RequestDispatcher dispatcher = request.getRequestDispatcher("/deleteexpense");
-			if (dispatcher != null) {
-				dispatcher.forward(request, response);
-				return;
-			}*/
-	    	%>
+	    function delete_record() {
+	    	alert(this);
+	    	$(this).submit();
 	    }
 
 	</script>
