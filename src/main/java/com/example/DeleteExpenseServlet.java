@@ -22,13 +22,13 @@ public class DeleteExpenseServlet extends HttpServlet {
 			throws ServletException, IOException {
 		ServletOutputStream out = resp.getOutputStream();
 
-		int expenseid = (int)req.getParameter("expenseid");
+		String expenseid = req.getParameter("expenseid");
 		
 		out.println(expenseid);
-		if (expenseid>0){
+//		if (expenseid>0){
 			
 //			DBConnect.addExpense(category, item, amount, paidby);
-		}
+//		}
 		
 		RequestDispatcher dispatcher = req.getRequestDispatcher("/expense.jsp");
 		if(dispatcher != null) dispatcher.forward(req, resp);
