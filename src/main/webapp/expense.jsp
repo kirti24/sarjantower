@@ -102,7 +102,7 @@
 
 				<tr class="active">
 					<td>TOTAL</td>
-					<td colspan="4"><b>Rs. <%=total %></b></td>
+					<td colspan="5"><b>Rs. <%=total %></b></td>
 				</tr>
 
 			</tbody>
