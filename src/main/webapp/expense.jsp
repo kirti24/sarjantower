@@ -85,8 +85,8 @@
 					<td><%=expenselist.get(i).getItem() %></td>
 					<td>Rs. <%=expenselist.get(i).getAmount() %></td>
 					<td><%=expenselist.get(i).getPaidby() %></td>
-					<td><span style="float:left"><%=expenselist.get(i).getCategory() %></span> 
-					<span style="float:right"><a class="fui-cross" onclick="delete_record();" /></span></td>
+					<td><span style="float:left"><%=expenselist.get(i).getCategory() %></span>
+					<span style="float:right"><a class="fui-cross" onclick="delete_record("+<%=expenselist.get(i).getID() %>+");" /></span></td>
 				</tr>
 
 				<%} %>
@@ -110,8 +110,8 @@
 	    	$("#expenseform").submit();
 	    }
 	    
-	    function delete_record() {
-	    	alert(this);
+	    function delete_record(int i) {
+	    	alert(i);
 	    }
 
 	</script>
