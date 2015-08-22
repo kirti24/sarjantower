@@ -59,11 +59,11 @@
 		<table class="table table-bordered">
 			<thead>
 				<tr>
-					<td class="col-md-6">Item Description</td>
-					<td class="col-md-6">Amount</td>
-					<td class="col-md-6">Paid By</td>
-					<td class="col-md-6">Category</td>
-					<td  class="col-md-6" colspan="2">Updated On</td>
+					<td>Item Description</td>
+					<td>Amount</td>
+					<td>Paid By</td>
+					<td>Category</td>
+					<td colspan="2">Updated On</td>
 				</tr>
 			</thead>
 			<tbody>
@@ -92,8 +92,7 @@
 					<input type="hidden" name="expenseid" value="<%=expenselist.get(i).getID() %>"/>
 					</td>
 					<td><%=expenselist.get(i).getTs() %></td>
-					<td><span class="col-xs-6"><input type="submit" class="btn btn-block btn-sm btn-danger" value="Delete" /></span>
-					</td>
+					<td><input type="submit" class="btn btn-block btn-sm btn-danger" value="Delete" /></td>
 					</form>
 					
 				</tr>
