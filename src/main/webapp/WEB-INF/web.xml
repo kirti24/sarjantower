@@ -46,9 +46,19 @@
     <servlet-name>addexpenseform</servlet-name>
     <servlet-class>com.example.AddExpenseServlet</servlet-class>
   </servlet>
+  
+  <servlet>
+    <servlet-name>deleteexpense</servlet-name>
+    <servlet-class>com.example.DeleteExpenseServlet</servlet-class>
+  </servlet>
 
   <servlet-mapping>
     <servlet-name>addexpenseform</servlet-name>
     <url-pattern>/addexpense</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>deleteexpense</servlet-name>
+    <url-pattern>/deleteexpense</url-pattern>
   </servlet-mapping>
 </web-app>
