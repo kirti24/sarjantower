@@ -62,7 +62,7 @@
 					<td>Item Description</td>
 					<td>Amount</td>
 					<td>Paid By</td>
-					<td>Category</td>
+					<td colspan="2">Category</td>
 				</tr>
 			</thead>
 			<tbody>
@@ -101,7 +101,7 @@
 
 				<tr class="active">
 					<td>TOTAL</td>
-					<td colspan="3"><b>Rs. <%=total %></b></td>
+					<td colspan="4"><b>Rs. <%=total %></b></td>
 				</tr>
 
 			</tbody>
