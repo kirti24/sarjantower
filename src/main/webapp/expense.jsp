@@ -90,7 +90,7 @@
 					<td><%=expenselist.get(i).getCategory() %> 
 					<input type="hidden" name="expenseid" value="<%=expenselist.get(i).getID() %>"/>
 					</td>
-					<td><span class="col-xs-6"><%=expenselist.get(i).getTS() %></span><span class="col-xs-2"></span>
+					<td><span class="col-xs-6"><%=expenselist.get(i).getTs() %></span><span class="col-xs-2"></span>
 					<span class="col-xs-4"><input type="submit" class="btn btn-block btn-sm btn-danger" value="Delete" /></span>
 					</td>
 					</form>
