@@ -87,8 +87,8 @@
 					<td><%=expenselist.get(i).getItem() %></td>
 					<td>Rs. <%=expenselist.get(i).getAmount() %></td>
 					<td><%=expenselist.get(i).getPaidby() %></td>
-					<td><%=expenselist.get(i).getCategory() %>
-					<a class="btn btn-block btn-lg btn-danger" onclick='<%request.setAttribute("expenseid", expenselist.get(i).getID()); %>' >Delete</a>
+					<td><span class="col-xs-6"><%=expenselist.get(i).getCategory() %></span><span class="col-xs-2"></span> 
+					<span class="col-xs-4"><a class="btn btn-block btn-sm btn-danger" onclick='<%request.setAttribute("expenseid", expenselist.get(i).getID()); %>' >Delete</a></span>
 					</td>
 					</form>
 					
