@@ -69,10 +69,10 @@
 			<tbody>
 				<tr>
 					<form method="post" action="addexpense" id="expenseform">
-					<td><input class="col-md-2" type="text" id="item" name="item" /></td>
-					<td><input type="text" id="amount" name="amount" /></td>
-					<td><input type="text" id="paidby" name="paidby" /></td>
-					<td><input type="text" id="category" name="category" /></td>  
+					<td><input class="col-md-6" type="text" id="item" name="item" /></td>
+					<td><input class="col-md-6" type="text" id="amount" name="amount" /></td>
+					<td><input class="col-md-6" type="text" id="paidby" name="paidby" /></td>
+					<td><input class="col-md-6" type="text" id="category" name="category" /></td>  
 					<td></td>
 					<td><a class="fui-plus" id="add" onclick="submit_form();" /></span></td>
 					</form>
