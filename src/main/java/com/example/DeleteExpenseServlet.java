@@ -23,7 +23,7 @@ public class DeleteExpenseServlet extends HttpServlet {
 		ServletOutputStream out = resp.getOutputStream();
 
 		String expenseid = req.getParameter("expenseid");
-		
+		System.out.println(expenseid);
 		out.println(expenseid);
 //		if (expenseid>0){
 			
