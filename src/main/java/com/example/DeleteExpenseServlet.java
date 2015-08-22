@@ -26,7 +26,7 @@ public class DeleteExpenseServlet extends HttpServlet {
 		System.out.println(expenseid);
 		out.println(expenseid);
 		if (expenseid.length()>0){
-			int id = (int)expenseid;
+			int id = Integer.parseInt(expenseid);
 			DBConnect.deleteExpense(id);
 		}
 		
