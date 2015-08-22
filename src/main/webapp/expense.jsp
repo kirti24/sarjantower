@@ -59,10 +59,10 @@
 		<table class="table table-bordered">
 			<thead>
 				<tr>
-					<td>Item Description</td>
-					<td>Amount</td>
-					<td>Paid By</td>
-					<td>Category</td>
+					<td class="col-md-2">Item Description</td>
+					<td class="col-md-2">Amount</td>
+					<td class="col-md-2">Paid By</td>
+					<td class="col-md-2">Category</td>
 					<td colspan="2">Updated On</td>
 				</tr>
 			</thead>
