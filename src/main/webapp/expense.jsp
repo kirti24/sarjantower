@@ -88,7 +88,7 @@
 					<td>Rs. <%=expenselist.get(i).getAmount() %></td>
 					<td><%=expenselist.get(i).getPaidby() %></td>
 					<td><span class="col-xs-6"><%=expenselist.get(i).getCategory() %></span><span class="col-xs-2"></span> 
-					<input type="hidden" id="expenseid" value="<%=expenselist.get(i).getID())%>"/>
+					<input type="hidden" id="expenseid" value="<%=expenselist.get(i).getID() %>"/>
 					<span class="col-xs-4"><input type="submit" class="btn btn-block btn-sm btn-danger" value="Delete" /></span>
 					</td>
 					</form>
