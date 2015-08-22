@@ -111,7 +111,13 @@
 	    }
 	    
 	    function delete_record(i) {
-	    	alert(i);
+	    	<%
+	    	RequestDispatcher dispatcher = request.getRequestDispatcher("/deleteExpense");
+			if (dispatcher != null) {
+				dispatcher.forward(request, response);
+				return;
+			}
+	    	%>
 	    }
 
 	</script>
