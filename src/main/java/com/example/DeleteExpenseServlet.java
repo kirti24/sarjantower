@@ -30,9 +30,9 @@ public class DeleteExpenseServlet extends HttpServlet {
 //			DBConnect.addExpense(category, item, amount, paidby);
 //		}
 		
-		RequestDispatcher dispatcher = req.getRequestDispatcher("/expense.jsp");
-		if(dispatcher != null) dispatcher.forward(req, resp);
-		return;
+//		RequestDispatcher dispatcher = req.getRequestDispatcher("/expense.jsp");
+//		if(dispatcher != null) dispatcher.forward(req, resp);
+//		return;
 		
 	}
 
