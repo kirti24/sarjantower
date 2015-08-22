@@ -83,12 +83,15 @@
 						%>
 
 				<tr>
+					<form  method="post" action="deleteexpense" id="deleteexpenserecord">
 					<td><%=expenselist.get(i).getItem() %></td>
 					<td>Rs. <%=expenselist.get(i).getAmount() %></td>
 					<td><%=expenselist.get(i).getPaidby() %></td>
-					<td><span style="float:left"><%=expenselist.get(i).getCategory() %></span>
-					<span style="float:right"><a class="fui-cross" id='<%=expenselist.get(i).getID() %>' onclick='delete_record();' /></span>
+					<td><%=expenselist.get(i).getCategory() %>
+					<a class="fui-plus" id="<%=expenselist.get(i).getID() %>" onclick='<%request.setAttribute("expenseid", this.id) %>' />
 					</td>
+					</form>
+					
 				</tr>
 
 				<%} %>
@@ -112,9 +115,8 @@
 	    	$("#expenseform").submit();
 	    }
 	    
-	    function delete_record() {
-	    	alert($(this).attr('id'));
-	    	
+	    function delete_record(id) {
+	    	//alert(id);
 	    }
 
 	</script>
