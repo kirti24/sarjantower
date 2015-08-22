@@ -88,7 +88,7 @@
 					<td>Rs. <%=expenselist.get(i).getAmount() %></td>
 					<td><%=expenselist.get(i).getPaidby() %></td>
 					<td><%=expenselist.get(i).getCategory() %>
-					<a class="fui-plus" id="<%=expenselist.get(i).getID() %>" onclick='<%request.setAttribute("expenseid", this.id); %>' />
+					<a class="fui-plus" onclick='<%request.setAttribute("expenseid", expenselist.get(i).getID()); %>' />
 					</td>
 					</form>
 					
