@@ -73,7 +73,7 @@
 					<td><input class="col-md-10" type="text" id="amount" name="amount" /></td>
 					<td><input class="col-md-10" type="text" id="paidby" name="paidby" /></td>
 					<td><input class="col-md-10" type="text" id="category" name="category" /></td>  
-					<td></td>
+					<td><span class="col-md-10"></span></td>
 					<td><a class="fui-plus" id="add" onclick="submit_form();" /></span></td>
 					</form>
 				</tr>
