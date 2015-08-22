@@ -71,8 +71,8 @@
 					<td><input type="text" id="item" name="item" /></td>
 					<td><input type="text" id="amount" name="amount" /></td>
 					<td><input type="text" id="paidby" name="paidby" /></td>
-					<td colspan="2"><span class="col-xs-6"><input type="text" id="category" name="category" /></span> <span class="col-xs-2"></span>  
-					<span class="col-xs-4"><a class="fui-plus" id="add" onclick="submit_form();" /></span></td>
+					<td colspan="2"><span class="col-xs-6"><input type="text" id="category" name="category" />  
+					<span class="col-xs-6"><a class="fui-plus" id="add" onclick="submit_form();" /></span></td>
 					</form>
 				</tr>
 
