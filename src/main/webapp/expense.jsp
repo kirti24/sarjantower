@@ -59,21 +59,20 @@
 		<table class="table table-bordered">
 			<thead>
 				<tr>
-					<td>Item Description</td>
-					<td>Amount</td>
-					<td>Paid By</td>
-					<td>Category</td>
-					<td colspan="2">Updated On</td>
+					<td class="col-md-6">Item Description</td>
+					<td class="col-md-6">Amount</td>
+					<td class="col-md-6">Paid By</td>
+					<td class="col-md-6">Category</td>
+					<td  class="col-md-6" colspan="2">Updated On</td>
 				</tr>
 			</thead>
 			<tbody>
 				<tr>
 					<form method="post" action="addexpense" id="expenseform">
-					<td><input class="col-md-6" type="text" id="item" name="item" /></td>
-					<td><input class="col-md-6" type="text" id="amount" name="amount" /></td>
-					<td><input class="col-md-6" type="text" id="paidby" name="paidby" /></td>
-					<td><input class="col-md-6" type="text" id="category" name="category" /></td>  
-					<td></td>
+					<td><input type="text" id="item" name="item" /></td>
+					<td><input type="text" id="amount" name="amount" /></td>
+					<td><input type="text" id="paidby" name="paidby" /></td>
+					<td><input type="text" id="category" name="category" /></td>  
 					<td><a class="fui-plus" id="add" onclick="submit_form();" /></span></td>
 					</form>
 				</tr>
