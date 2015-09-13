@@ -56,7 +56,7 @@
 		<%if(request.getAttribute("errormessage") != null){%>
 			<label class="alert alert-error"><%=request.getAttribute("errormessage")%></label>
 		<%}%>
-		<table class="table table-bordered">
+		<table class="table table-bordered table-striped">
 			<thead>
 				<tr>
 					<td class="col-md-2">Item Description</td>
@@ -107,8 +107,46 @@
 
 			</tbody>
 		</table>
-
-		<form method="post"></form>
+		<br/><br/>
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<td>Paid By</td>
+					<td>Total</td>
+				</tr>
+			</thead>
+			<tbody>
+				<% ArrayList<ExpenseList> expenselistgrpMember = DBConnect.getExpenseGroupMember();
+					double total = 0;
+					for(int i=0;i<expenselistgrpMember.size();i++){
+						%>
+				<tr>
+					<td><%=expenselistgrpMember.get(i).getPaidby() %></td>
+					<td>Rs. <%=expenselistgrpMember.get(i).getAmount() %></td>
+				</tr>
+				<%} %>
+			</tbody>
+		</table>
+		<br/><br/>
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<td>Expense Type</td>
+					<td>Total</td>
+				</tr>
+			</thead>
+			<tbody>
+				<% ArrayList<ExpenseList> expenselistgrpType = DBConnect.getExpenseGroupType();
+					double total = 0;
+					for(int i=0;i<expenselistgrpType.size();i++){
+						%>
+				<tr>
+					<td><%=expenselistgrpType.get(i).getCategory() %></td>
+					<td>Rs. <%=expenselistgrpType.get(i).getAmount() %></td>
+				</tr>
+				<%} %>
+			</tbody>
+		</table>
 
 	</div>
 

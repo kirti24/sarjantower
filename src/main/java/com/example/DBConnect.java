@@ -485,4 +485,124 @@ public class DBConnect {
 		}
 	}
 	
+	@SuppressWarnings("finally")
+	public static ArrayList<ExpenseList> getExpenseGroupMember(){
+		try {
+			Class.forName("org.postgresql.Driver");
+		} catch (ClassNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+
+		URI dbUri = null;
+		Connection conn = null;
+		PreparedStatement stat = null;
+		ResultSet rs = null;
+		ArrayList<ExpenseList> expenselist = new ArrayList<ExpenseList>();
+		try{
+			dbUri = new URI(System.getenv("DATABASE_URL"));
+			String dbusername = dbUri.getUserInfo().split(":")[0];
+			String dbpassword = dbUri.getUserInfo().split(":")[1];
+			String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
+			conn = DriverManager.getConnection(dbUrl, dbusername, dbpassword);
+			
+			stat = conn.prepareStatement("select sum(amount) as amount, paidby from expenses group by paidby");
+			rs = stat.executeQuery();
+			while(rs.next()){
+				expenselist.add(new ExpenseList(null, null, null, rs.getDouble("amount"), rs.getString("paidby"), null));
+			}
+			
+		}
+		catch (Exception e){
+			e.printStackTrace();
+		}
+		finally{
+			try{
+				if(rs!=null){
+					rs.close();
+				}
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+			try{
+				if(stat!=null){
+					stat.close();
+				}
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+			try{
+				if(conn!=null){
+					conn.close();
+				}
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+			return expenselist;
+		}
+	}
+	
+	@SuppressWarnings("finally")
+	public static ArrayList<ExpenseList> getExpenseGroupType(){
+		try {
+			Class.forName("org.postgresql.Driver");
+		} catch (ClassNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+
+		URI dbUri = null;
+		Connection conn = null;
+		PreparedStatement stat = null;
+		ResultSet rs = null;
+		ArrayList<ExpenseList> expenselist = new ArrayList<ExpenseList>();
+		try{
+			dbUri = new URI(System.getenv("DATABASE_URL"));
+			String dbusername = dbUri.getUserInfo().split(":")[0];
+			String dbpassword = dbUri.getUserInfo().split(":")[1];
+			String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
+			conn = DriverManager.getConnection(dbUrl, dbusername, dbpassword);
+			
+			stat = conn.prepareStatement("select category, sum(amount) as amount from expenses group by category");
+			rs = stat.executeQuery();
+			while(rs.next()){
+				expenselist.add(new ExpenseList(null, rs.getString("category"), null, rs.getDouble("amount"), null, null));
+			}
+			
+		}
+		catch (Exception e){
+			e.printStackTrace();
+		}
+		finally{
+			try{
+				if(rs!=null){
+					rs.close();
+				}
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+			try{
+				if(stat!=null){
+					stat.close();
+				}
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+			try{
+				if(conn!=null){
+					conn.close();
+				}
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+			return expenselist;
+		}
+	}
+	
 }
