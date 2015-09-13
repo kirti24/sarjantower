@@ -52,7 +52,7 @@
 		%>
 		
 		<%
-			if (request.getAttribute("validated") != null && request.getAttribute("validated") == "false") {
+			if (request.getSession().getAttribute("validated") != null && request.getSession().getAttribute("validated") == "false") {
 				%>
 				<jsp:include page="changepwd.jsp"></jsp:include>
 				<%	
