@@ -12,7 +12,7 @@
 	<div class="pallete-item">
 		<dl class="palette palette-peter-river">
 			<dt>
-				<a href="schedule2015.jsp"
+				<a href="#" onclick="load('schedule2015.jsp')"
 					style="text-decoration: none; color: white;">Schedule</a>
 			</dt>
 			<dd>&nbsp;</dd>
@@ -29,7 +29,15 @@
 </div>
 <br />
 <div class="col-md-10" id="update2015">
-	<div id="schedule">
-		<jsp:include page="schedule2015.jsp"></jsp:include>
+	<div id="update2015">
+		<!-- <jsp:include page="schedule2015.jsp"></jsp:include> -->
 	</div>
 </div>
+
+<script type="text/javascript">
+
+function load(page) {
+	$('#update2015').load('schedule2015.jsp');
+}
+
+</script>
