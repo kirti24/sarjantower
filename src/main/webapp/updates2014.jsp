@@ -366,161 +366,161 @@
 						<td>29-Aug</td>
 						<td>Manish Bajaj</td>
 						<td>9:27 PM</td>
-						<td><i class="glyphicon glyphicon-ok"></i></td>
+						<td><i class="fui-check"></i></td>
 					</tr>
 					<tr>
 						<td>2</td>
 						<td>29-Aug</td>
 						<td>Ishaan Jalan</td>
 						<td>10:39 PM</td>
-						<td><i class="glyphicon glyphicon-remove"></i></td>
+						<td><i class="fui-cross"></i></td>
 					</tr>
 					<tr class="active">
 						<td>3</td>
 						<td>30-Aug</td>
 						<td>Neha Agarwal</td>
 						<td>11:38 PM</td>
-						<td><i class="glyphicon glyphicon-ok"></i></td>
+						<td><i class="fui-check"></i></td>
 					</tr>
 					<tr>
 						<td>4</td>
 						<td>01-Sep</td>
 						<td>Rishi Singh</td>
 						<td>9:51 PM</td>
-						<td><i class="glyphicon glyphicon-remove"></i></td>
+						<td><i class="fui-cross"></i></td>
 					</tr>
 					<tr>
 						<td>5</td>
 						<td>01-Sep</td>
 						<td>Kovid Prabhakar</td>
 						<td>9:52 PM</td>
-						<td><i class="glyphicon glyphicon-remove"></i></td>
+						<td><i class="fui-cross"></i></td>
 					</tr>
 					<tr>
 						<td>6</td>
 						<td>01-Sep</td>
 						<td>Sushmita Agarwal</td>
 						<td>9:54 PM</td>
-						<td><i class="glyphicon glyphicon-ok"></i></td>
+						<td><i class="fui-check"></i></td>
 					</tr>
 					<tr>
 						<td>7</td>
 						<td>01-Sep</td>
 						<td>Mayank Agarwal</td>
 						<td>9:56 PM</td>
-						<td><i class="glyphicon glyphicon-ok"></i></td>
+						<td><i class="fui-check"></i></td>
 					</tr>
 					<tr>
 						<td>8</td>
 						<td>01-Sep</td>
 						<td>Ashish Parasrampuria</td>
 						<td>9:58 PM</td>
-						<td><i class="glyphicon glyphicon-ok"></i></td>
+						<td><i class="fui-check"></i></td>
 					</tr>
 					<tr>
 						<td>9</td>
 						<td>01-Sep</td>
 						<td>Akrati Biyala</td>
 						<td>10:02 PM</td>
-						<td><i class="glyphicon glyphicon-ok"></i></td>
+						<td><i class="fui-check"></i></td>
 					</tr>
 					<tr>
 						<td>10</td>
 						<td>01-Sep</td>
 						<td>Saloni Deorah</td>
 						<td>10:03 PM</td>
-						<td><i class="glyphicon glyphicon-ok"></i></td>
+						<td><i class="fui-check"></i></td>
 					</tr>
 					<tr>
 						<td>11</td>
 						<td>01-Sep</td>
 						<td>Saloni Agarwal</td>
 						<td>10:05 PM</td>
-						<td><i class="glyphicon glyphicon-ok"></i></td>
+						<td><i class="fui-check"></i></td>
 					</tr>
 					<tr>
 						<td>12</td>
 						<td>01-Sep</td>
 						<td>Harsha Agarwal</td>
 						<td>10:06 PM</td>
-						<td><i class="glyphicon glyphicon-ok"></i></td>
+						<td><i class="fui-check"></i></td>
 					</tr>
 					<tr class="active">
 						<td>13</td>
 						<td>02-Sep</td>
 						<td>Kirti Agarwal</td>
 						<td>10:09 PM</td>
-						<td><i class="glyphicon glyphicon-remove"></i></td>
+						<td><i class="fui-cross"></i></td>
 					</tr>
 					<tr class="active">
 						<td>14</td>
 						<td>02-Sep</td>
 						<td>Kovid Prabhakar</td>
 						<td>10:11 PM</td>
-						<td><i class="glyphicon glyphicon-remove"></i></td>
+						<td><i class="fui-cross"></i></td>
 					</tr>
 					<tr class="active">
 						<td>15</td>
 						<td>02-Sep</td>
 						<td>Sushmita Agarwal</td>
 						<td>10:12 PM</td>
-						<td><i class="glyphicon glyphicon-remove"></i></td>
+						<td><i class="fui-cross"></i></td>
 					</tr>
 					<tr class="active">
 						<td>16</td>
 						<td>02-Sep</td>
 						<td>Vijay Rathi</td>
 						<td>10:12 PM</td>
-						<td><i class="glyphicon glyphicon-remove"></i></td>
+						<td><i class="fui-cross"></i></td>
 					</tr>
 					<tr class="active">
 						<td>17</td>
 						<td>02-Sep</td>
 						<td>Nidhi Rajpurohit</td>
 						<td>10:42 PM</td>
-						<td><i class="glyphicon glyphicon-remove"></i></td>
+						<td><i class="fui-cross"></i></td>
 					</tr>
 					<tr class="active">
 						<td>18</td>
 						<td>03-Sep</td>
 						<td>Drex Franco</td>
 						<td>08:43 AM</td>
-						<td><i class="glyphicon glyphicon-ok"></i></td>
+						<td><i class="fui-check"></i></td>
 					</tr>
 					<tr>
 						<td>19</td>
 						<td>04-Sep</td>
 						<td>Kovid Prabhakar</td>
 						<td>10:22 PM</td>
-						<td><i class="glyphicon glyphicon-ok"></i></td>
+						<td><i class="fui-check"></i></td>
 					</tr>
 					<tr>
 						<td>20</td>
 						<td>04-Sep</td>
 						<td>Abhinav Mantri</td>
 						<td>10:23 PM</td>
-						<td><i class="glyphicon glyphicon-ok"></i></td>
+						<td><i class="fui-check"></i></td>
 					</tr>
 					<tr>
 						<td>21</td>
 						<td>04-Sep</td>
 						<td>Nidhi Rajpurohit</td>
 						<td>10:33 PM</td>
-						<td><i class="glyphicon glyphicon-ok"></i></td>
+						<td><i class="fui-check"></i></td>
 					</tr>
 					<tr>
 						<td>22</td>
 						<td>04-Sep</td>
 						<td>Hitesh Bohra</td>
 						<td>10:36 PM</td>
-						<td><i class="glyphicon glyphicon-ok"></i></td>
+						<td><i class="fui-check"></i></td>
 					</tr>
 					<tr>
 						<td>23</td>
 						<td>04-Sep</td>
 						<td>Saloni Agarwal</td>
 						<td>10:49 PM</td>
-						<td><i class="glyphicon glyphicon-ok"></i></td>
+						<td><i class="fui-check"></i></td>
 					</tr>
 				</tbody>
 			</table>

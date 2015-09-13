@@ -45,13 +45,13 @@
 		<br/>
 		
 		<%if(request.getAttribute("event").toString().equalsIgnoreCase("Group Dance 2014")){ %>
-		<h3>Group Photos...</h3>
+		<h4>Group Photos...</h4>
 		<jsp:include page="photos/GroupDance2014.jsp"></jsp:include>
 		<br/>
 		<%} %>
 		
 		<%if(request.getAttribute("event").toString().equalsIgnoreCase("Group Dance 2015")){ %>
-		<h3>Group Photos...</h3>
+		<h4>Group Photos...</h4>
 		<jsp:include page="photos/GroupDance2015.jsp"></jsp:include>
 		<br/>
 		<%} %>
