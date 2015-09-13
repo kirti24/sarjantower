@@ -26,6 +26,14 @@
 			<dd>&nbsp;</dd>
 		</dl>
 	</div>
+	
+	<div class="pallete-item">
+		<dl class="palette palette-wet-asphalt">
+			<dt>Photo Gallery</dt>
+			<dd>&nbsp;</dd>
+		</dl>
+	</div>
+	
 </div>
 <br />
 <div class="col-md-10" id="update2015">
