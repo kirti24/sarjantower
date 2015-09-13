@@ -19,13 +19,11 @@
 				<!-- <dd>&nbsp;</dd> -->
 			</dl>
 		</div>
-
-
+		<form method="post" action="event">
 		<div class="pallete-item">
 			<dl class="palette palette-wet-asphalt">
 				<dt>
-					<a href="#" onclick="loadevent('Solo Dance 2015');" name="eventname" value="Solo Dance 2015"
-						style="text-decoration: none; color: white;">Voting</a>
+					<input type="submit" name="eventname" value="Solo Dance 2015">Voting
 				</dt>
 				<dd>
 					<a href="#" name="eventname" value="Solo Dance 2015"
@@ -33,6 +31,7 @@
 				</dd>
 			</dl>
 		</div>
+		</form>
 
 		<div class="pallete-item">
 			<dl class="palette palette-wet-asphalt">
@@ -53,6 +52,4 @@
 	function load(page) {
 		$('#update2015').load(page);
 	}
-	function loadevent(eventname) {
-		alert(eventname);
-	}
+</script>
