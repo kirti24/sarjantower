@@ -1,4 +1,6 @@
-<table class="table table-bordered" style="font-size: small;">
+<h4><i>Schedule</i></h4>
+
+<table class="table table-bordered table-striped" style="font-size: small;">
 
 	<thead>
 		<tr>
