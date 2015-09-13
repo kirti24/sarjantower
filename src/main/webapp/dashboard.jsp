@@ -54,7 +54,7 @@
 		<br/>
 		<jsp:include page="banner.jsp"></jsp:include>
 		<br/>
-		<jsp:include page="updates2015.jsp"></jsp:include>
+		<jsp:include page="updates2015.jsp" id="update2015"></jsp:include>
 
 		<!-- <jsp:include page="updates2014.jsp"></jsp:include> -->
 
