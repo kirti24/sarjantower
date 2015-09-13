@@ -36,12 +36,12 @@
 	<div class="col-lg-6">
 
 		<div class="row">
-			<h3>Treasure Hunt Scores</h3>
+			<h4>Treasure Hunt Scores</h4>
 
-			<h4>
+			<h5>
 				<a href="#" onclick="toggle('TreasureHuntWinners')">Click to
 					show/hide winners list</a>
-			</h4>
+			</h5>
 			<div id="TreasureHuntWinners" style="display: none">
 				<table class="table table-bordered">
 					<tbody>
@@ -151,11 +151,11 @@
 
 
 		<div class="row">
-			<h3>Antakshri Scores</h3>
-			<h4>
+			<h4>Antakshri Scores</h4>
+			<h5>
 				<a href="#" onclick="toggle('AntakshriWinners')">Click to
 					show/hide winners list</a>
-			</h4>
+			</h5>
 			<div id="AntakshriWinners" style="display: none">
 				<table class="table table-bordered">
 					<tbody>
@@ -275,7 +275,7 @@
 		</div>
 
 		<div class="row">
-			<h3>Scavenger Hunt Scores (as of 29-Aug)</h3>
+			<h4>Scavenger Hunt Scores (as of 29-Aug)</h4>
 			<table class="table table-bordered">
 				<thead>
 					<tr>
@@ -349,7 +349,7 @@
 			</table>
 		</div>
 		<div class="row">
-			<h3>Quiz Results</h3>
+			<h4>Quiz Results</h4>
 			<table class="table table-bordered">
 				<thead>
 					<tr>
