@@ -24,7 +24,7 @@
 		<div class="pallete-item">
 			<dl class="palette palette-wet-asphalt">
 				<dt>
-					<a href="#" onclick="loadevent('Solo Dance 2015')" name="eventname" value="Solo Dance 2015"
+					<a href="#" onclick="loadevent('Solo Dance 2015');" name="eventname" value="Solo Dance 2015"
 						style="text-decoration: none; color: white;">Voting</a>
 				</dt>
 				<dd>
