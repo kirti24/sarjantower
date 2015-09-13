@@ -1,11 +1,10 @@
 <div class="col-md-2">
-
+	<br/>
 	<div class="pallete-item">
 		<dl class="palette palette-wet-asphalt">
 			<dt>
 				<a href="2014.jsp" style="text-decoration: none; color: white;">2014</a>
 			</dt>
-			<dd>&nbsp;</dd>
 		</dl>
 	</div>
 
