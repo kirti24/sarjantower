@@ -612,4 +612,59 @@ public class DBConnect {
 		}
 	}
 	
+	@SuppressWarnings("finally")
+	public static void changePassword(String username,String password){
+		try {
+			Class.forName("org.postgresql.Driver");
+		} catch (ClassNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+
+		URI dbUri = null;
+		Connection conn = null;
+		PreparedStatement stat = null;
+		ResultSet rs = null;
+		try{
+			dbUri = new URI(System.getenv("DATABASE_URL"));
+			String dbusername = dbUri.getUserInfo().split(":")[0];
+			String dbpassword = dbUri.getUserInfo().split(":")[1];
+			String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
+			conn = DriverManager.getConnection(dbUrl, dbusername, dbpassword);
+			stat = conn.prepareStatement("update accounts set newpass = ?, isvalidated = ? where flatno=?");
+			stat.setString(1, username);
+			stat.setBoolean(2, true);
+			rs = stat.executeQuery();
+		}
+		catch (Exception e){
+			e.printStackTrace();
+		}
+		finally{
+			try{
+				if(rs!=null){
+					rs.close();
+				}
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+			try{
+				if(stat!=null){
+					stat.close();
+				}
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+			try{
+				if(conn!=null){
+					conn.close();
+				}
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+		}
+	}
+	
 }

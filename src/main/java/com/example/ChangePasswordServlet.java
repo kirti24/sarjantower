@@ -18,7 +18,7 @@ public class ChangePasswordServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
-		/*
+		
 		try{
 			ServletOutputStream out = resp.getOutputStream();
 			
@@ -26,33 +26,19 @@ public class ChangePasswordServlet extends HttpServlet {
 			String repassword = req.getParameter("repassword");
 			out.write((password+"\t"+repassword).getBytes());
 			
-			if(!password.equals(repassword)){
-				RequestDispatcher dispatcher = req.getRequestDispatcher("/dashboard.jsp");
-				req.setAttribute("errormessage", "Password Mismatch. Try again.");
-				req.getSession(false).invalidate();
-				if(dispatcher != null) dispatcher.forward(req, resp);
-			}else{
-				//DBConnect.sessionCreate(username, req.getSession(false).getId());
-				RequestDispatcher dispatcher = req.getRequestDispatcher("/dashboard.jsp");
-				req.setAttribute("verified", "true");
-				req.setAttribute("user", username);
-				HttpSession session = req.getSession(false);			
-				session.setAttribute("isAuthorised", "true");
-				session.setAttribute("user", username);
-				if (!isValidated)
-					session.setAttribute("validated", "false");
-				else 
-					session.setAttribute("validated", "true");
-				
-				System.out.println("Setting attribute isauth for session " + session.getId());
-				if(dispatcher != null) dispatcher.forward(req, resp);
-				return;
-			}
+			//DBConnect.sessionCreate(username, req.getSession(false).getId());
+			RequestDispatcher dispatcher = req.getRequestDispatcher("/dashboard.jsp");
+			String user = req.getAttribute("user", username);
+			if(password.equals(repassword))
+				DBConnect.changePassword(user,password);
+			
+			if(dispatcher != null) dispatcher.forward(req, resp);
+			return;
 		}catch(Exception e){
 			RequestDispatcher dispatcher = req.getRequestDispatcher("/error.jsp");
 			if(dispatcher != null) dispatcher.forward(req, resp);
 			return;
-		}*/
+		}
 
 	}
 
