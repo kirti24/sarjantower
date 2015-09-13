@@ -117,7 +117,6 @@
 			</thead>
 			<tbody>
 				<% ArrayList<ExpenseList> expenselistgrpMember = DBConnect.getExpenseGroupMember();
-					double total = 0;
 					for(int i=0;i<expenselistgrpMember.size();i++){
 						%>
 				<tr>
@@ -137,7 +136,6 @@
 			</thead>
 			<tbody>
 				<% ArrayList<ExpenseList> expenselistgrpType = DBConnect.getExpenseGroupType();
-					double total = 0;
 					for(int i=0;i<expenselistgrpType.size();i++){
 						%>
 				<tr>
