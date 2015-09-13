@@ -17,7 +17,7 @@
 			event = line.toString();
 			eventSet=true;
 			%>
-			<div class="page-header"><h1><%=event %></h1></div>
+			<div class="page-header"><h3><%=event %></h3></div>
 			<%
 			prevList = DBConnect.getVote(request.getSession(false).getAttribute("user").toString(), event);
 			continue;
