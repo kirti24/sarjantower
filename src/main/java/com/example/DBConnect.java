@@ -23,7 +23,7 @@ public class DBConnect {
 		Connection conn = null;
 		PreparedStatement stat = null;
 		ResultSet rs = null;
-		boolean returnArray[] = {isValid,isValidated};
+		boolean returnArray[] = {false,false};
 		try{
 			dbUri = new URI(System.getenv("DATABASE_URL"));
 			String dbusername = dbUri.getUserInfo().split(":")[0];
