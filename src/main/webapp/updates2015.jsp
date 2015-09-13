@@ -1,3 +1,4 @@
+<%@page session="false"%>
 <div class="row">
 	<div class="col-md-2">
 		<div class="pallete-item">
@@ -23,10 +24,10 @@
 		<div class="pallete-item">
 			<dl class="palette palette-wet-asphalt">
 				<dt>
-					<a href="#" onclick="voting2015.jsp"
+					<a href="/event" name="eventname" value="Solo Dance 2015"
 						style="text-decoration: none; color: white;">Voting</a>
 				</dt>
-				<!-- <dd>&nbsp;</dd> -->
+				<dd>Solo Dance</dd>
 			</dl>
 		</div>
 

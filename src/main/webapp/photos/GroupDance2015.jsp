@@ -1,3 +1,4 @@
+<%@page session="false"%>
 <table class="table table-bordered">
 	<tbody>
 		<tr>
