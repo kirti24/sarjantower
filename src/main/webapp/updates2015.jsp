@@ -19,19 +19,24 @@
 				<!-- <dd>&nbsp;</dd> -->
 			</dl>
 		</div>
-		<form method="post" action="event">
+		
 		<div class="pallete-item">
 			<dl class="palette palette-wet-asphalt">
 				<dt>
-					<input type="submit" name="eventname" value="Solo Dance 2015">Voting
+					<a href="#" onclick="submitform('soloeventform')"
+						style="text-decoration: none; color: white;">Voting</a>
 				</dt>
 				<dd>
-					<a href="#" name="eventname" value="Solo Dance 2015"
+					<a href="#" onclick="submitform('soloeventform')"
 						style="text-decoration: none; color: white;">Solo Dance</a>
 				</dd>
 			</dl>
+			
+			<form id="soloeventform" method="post" action="event">
+				<input type="hidden" name="eventname" value="Solo Dance 2015">
+			</form>
+			
 		</div>
-		</form>
 
 		<div class="pallete-item">
 			<dl class="palette palette-wet-asphalt">
@@ -39,7 +44,6 @@
 				<!-- <dd>&nbsp;</dd> -->
 			</dl>
 		</div>
-
 	</div>
 	<div class="col-md-10" id="update2015">
 		<div id="update2015">
@@ -48,8 +52,17 @@
 		</div>
 	</div>
 </div>
+
+<form id="eventform" method="post" action="event">
+<input type="hidden" name="eventname">
+</form>
+
 <script type="text/javascript">
 	function load(page) {
 		$('#update2015').load(page);
+	}
+	
+	function submitform(eventname) {
+		$(eventname).submit();
 	}
 </script>
