@@ -50,8 +50,18 @@
 			}
 			}
 		%>
+		
+		<%
+			if (request.getAttribute("validated") != null && request.getAttribute("validated") == "false") {
+				%>
+				<jsp:include page="changepwd.jsp"></jsp:include>
+				<%	
+			}
+			else{
+		%>
+		
 		<jsp:include page="updates2015.jsp"></jsp:include>
-
+		<%} %>
 		<!-- <jsp:include page="updates2014.jsp"></jsp:include> -->
 
 		<br /> <br />

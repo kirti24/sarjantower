@@ -11,7 +11,7 @@ import java.util.ArrayList;
 
 public class DBConnect {
 	@SuppressWarnings("finally")
-	public static boolean loginCheck(String username,String password){
+	public static boolean[] loginCheck(String username,String password){
 		try {
 			Class.forName("org.postgresql.Driver");
 		} catch (ClassNotFoundException e1) {
@@ -24,20 +24,24 @@ public class DBConnect {
 		PreparedStatement stat = null;
 		ResultSet rs = null;
 		boolean isValid = false;
+		boolean isValidated = false;
+		boolean returnArray[] = {isValid,isValidated};
 		try{
 			dbUri = new URI(System.getenv("DATABASE_URL"));
 			String dbusername = dbUri.getUserInfo().split(":")[0];
 			String dbpassword = dbUri.getUserInfo().split(":")[1];
 			String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
 			conn = DriverManager.getConnection(dbUrl, dbusername, dbpassword);
-			stat = conn.prepareStatement("select pass, newpass, isvalid from accounts where flatno=?");
+			stat = conn.prepareStatement("select pass, newpass, isvalidated from accounts where flatno=?");
 			stat.setString(1, username);
 			rs = stat.executeQuery();
 			if(rs.next()){
 				String pwd = rs.getString("newpass");
-				if(pwd.equals(password))
+				if(pwd.equals(password)){
 					isValid = true;
-				if(!isValid && !rs.getBoolean("isvalid")) {
+					isValidated = true;
+				}
+				if(!isValid && !rs.getBoolean("isvalidated")) {
 					pwd = rs.getString("pass");
 					if(pwd.equals(password))
 						isValid = true;

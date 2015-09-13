@@ -28,8 +28,9 @@ public class LoginServlet extends HttpServlet {
 			String username = req.getParameter("username");
 			String password = req.getParameter("password");
 			out.write((username+password).getBytes());
-			boolean isValid = DBConnect.loginCheck(username,password);
-			
+			boolean returnArray[] = DBConnect.loginCheck(username,password);
+			boolean isValid = returnArray[0];
+			boolean isValidated = returnArray[1];
 			if(!isValid){
 				RequestDispatcher dispatcher = req.getRequestDispatcher("/index.jsp");
 				req.setAttribute("errormessage", "Invalid Username/Password. Try again.");
@@ -39,6 +40,7 @@ public class LoginServlet extends HttpServlet {
 				//DBConnect.sessionCreate(username, req.getSession(false).getId());
 				RequestDispatcher dispatcher = req.getRequestDispatcher("/dashboard.jsp");
 				req.setAttribute("verified", "true");
+				req.setAttribute("validated", isValidated);
 				req.setAttribute("user", username);
 				HttpSession session = req.getSession(false);			
 				session.setAttribute("isAuthorised", "true");
