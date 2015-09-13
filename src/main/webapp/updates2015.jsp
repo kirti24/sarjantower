@@ -23,7 +23,7 @@
 		<div class="pallete-item">
 			<dl class="palette palette-wet-asphalt">
 				<dt>
-					<a href="#" onclick="load('voting2015.jsp')"
+					<a href="#" onclick="voting2015.jsp"
 						style="text-decoration: none; color: white;">Voting</a>
 				</dt>
 				<!-- <dd>&nbsp;</dd> -->
