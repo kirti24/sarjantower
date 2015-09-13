@@ -6,7 +6,7 @@
 <%
 	String prevList="";
 	BufferedReader reader = new BufferedReader(new FileReader(
-			"src/main/webapp/"+request.getAttribute("event").toString().replace(' ', '_')+".txt"));
+			"src/main/webapp/ParticipantList/"+request.getAttribute("event").toString().replace(' ', '_')+".txt"));
 	
 	String line;
 	String categories="";
