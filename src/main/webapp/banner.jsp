@@ -9,7 +9,7 @@
 
 <div class="pallete-item">
 	<dl class="palette palette-peter-river">
-		<dt>Schedule</dt>
+		<dt><a href="schedule2015.jsp"  style="text-decoration: none; color: white;">Schedule</a></dt>
 		<dd>&nbsp;</dd>
 	</dl>
 </div>
