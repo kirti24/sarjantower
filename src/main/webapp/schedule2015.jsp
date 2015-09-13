@@ -1,4 +1,4 @@
-<h4><i>Schedule</i></h4>
+<h5><i>Schedule</i></h5>
 
 <table class="table table-bordered table-striped" style="font-size: small;">
 
