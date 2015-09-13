@@ -12,7 +12,7 @@
 	</div>
 </div>
 
-<<script>
+<script>
 $( "#changepwdform" ).validate({
 	  rules: {
 	    password: "required",

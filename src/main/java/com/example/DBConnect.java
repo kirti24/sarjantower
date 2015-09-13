@@ -631,9 +631,10 @@ public class DBConnect {
 			String dbpassword = dbUri.getUserInfo().split(":")[1];
 			String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
 			conn = DriverManager.getConnection(dbUrl, dbusername, dbpassword);
-			stat = conn.prepareStatement("update accounts set newpass = ?, isvalidated = ? where flatno=?");
-			stat.setString(1, username);
+			stat = conn.prepareStatement("update accounts set newpass=?, isvalidated=? where flatno=?");
+			stat.setString(1, password);
 			stat.setBoolean(2, true);
+			stat.setString(3, username);
 			rs = stat.executeQuery();
 		}
 		catch (Exception e){
