@@ -24,10 +24,13 @@
 		<div class="pallete-item">
 			<dl class="palette palette-wet-asphalt">
 				<dt>
-					<a href="/event" name="eventname" value="Solo Dance 2015"
+					<a href="#" onclick="loadevent('Solo Dance 2015')" name="eventname" value="Solo Dance 2015"
 						style="text-decoration: none; color: white;">Voting</a>
 				</dt>
-				<dd>Solo Dance</dd>
+				<dd>
+					<a href="#" name="eventname" value="Solo Dance 2015"
+						style="text-decoration: none; color: white;">Solo Dance</a>
+				</dd>
 			</dl>
 		</div>
 
@@ -50,4 +53,6 @@
 	function load(page) {
 		$('#update2015').load(page);
 	}
-</script>
+	function loadevent(eventname) {
+		alert(eventname);
+	}
