@@ -1,3 +1,5 @@
+<div class="col-md-2">
+
 <div class="pallete-item">
 	<dl class="palette palette-turquoise">
 		<dt><a href="2014.jsp" style="text-decoration: none; color: white;">2014</a></dt>
@@ -18,4 +20,5 @@
 		<dt>Voting</dt>
 		<dd>&nbsp;</dd>
 	</dl>
+</div>
 </div>
