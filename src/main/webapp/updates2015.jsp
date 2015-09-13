@@ -1,7 +1,7 @@
 <div class="col-md-2">
 
 	<div class="pallete-item">
-		<dl class="palette palette-turquoise">
+		<dl class="palette palette-wet-asphalt">
 			<dt>
 				<a href="2014.jsp" style="text-decoration: none; color: white;">2014</a>
 			</dt>
@@ -10,7 +10,7 @@
 	</div>
 
 	<div class="pallete-item">
-		<dl class="palette palette-peter-river">
+		<dl class="palette palette-wet-asphalt">
 			<dt>
 				<a href="#" onclick="load('schedule2015.jsp')"
 					style="text-decoration: none; color: white;">Schedule</a>
@@ -21,7 +21,7 @@
 
 
 	<div class="pallete-item">
-		<dl class="palette palette-amethyst">
+		<dl class="palette palette-wet-asphalt">
 			<dt>Voting</dt>
 			<dd>&nbsp;</dd>
 		</dl>
@@ -30,7 +30,8 @@
 <br />
 <div class="col-md-10" id="update2015">
 	<div id="update2015">
-		<!-- <jsp:include page="schedule2015.jsp"></jsp:include> -->
+		<!-- need to remove later -->
+		<jsp:include page="schedule2015.jsp"></jsp:include>
 	</div>
 </div>
 
