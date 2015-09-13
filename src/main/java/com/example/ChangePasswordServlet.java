@@ -28,7 +28,7 @@ public class ChangePasswordServlet extends HttpServlet {
 			
 			//DBConnect.sessionCreate(username, req.getSession(false).getId());
 			RequestDispatcher dispatcher = req.getRequestDispatcher("/dashboard.jsp");
-			String user = req.getAttribute("user");
+			String user = req.getAttribute("user").toString();
 			if(password.equals(repassword)){
 				DBConnect.changePassword(user,password);
 			}
