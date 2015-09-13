@@ -37,7 +37,7 @@
 <script type="text/javascript">
 
 function load(page) {
-	$('#update2015').load('schedule2015.jsp');
+	$('#update2015').load(page);
 }
 
 </script>
