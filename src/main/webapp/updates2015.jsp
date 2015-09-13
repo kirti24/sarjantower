@@ -22,6 +22,17 @@
 		
 		<div class="pallete-item">
 			<dl class="palette palette-wet-asphalt">
+				<dt>Photo Gallery</dt>
+				<!-- <dd>&nbsp;</dd> -->
+			</dl>
+		</div>
+		
+		<%
+		if (request.getSession(false).getAttribute("user").toString()
+				.equalsIgnoreCase("admin")) {
+			%>
+		<div class="pallete-item">
+			<dl class="palette palette-wet-asphalt">
 				<dt>
 					<a href="#" onclick="submitform('soloeventform')"
 						style="text-decoration: none; color: white;">Voting</a>
@@ -37,7 +48,12 @@
 			</form>
 			
 		</div>
+		<%} %>
 		
+		<%
+		if (request.getSession(false).getAttribute("user").toString()
+				.equalsIgnoreCase("admin")) {
+			%>
 		<div class="pallete-item">
 			<dl class="palette palette-wet-asphalt">
 				<dt>
@@ -55,7 +71,12 @@
 			</form>
 			
 		</div>
+		<%} %>
 		
+		<%
+		if (request.getSession(false).getAttribute("user").toString()
+				.equalsIgnoreCase("admin")) {
+			%>
 		<div class="pallete-item">
 			<dl class="palette palette-wet-asphalt">
 				<dt>
@@ -73,13 +94,8 @@
 			</form>
 			
 		</div>
-
-		<div class="pallete-item">
-			<dl class="palette palette-wet-asphalt">
-				<dt>Photo Gallery</dt>
-				<!-- <dd>&nbsp;</dd> -->
-			</dl>
-		</div>
+		<%} %>
+		
 	</div>
 	<div class="col-md-10" id="update2015">
 		<div id="update2015">
