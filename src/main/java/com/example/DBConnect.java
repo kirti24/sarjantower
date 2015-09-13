@@ -37,7 +37,7 @@ public class DBConnect {
 				String pwd = rs.getString("newpass");
 				if(pwd.equals(password))
 					isValid = true;
-				else if(!rs.getBoolean("isvalid")) {
+				if(!isValid && !rs.getBoolean("isvalid")) {
 					pwd = rs.getString("pass");
 					if(pwd.equals(password))
 						isValid = true;
