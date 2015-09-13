@@ -35,7 +35,6 @@
 		</div>
 
 	</div>
-	<br />
 	<div class="col-md-10" id="update2015">
 		<div id="update2015">
 			<!-- need to remove later -->
