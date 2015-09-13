@@ -42,18 +42,15 @@
 		
 		<jsp:include page="header.jsp"></jsp:include>
 		
-		<br/>
 		
 		<%if(request.getAttribute("event").toString().equalsIgnoreCase("Group Dance 2014")){ %>
 		<h4>Group Photos...</h4>
 		<jsp:include page="photos/GroupDance2014.jsp"></jsp:include>
-		<br/>
 		<%} %>
 		
 		<%if(request.getAttribute("event").toString().equalsIgnoreCase("Group Dance 2015")){ %>
 		<h4>Group Photos...</h4>
 		<jsp:include page="photos/GroupDance2015.jsp"></jsp:include>
-		<br/>
 		<%} %>
 		<form method="post" action="vote">
 
