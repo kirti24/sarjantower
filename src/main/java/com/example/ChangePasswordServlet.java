@@ -32,6 +32,7 @@ public class ChangePasswordServlet extends HttpServlet {
 			String user = session.getAttribute("user").toString();
 			if(password.equals(repassword)){
 				DBConnect.changePassword(user,password);
+				session.setAttribute("validated", "true");
 			}
 			
 //			if(dispatcher != null) dispatcher.forward(req, resp);
