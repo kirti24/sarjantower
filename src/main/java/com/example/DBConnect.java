@@ -76,7 +76,7 @@ public class DBConnect {
 			catch(Exception e){
 				e.printStackTrace();
 			}
-			return isValid;
+			return returnArray;
 		}
 	}
 
