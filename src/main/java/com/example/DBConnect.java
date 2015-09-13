@@ -23,8 +23,6 @@ public class DBConnect {
 		Connection conn = null;
 		PreparedStatement stat = null;
 		ResultSet rs = null;
-		boolean isValid = false;
-		boolean isValidated = false;
 		boolean returnArray[] = {isValid,isValidated};
 		try{
 			dbUri = new URI(System.getenv("DATABASE_URL"));
@@ -38,13 +36,13 @@ public class DBConnect {
 			if(rs.next()){
 				String pwd = rs.getString("newpass");
 				if(pwd.equals(password)){
-					isValid = true;
-					isValidated = true;
+					returnArray[0] = true;
+					returnArray[1] = true;
 				}
 				if(!isValid && !rs.getBoolean("isvalidated")) {
 					pwd = rs.getString("pass");
 					if(pwd.equals(password))
-						isValid = true;
+						returnArray[0] = true;
 				}
 			}
 		}
