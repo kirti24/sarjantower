@@ -50,7 +50,6 @@
 			}
 			}
 		%>
-		<br/>
 		<jsp:include page="updates2015.jsp"></jsp:include>
 
 		<!-- <jsp:include page="updates2014.jsp"></jsp:include> -->

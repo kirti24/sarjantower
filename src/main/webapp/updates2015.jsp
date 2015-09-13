@@ -1,10 +1,10 @@
 <div class="col-md-2">
-	<br/>
 	<div class="pallete-item">
 		<dl class="palette palette-wet-asphalt">
 			<dt>
 				<a href="2014.jsp" style="text-decoration: none; color: white;">2014</a>
 			</dt>
+			<!-- <dd>&nbsp;</dd> -->
 		</dl>
 	</div>
 
@@ -14,7 +14,7 @@
 				<a href="#" onclick="load('schedule2015.jsp')"
 					style="text-decoration: none; color: white;">Schedule</a>
 			</dt>
-			<dd>&nbsp;</dd>
+			<!-- <dd>&nbsp;</dd> -->
 		</dl>
 	</div>
 
@@ -22,14 +22,14 @@
 	<div class="pallete-item">
 		<dl class="palette palette-wet-asphalt">
 			<dt>Voting</dt>
-			<dd>&nbsp;</dd>
+			<!-- <dd>&nbsp;</dd> -->
 		</dl>
 	</div>
 	
 	<div class="pallete-item">
 		<dl class="palette palette-wet-asphalt">
 			<dt>Photo Gallery</dt>
-			<dd>&nbsp;</dd>
+			<!-- <dd>&nbsp;</dd> -->
 		</dl>
 	</div>
 	
