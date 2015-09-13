@@ -6,27 +6,27 @@
 				<legend>Voting</legend>
 				<% if(request.getSession(false).getAttribute("user").toString().equalsIgnoreCase("admin")){ %>
 				<input type="submit" name="eventname" class="btn btn-primary"
-					value="Solo Dance" >
+					value="Solo Dance 2014" >
 					<%}else{ %>
 					<input type="submit" name="eventname" class="btn btn-primary"
-					value="Solo Dance" disabled>
+					value="Solo Dance 2014" disabled>
 					<%} %>
 					<br /> <br />
 					<% if(request.getSession(false).getAttribute("user").toString().equalsIgnoreCase("admin")){ %>
 					<input type="submit"
-					name="eventname" class="btn btn-primary" value="Group Dance" >
+					name="eventname" class="btn btn-primary" value="Group Dance 2014" >
 					<%}else{ %>
 					<input type="submit"
-					name="eventname" class="btn btn-primary" value="Group Dance" disabled>
+					name="eventname" class="btn btn-primary" value="Group Dance 2014" disabled>
 					<%} %>
 					<br />
 				<br /> 
 				<% if(request.getSession(false).getAttribute("user").toString().equalsIgnoreCase("admin")){ %>
 				<input type="submit" name="eventname"
-					class="btn btn-primary" value="Fancy Dress" >
+					class="btn btn-primary" value="Fancy Dress 2014" >
 					<%}else{ %> 
 				<input type="submit" name="eventname"
-					class="btn btn-primary" value="Fancy Dress" disabled> 
+					class="btn btn-primary" value="Fancy Dress 2014" disabled> 
 				<%} %>
 				<br />
 				<br />

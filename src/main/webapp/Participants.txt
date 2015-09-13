@@ -1,5 +1,0 @@
-Group Dance
-Category 1,Name 1,Name2,Name3
-Category2,Name4,Name5
-Category3,Name6
-Category4,Name7,Name8
