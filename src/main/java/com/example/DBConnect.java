@@ -39,7 +39,7 @@ public class DBConnect {
 					returnArray[0] = true;
 					returnArray[1] = true;
 				}
-				if(!isValid && !rs.getBoolean("isvalidated")) {
+				if(!returnArray[0] && !rs.getBoolean("isvalidated")) {
 					pwd = rs.getString("pass");
 					if(pwd.equals(password))
 						returnArray[0] = true;
