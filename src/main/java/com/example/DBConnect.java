@@ -509,7 +509,7 @@ public class DBConnect {
 			stat = conn.prepareStatement("select sum(amount) as amount, paidby from expenses group by paidby");
 			rs = stat.executeQuery();
 			while(rs.next()){
-				expenselist.add(new ExpenseList(null, null, null, rs.getDouble("amount"), rs.getString("paidby"), null));
+				expenselist.add(new ExpenseList(0, "", "", rs.getDouble("amount"), rs.getString("paidby"), null));
 			}
 			
 		}
@@ -569,7 +569,7 @@ public class DBConnect {
 			stat = conn.prepareStatement("select category, sum(amount) as amount from expenses group by category");
 			rs = stat.executeQuery();
 			while(rs.next()){
-				expenselist.add(new ExpenseList(null, rs.getString("category"), null, rs.getDouble("amount"), null, null));
+				expenselist.add(new ExpenseList(0, rs.getString("category"), "", rs.getDouble("amount"), "", null));
 			}
 			
 		}
