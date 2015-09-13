@@ -63,6 +63,6 @@
 	}
 	
 	function submitform(eventname) {
-		$(eventname).submit();
+		$('#'+eventname).submit();
 	}
 </script>
