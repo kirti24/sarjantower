@@ -37,6 +37,42 @@
 			</form>
 			
 		</div>
+		
+		<div class="pallete-item">
+			<dl class="palette palette-wet-asphalt">
+				<dt>
+					<a href="#" onclick="submitform('groupeventform')"
+						style="text-decoration: none; color: white;">Voting</a>
+				</dt>
+				<dd>
+					<a href="#" onclick="submitform('groupeventform')"
+						style="text-decoration: none; color: white;">Group Dance</a>
+				</dd>
+			</dl>
+			
+			<form id="groupeventform" method="post" action="event">
+				<input type="hidden" name="eventname" value="Group Dance 2015">
+			</form>
+			
+		</div>
+		
+		<div class="pallete-item">
+			<dl class="palette palette-wet-asphalt">
+				<dt>
+					<a href="#" onclick="submitform('fancyeventform')"
+						style="text-decoration: none; color: white;">Voting</a>
+				</dt>
+				<dd>
+					<a href="#" onclick="submitform('fancyeventform')"
+						style="text-decoration: none; color: white;">Fancy Dress</a>
+				</dd>
+			</dl>
+			
+			<form id="fancyeventform" method="post" action="event">
+				<input type="hidden" name="eventname" value="Fancy Dress 2015">
+			</form>
+			
+		</div>
 
 		<div class="pallete-item">
 			<dl class="palette palette-wet-asphalt">
