@@ -25,8 +25,8 @@ public class LoginServlet extends HttpServlet {
 		try{
 			ServletOutputStream out = resp.getOutputStream();
 			
-			String username = req.getParameter("username");
-			String password = req.getParameter("password");
+			String username = req.getParameter("username").toUpperCase();
+			String password = req.getParameter("password").toLowerCase();
 			out.write((username+password).getBytes());
 			boolean returnArray[] = DBConnect.loginCheck(username,password);
 			boolean isValid = returnArray[0];

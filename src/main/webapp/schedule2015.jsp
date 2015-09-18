@@ -1,5 +1,5 @@
 <%@page session="false"%>
-<h5><i>Schedule</i></h5>
+<h5><i>Tentative Schedule</i></h5>
 
 <table class="table table-bordered table-striped" style="font-size: small;">
 
