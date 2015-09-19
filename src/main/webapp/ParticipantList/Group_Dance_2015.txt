@@ -2,7 +2,5 @@ Group Dance 2015
 Playgroup,Meshwa and Kids,Badmash Group
 Primary,Naitik-Advait-Aditya-Varshil,Vidhi-Anvesha-Manishka
 Secondary,Nach Meri Jaan,Meshwa-Ankur,Sathiya Group,Mashup Group,Bademiya Chotemiya
-Junior College,Titliyaan,Fab 5
-College,The Unknowns v2.0
-Couple,Seth Uncle and Aunty
-Parents,Bhabhiya
+Junior College,Titliyaan,Fab 5,The Unknowns v2.0
+Couple,Seth Uncle and Aunty,Bhabhiya

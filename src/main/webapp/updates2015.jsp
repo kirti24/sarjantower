@@ -50,9 +50,9 @@
 		</div>
 		<%} %>
 		
-		<%
+		<%/*
 		if (request.getSession(false).getAttribute("user").toString()
-				.equalsIgnoreCase("admin")) {
+				.equalsIgnoreCase("admin")) {*/
 			%>
 		<div class="pallete-item">
 			<dl class="palette palette-wet-asphalt">
@@ -71,7 +71,7 @@
 			</form>
 			
 		</div>
-		<%} %>
+		<%//} %>
 		
 		<%
 		if (request.getSession(false).getAttribute("user").toString()

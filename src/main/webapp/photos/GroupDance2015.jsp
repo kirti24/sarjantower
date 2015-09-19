@@ -2,32 +2,29 @@
 <table class="table table-bordered">
 	<tbody>
 		<tr>
-			<td><a href="http://i.imgur.com/9YEoVDE.jpg" target="_blank">Advait-Aditya-Varshil</a></td>
-			<td><a href="http://i.imgur.com/RcB5Nmu.jpg" target="_blank">Meshwa-Melric</a></td>
-			<td><a href="https://i.imgur.com/pMp8gWe.jpg" target="_blank">Meshwa-Palak</a></td>
+			<td><a href="http://i.imgur.com/QwcwKaL.jpg" target="_blank">Meshwa and Kids</a></td>
+			<td><a href="http://i.imgur.com/FIVlsHp.jpg" target="_blank">Badmash Group</a></td>
+			<td><a href="http://i.imgur.com/COkc8yP.jpg" target="_blank">Naitik-Advait-Aditya-Varshil</a></td>
 		</tr>
 		<tr>
-			<td><a href="https://i.imgur.com/3urU3tA.jpg" target="_blank">Vidhi-Anvesha-Manishka</a></td>
-			<td><a href="http://i.imgur.com/FFBfNhW.jpg" target="_blank">Aryan-Vidhi</a></td>
-			<td><a href="https://i.imgur.com/jXL9Jb6.jpg" target="_blank">Advik-Ishaan</a></td>
+			<td><a href="http://i.imgur.com/FiIzECU.jpg" target="_blank">Vidhi-Anvesha-Manishka</a></td>
+			<td><a href="http://i.imgur.com/vIButbZ.jpg" target="_blank">Nach Meri Jaan</a></td>
+			<td><a href="http://i.imgur.com/YRvujnL.jpg" target="_blank">Meshwa-Ankur</a></td>
 		</tr>
 		<tr>
-			<td><a href="http://i.imgur.com/4fVo7gz.jpg" target="_blank">Aryan-Advik</a></td>
-			<td><a href="https://i.imgur.com/xvG7BO8.jpg" target="_blank">Aryan-Radhika</a></td>
-			<td><a href="https://i.imgur.com/Ug0Mog7.jpg" target="_blank">Vidhi-Radhika</a></td>
+			<td><a href="http://i.imgur.com/bUfddh2.jpg" target="_blank">Sathiya Group</a></td>
+			<td><a href="http://i.imgur.com/DHZMl6U.jpg" target="_blank">Mashup Group</a></td>
+			<td><a href="http://i.imgur.com/fXZUpj1.jpg" target="_blank">Bademiya Chotemiya</a></td>
 		</tr>
 		<tr>
-			<td><a href="https://i.imgur.com/8c425t8.jpg" target="_blank">The
-					Unknowns</a></td>
-			<td><a href="https://i.imgur.com/m3eq485.jpg" target="_blank">Unity
-					Group</a></td>
-			<td><a href="https://i.imgur.com/HuuQGrr.jpg" target="_blank">Silencer</a></td>
+			<td><a href="http://i.imgur.com/gabZveX.jpg" target="_blank">Titliyaan</a></td>
+			<td><a href="http://i.imgur.com/wpbAK2n.jpg" target="_blank">Fab 5</a></td>
+			<td><a href="http://i.imgur.com/Jwpgqzt.jpg" target="_blank">The Unknowns v2.0</a></td>
 		</tr>
 		<tr>
-			<td><a href="http://i.imgur.com/lkZ2wCL.jpg" target="_blank">Nautanki</a></td>
-			<td><a href="https://i.imgur.com/wLXWngs.jpg" target="_blank">Seth
-					Uncle and Aunty</a></td>
-			<td><a href="https://i.imgur.com/E6NpUtF.jpg" target="_blank">Bhabhiya</a></td>
+			<td><a href="http://i.imgur.com/qdAdtyy.jpg" target="_blank">Seth Uncle and Aunty</a></td>
+			<td><a href="http://i.imgur.com/nxoe4Th.jpg" target="_blank">Bhabhiya</a></td>
+			<td></td>
 		</tr>
 	</tbody>
 </table>
