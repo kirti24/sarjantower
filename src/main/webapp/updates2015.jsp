@@ -1,6 +1,6 @@
 <%@page session="false"%>
 <div class="row">
-	<div class="col-md-2">
+	<div class="col-md-2 col-xs-2">
 		<div class="pallete-item">
 			<dl class="palette palette-wet-asphalt">
 				<dt>
@@ -110,7 +110,7 @@
 		<%} %>
 		
 	</div>
-	<div class="col-md-10" id="update2015">
+	<div class="col-md-10 col-xs-10" id="update2015">
 		<div id="update2015">
 			<!-- need to remove later -->
 			<jsp:include page="schedule2015.jsp"></jsp:include>
