@@ -1,6 +1,6 @@
 <%@page session="false"%>
 <div class="row">
-	<div class="col-md-2 col-xs-2">
+	<div class="col-md-2">
 		<div class="pallete-item">
 			<dl class="palette palette-wet-asphalt">
 				<dt>
@@ -127,4 +127,7 @@
 		$('#update2015').load(page);
 	}
 	
+	function submitform(eventname) {
+		$('#'+eventname).submit();
+	}
 </script>
