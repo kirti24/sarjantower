@@ -80,10 +80,9 @@
 			%>
 		<div class="pallete-item">
 			<form id="groupeventform1" method="post" action="event">
-				<input type="hidden" name="eventname" value="Group Dance 2015">
-				<button id="button1" class="btn btn-block btn-lg btn-inverse" onkeypress="submit_grp_form();"></button>
+				<input type="hidden" name="eventname" value="Group Dance 2015" />
+				<input type="submit" class="btn btn-block btn-lg btn-inverse" value="Group Dance Voting" />
 			</form>
-			
 		</div>
 		<%} %>
 		
@@ -125,14 +124,7 @@
 
 <script type="text/javascript">
 	function load(page) {
-		$("#update2015").load(page);
+		$('#update2015').load(page);
 	}
 	
-	function submit_grp_form() {
-		$("#groupeventform1").submit();
-	}
-	
-	function submitform(eventname) {
-		$('#'+eventname).submit();
-	}
 </script>
