@@ -79,7 +79,7 @@
 				.equalsIgnoreCase("admin")) {
 			%>
 		<div class="pallete-item">
-			<form id="groupeventform" method="post" action="event">
+			<form id="groupeventform1" method="post" action="event">
 				<input type="hidden" name="eventname" value="Group Dance 2015">
 				<input type="submit" class="btn btn-block btn-lg btn-inverse" value="Group Dance Voting">
 			</form>
