@@ -76,7 +76,7 @@
   
   <servlet>
     <servlet-name>Expense</servlet-name>
-    <jsp-file>expense.jsp</jsp-file>
+    <jsp-file>index.jsp</jsp-file>
 </servlet>
 
 <servlet-mapping>
