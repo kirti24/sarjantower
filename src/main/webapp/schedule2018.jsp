@@ -1,7 +1,7 @@
 <%@page session="false"%>
 <br/>
 <div style="font-family: 'Love Ya Like A Sister';text-align: center; color: maroon;">
-<h6>EVERY DAY GANESHJI AARTI - <b>MORNING 9.00 AM </b>AND <b>EVENING 7.00 PM</b></h6>
+<h4>EVERY DAY GANESHJI AARTI - <b>MORNING 9.00 AM </b>AND <b>EVENING 7.00 PM</b></h4>
 </div>
 <table class="table table-bordered table-striped" style="background-color: darkslategrey; color: white;">
 
