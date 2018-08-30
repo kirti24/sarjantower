@@ -74,4 +74,14 @@
     <url-pattern>/changepwd</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+    <servlet-name>Expense</servlet-name>
+    <jsp-file>expense.jsp</jsp-file>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>Expense</servlet-name>
+    <url-pattern>/expense</url-pattern>
+</servlet-mapping>
+  
 </web-app>
