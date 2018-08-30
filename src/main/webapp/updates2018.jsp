@@ -27,10 +27,13 @@
 	crossorigin="anonymous"></script>
 </head>
 <body>
-	<div class="page-header">
-    	<h1>Sarjan Tower <small>Ganpati Festival 2018</small></h1>
-	</div>
+
 	<div class="container">
+		<div class="page-header">
+			<h1>
+				Sarjan Tower <small>Ganpati Festival 2018</small>
+			</h1>
+		</div>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-10 col-xs-10" id="update2018">

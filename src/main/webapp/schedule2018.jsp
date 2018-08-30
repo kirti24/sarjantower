@@ -1,15 +1,17 @@
 <%@page session="false"%>
-<h5><i>Tentative Schedule</i></h5>
-
+<center>
+<h4><i><b>Tentative</b> Schedule for "Ganeshotsav 2018"</i></h4>
+<h5>EVERY DAY GANESHJI AARTI - <b>MORNING 9.00 AM </b>AND <b>EVENING 7.00 PM</b></h5>
+</center>
 <table class="table table-bordered table-striped" style="font-size: small;">
 
-	<thead>
+	<thead class="thead-dark">
 		<tr>
-			<td>Day & Date</td>
-			<td>Time</td>
-			<td>Event</td>
-			<td>Event Organizer</td>
-			<td>Prizes</td>
+			<th>Day & Date</th>
+			<th>Time</th>
+			<th>Event</th>
+			<th>Event Organizer</th>
+			<th>Prizes</th>
 		</tr>
 	</thead>
 
