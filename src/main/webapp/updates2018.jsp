@@ -12,6 +12,8 @@
 	href="font-awesome/css/font-awesome.min.css" />
 <link href='https://fonts.googleapis.com/css?family=Sofia'
 	rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Delius'
+	rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Mirza'
 	rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Metamorphous'
