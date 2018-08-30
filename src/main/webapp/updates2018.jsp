@@ -22,6 +22,8 @@
 	rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Rock+Salt'
 	rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two'
+	rel='stylesheet'>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -40,8 +42,9 @@
 					</div>
 					<div class="col-md-8 col-xs-8">
 					<br/><br/>
-						<h1 style="font-family: 'Rock Salt'; text-align: left; color: maroon;"> Sarjan Tower <sub style="font-family: 'Cabin Sketch';">Ganeshotsav
-								2018</sub>
+						<h1 style="font-family: 'Rock Salt'; text-align: left; color: maroon;"> Sarjan Tower 
+						<sub style="font-family: 'Cabin Sketch';"><b>Ganeshotsav
+								2018</b></sub>
 						</h1>
 					</div>
 				</div>

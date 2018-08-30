@@ -136,8 +136,7 @@
 		<tr>
 		</tr>
 		<tr>
-		<td colspan="5">
-		Divya Agarwal & Shubangi Bajoria will organise the daily quiz <br/>
+		<td colspan="5" style="font-family: 'Shadows Into Light Two'">Divya Agarwal & Shubangi Bajoria will organise the daily quiz <br/>
 Fashion show - This time everyone can make their own team (all age groups) and give their team name for fashion show.<br/>
 Decoration Team - Jyoti Chaudhary, Neha Agarwal, Pooja Jalan, Deepti Bagaria, Yogesh Saraf, Darshan Chaubey<br/>
 We will try to keep HOUSIE every day if possible<br/>
