@@ -1,6 +1,6 @@
 <%@page session="false"%>
+<br/>
 <div style="font-family: Quantico;text-align: center; color: maroon;">
-<h5><i><b>Tentative</b> Schedule for "Ganeshotsav 2018"</i></h5>
 <h6>EVERY DAY GANESHJI AARTI - <b>MORNING 9.00 AM </b>AND <b>EVENING 7.00 PM</b></h6>
 </div>
 <table class="table table-bordered table-striped" style="background-color: darkslategrey; color: white;">
@@ -140,6 +140,6 @@
 <style>
 th, td {
 	text-align: center;
-	font-family: Mirza;
+	font-family: Cabin Sketch;
 }
 </style>

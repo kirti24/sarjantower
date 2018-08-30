@@ -20,10 +20,10 @@
 </head>
 <body style="">
 	<div class="container">
+		<br/>
 		<div class="container-fluid">
 		<div class="page-header">
-			<h1 style="font-family: 'Cabin Sketch'; text-align: center; color: maroon;">
-				Sarjan Tower <small style="font-family: 'Rock Salt';">Ganpati Festival 2018</small>
+			<h1 style="font-family: 'Rock Salt'; text-align: center; color: maroon;">Sarjan Tower <sub style="font-family: 'Cabin Sketch';">Ganeshotsav 2018</sub>
 			</h1>
 		</div>
 		</div>
