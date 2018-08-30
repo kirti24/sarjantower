@@ -132,11 +132,24 @@
 			<td><i>Festival Committee</i></td>
 			<td><i></i></td>
 		</tr>
-				
+		
+		<tr>
+		</tr>
+		<tr>
+		<td colspan="5">
+		Divya Agarwal & Shubangi Bajoria will organise the daily quiz <br/>
+Fashion show - This time everyone can make their own team (all age groups) and give their team name for fashion show.<br/>
+Decoration Team - Jyoti Chaudhary, Neha Agarwal, Pooja Jalan, Deepti Bagaria, Yogesh Saraf, Darshan Chaubey<br/>
+We will try to keep HOUSIE every day if possible<br/>
+For any clarifications regarding events contact Manish Gupta
+		</td>
+		</tr>		
 	</tbody>
 
 </table>
 
+<br/>
+<br/>
 <style>
 th, td {
 	text-align: center;
