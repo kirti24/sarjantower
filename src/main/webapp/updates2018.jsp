@@ -15,11 +15,10 @@
 <script	src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
 <body>
-
 	<div class="container">
 		<div class="page-header">
-			<h1 style="font-family: Metamorphous; font-size: 30px; text-align: center;">
-				Sarjan Tower <small style="font-family: Metamorphous; font-size: 20px">Ganpati Festival 2018</small>
+			<h1 style="font-family: Metamorphous; font-size: 36px; text-align: center; color: maroon;">
+				Sarjan Tower <small style="font-family: Metamorphous;">Ganpati Festival 2018</small>
 			</h1>
 		</div>
 		<div class="container">
