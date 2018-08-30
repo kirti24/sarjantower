@@ -14,12 +14,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script	src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
-<body>
+<body style="background-color: ">
 	<div class="container">
+		<div class="container-fluid">
 		<div class="page-header">
-			<h1 style="font-family: Metamorphous; font-size: 36px; text-align: center; color: maroon;">
+			<h1 style="font-family: Metamorphous; text-align: center; color: maroon;">
 				Sarjan Tower <small style="font-family: Metamorphous;">Ganpati Festival 2018</small>
 			</h1>
+		</div>
 		</div>
 		<div class="container">
 			<div class="container-fluid">

@@ -3,7 +3,7 @@
 <h5><i><b>Tentative</b> Schedule for "Ganeshotsav 2018"</i></h5>
 <h6>EVERY DAY GANESHJI AARTI - <b>MORNING 9.00 AM </b>AND <b>EVENING 7.00 PM</b></h6>
 </center>
-<table class="table table-bordered table-striped" style="font-size: small;">
+<table class="table table-bordered table-striped" style="font-size: small; background-color: darkred; color: white;">
 
 	<thead class="thead-dark">
 		<tr>
