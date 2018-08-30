@@ -31,7 +31,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="page-header">
-					<h1 style="font-family: Rakkas">
+					<h1 style="font-family:\"Helvetica Neue\",Helvetica,Arial,sans-serif, cursive;">
 						Sarjan Tower <small>Ganpati Festival 2018</small>
 					</h1>
 				</div>
