@@ -22,7 +22,7 @@
 	rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Rock+Salt'
 	rel='stylesheet'>
-<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two'
+<link href='https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister'
 	rel='stylesheet'>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script

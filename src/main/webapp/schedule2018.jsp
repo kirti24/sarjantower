@@ -1,6 +1,6 @@
 <%@page session="false"%>
 <br/>
-<div style="font-family: Quantico;text-align: center; color: maroon;">
+<div style="font-family: 'Love Ya Like A Sister';text-align: center; color: maroon;">
 <h6>EVERY DAY GANESHJI AARTI - <b>MORNING 9.00 AM </b>AND <b>EVENING 7.00 PM</b></h6>
 </div>
 <table class="table table-bordered table-striped" style="background-color: darkslategrey; color: white;">
@@ -136,7 +136,7 @@
 		<tr>
 		</tr>
 		<tr>
-		<td colspan="5" style="font-family: 'Shadows Into Light Two'">Divya Agarwal & Shubangi Bajoria will organise the daily quiz <br/>
+		<td colspan="5" style="font-family: ''">Divya Agarwal & Shubangi Bajoria will organise the daily quiz <br/>
 Fashion show - This time everyone can make their own team (all age groups) and give their team name for fashion show.<br/>
 Decoration Team - Jyoti Chaudhary, Neha Agarwal, Pooja Jalan, Deepti Bagaria, Yogesh Saraf, Darshan Chaubey<br/>
 We will try to keep HOUSIE every day if possible<br/>
