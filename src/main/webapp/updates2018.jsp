@@ -24,7 +24,7 @@
 		<div class="container-fluid">
 		<div class="page-header">
 			<div class="col-md-2 col-xs-2">
-			<img alt="" src="photos/ganesh-logo.png"/>
+			<img class="img-thumbnail" alt="" src="photos/ganesh-logo.png"/>
 			</div>
 			<div class="col-md-10 col-xs-10">
 			<h1 style="font-family: 'Rock Salt'; text-align: center; color: maroon;">Sarjan Tower <sub style="font-family: 'Cabin Sketch';">Ganeshotsav 2018</sub>
