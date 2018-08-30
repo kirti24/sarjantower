@@ -34,12 +34,14 @@
 				Sarjan Tower <small>Ganpati Festival 2018</small>
 			</h1>
 		</div>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-10 col-xs-10" id="update2018">
-					<div id="update2018">
-						<!-- need to remove later -->
-						<jsp:include page="schedule2018.jsp"></jsp:include>
+		<div class="container">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-10 col-xs-10" id="update2018">
+						<div id="update2018">
+							<!-- need to remove later -->
+							<jsp:include page="schedule2018.jsp"></jsp:include>
+						</div>
 					</div>
 				</div>
 			</div>

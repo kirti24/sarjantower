@@ -138,7 +138,7 @@
 </table>
 
 <style>
-td {
+th, td {
 	text-align: center;
 }
 </style>
