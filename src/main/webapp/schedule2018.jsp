@@ -8,209 +8,127 @@
 			<td>Day & Date</td>
 			<td>Time</td>
 			<td>Event</td>
-			<td>Arranged By</td>
+			<td>Event Organizer</td>
+			<td>Prizes</td>
 		</tr>
 	</thead>
 
 	<tbody>
 		<tr>
-			<td rowspan="8">Thursday, September 17, 2015</td>
-			<td>10:00 AM</td>
-			<td>Departure for bringing Ganesh Idol</td>
-			<td></td>
+			<td>Thursday, September 13, 2018</td>
+			<td>08:30 PM</td>
+			<td>Scavenger Hunt</td>
+			<td><i>Manish Gupta</i></td>
+			<td><i>Winning Team</i></td>
 		</tr>
 		
 		<tr>
-			<td>12:15 PM</td>
-			<td>Mid-Way Snacks</td>
-			<td><i>Shri M.P. Toshniwal</i></td>
+			<td>Friday, September 14, 2018</td>
+			<td>08:30 PM</td>
+			<td>Jugadu Cook</td>
+			<td><i>Jyoti Chaudhary <br/> Kovid Prabhakar</i></td>
+			<td><i>Winning Team</i></td>
 		</tr>
 		
 		<tr>
-			<td rowspan="3">07:00 PM</td>
-			<td>Chappan Bhog Prasadam</td>
-			<td rowspan="3"><i>Shri Ramesh Ji Deorah</i></td>
+			<td>Saturday, September 15, 2018</td>
+			<td>08:30 PM</td>
+			<td>Group Dance</td>
+			<td><i>Shreya Malsaria <br/> Saloni Agarwal</i></td>
+			<td><i>All participants</i></td>
 		</tr>
 		
 		<tr>
-			<td>Ganesh Pooja & Aarti</td>
-		</tr>
-		
-		<tr>
-			<td>Dinner</td>
-		</tr>
-		
-		<tr>
-			<td>08:00 PM</td>
-			<td>Ganesh Vandana</td>
-			<td><i>Jyoti Chaudhary</i></td>
-		</tr>
-		
-		<tr>
-			<td rowspan="2">08:30 PM</td>
-			<td>Musical Performance (Sarjan Kids)</td>
-			<td></td>
-		</tr>
-		
-		<tr>
-			<td>Snakes & Ladders Game (Family event)</td>
-			<td><i>Sarjan Volunteers</i></td>
-		</tr>
-		<tr>
-			<td colspan="4">&nbsp;</td>
-		</tr>
-		
-		<tr>
-			<td>Friday, September 18, 2015</td>
-			<td>08:00 PM</td>
-			<td>Dance Sarjan Dance - Group Dance</td>
-			<td><i>Sarjan Volunteers</i></td>
-		</tr>
-		
-		<tr>
-			<td rowspan="3">Saturday, September 19, 2015</td>
+			<td rowspan="3">Sunday, September 16, 2018</td>
 			<td>11:00 AM</td>
-			<td>Sports Meet & Musical Chair</td>
-			<td><i>Sarjan Volunteers</i></td>
+			<td>Sports Day</td>
+			<td><i>Kovid Prabhakar <br/>Rahul Rajpurohit <br/>Yogesh Jhunjhunwala</i></td>
+			<td><i>Winners</i></td>
 		</tr>
 		
 		<tr>
-			<td>03:00 PM</td>
-			<td>Dadi ka mangal (kirtan)</td>
-			<td><i>Smt. Suman Jalan</i></td>
+			<td>08:30 PM</td>
+			<td>Solo Dance</td>
+			<td><i>Mrs Pratima Chopde <br/>Navin Somani</i></td>
+			<td><i>All participants</i></td>
 		</tr>
 		
 		<tr>
-			<td>08:00 PM</td>
+			<td>10:00 PM</td>
+			<td>Special Performance</td>
+			<td><i></i></td>
+			<td><i>TBD</i></td>
+		</tr>
+		
+		<tr>
+			<td>Monday, September 17, 2018</td>
+			<td>08:30 PM</td>
+			<td>Antakshari</td>
+			<td><i>Yogesh Jhunjhunwala <br/> Shreya Malsaria</i></td>
+			<td><i>Winning Team</i></td>
+		</tr>
+		
+		<tr>
+			<td>Tuesday, September 18, 2018</td>
+			<td>08:30 PM</td>
+			<td>Human Monopoly</td>
+			<td><i>Akriti Biyala<br/> Kovid Prabhakar</i></td>
+			<td><i>Winning Team</i></td>
+		</tr>
+		
+		<tr>
+			<td>Wednesday, September 19, 2018</td>
+			<td>08:30 PM</td>
+			<td>One Minute Show</td>
+			<td><i>Nidhi Rajpurohit<br/> Saloni Agarwal <br/> Ankur Seth</i></td>
+			<td><i>Winning Team</i></td>
+		</tr>
+		
+		<tr>
+			<td>Thursday, September 20, 2018</td>
+			<td>08:30 PM</td>
+			<td>Treasure Hunt</td>
+			<td><i>Harsh Bajaj<br/> Harshit Agarwal <br/> Varun Agarwal</i></td>
+			<td><i>Winning Team</i></td>
+		</tr>
+		
+		<tr>
+			<td rowspan="2">Friday, September 21, 2018</td>
+			<td>08:30 PM</td>
+			<td>Fancy Dress</td>
+			<td><i>Mohit Bajoria<br/> Akriti Biyala</i></td>
+			<td><i>All participants</i></td>
+		</tr>
+		
+		<tr>
+			<td>09:30 PM</td>
 			<td>Fashion Show</td>
-			<td><i>Shruti Parashar</i></td>
+			<td><i>Festival Committee</i></td>
+			<td><i>TBD</i></td>
 		</tr>
 		
-		<tr>
-			<td rowspan="3">Sunday, September 20, 2015</td>
-			<td>10:00 AM</td>
-			<td>Blood Donation Camp</td>
-			<td><i>Dr. Sunil Chopde</i></td>
-		</tr>
 		
 		<tr>
-			<td>05:00 PM</td>
-			<td></td>
-			<td></td>
-		</tr>
-		
-		<tr>
-			<td>08:00 PM</td>
-			<td>Antakshri</td>
-			<td><i>Deepika Chaudhary & Kirti Agarwal</i></td>
-		</tr>
-		
-		<tr>
-			<td rowspan="2">Monday, September 21, 2015</td>
-			<td>05:00 PM</td>
-			<td>Art and Craft Competition</td>
-			<td><i>Jyoti Chaudhary</i></td>
-		</tr>
-		
-		<tr>
-			<td>08:00 PM</td>
-			<td>Mega Housie</td>
-			<td><i>Smt. Rekha Rajpurohit</i></td>
-		</tr>
-		
-		<tr>
-			<td rowspan="2">Tuesday, September 22, 2015</td>
-			<td>05:00 PM</td>
-			<td></td>
-			<td><i></i></td>
-		</tr>
-		
-		<tr>
-			<td>08:00 PM</td>
-			<td>Family Game - ADMATAZ</td>
-			<td><i>Manish Bajaj & Ashish Parasrampuria</i></td>
-		</tr>
-		
-		<tr>
-			<td rowspan="2">Wednesday, September 23, 2015</td>
-			<td>05:00 PM</td>
-			<td></td>
-			<td><i></i></td>
-		</tr>
-		
-		<tr>
-			<td>08:00 PM</td>
-			<td>Family Game - KAHANI GHAR GHAR KI</td>
-			<td><i>Smt. Apra Seth & Miss Neha Agarwal</i></td>
-		</tr>
-		
-		<tr>
-			<td rowspan="2">Thursday, September 24, 2015</td>
-			<td>05:00 PM</td>
-			<td></td>
-			<td><i></i></td>
-		</tr>
-		
-		<tr>
-			<td>08:00 PM</td>
-			<td>Fancy Dress Competition</td>
-			<td><i>Sarjan Volunteers</i></td>
-		</tr>
-		
-		<tr>
-			<td rowspan="2">Friday, September 25, 2015</td>
-			<td>03:00 PM</td>
-			<td>Shyam Baba Ka Kirtan</td>
-			<td><i>Smt. Lalita Gupta</i></td>
-		</tr>
-		
-		<tr>
-			<td>08:00 PM</td>
-			<td>Dance Sarjan Dance - Solo Dance</td>
-			<td><i>Sarjan Volunteers</i></td>
-		</tr>
-		
-		<tr>
-			<td rowspan="3">Saturday, September 26, 2015</td>
-			<td>10:00 AM</td>
-			<td>Box Cricket</td>
-			<td><i>Sarjan Volunteers</i></td>
-		</tr>
-		
-		<tr>
-			<td>05:00 PM</td>
-			<td></td>
-			<td><i></i></td>
+			<td rowspan="2">Saturday, September 22, 2018</td>
+			<td>04:30 PM</td>
+			<td>Art & Craft</td>
+			<td><i>Saloni Deorah<br/> Shreya Malsaria <br/> Rahul Rajpurohit</i></td>
+			<td><i>Winners</i></td>
 		</tr>
 		
 		<tr>
 			<td>07:00 PM</td>
-			<td>Dance Masti with DJ Abhishek</td>
-			<td><i></i></td>
+			<td>DJ Night</td>
+			<td><i>Ashish Parasrampuria<br/> Jyoti Chaudhary<br/> Kovid Prabhakar</i></td>
+			<td><i>TBD</i></td>
 		</tr>
 		
 		<tr>
-			<td rowspan="4">Sunday, September 27, 2015</td>
-			<td>04:00 PM</td>
-			<td>Snacks</td>
-			<td><i>Shri P.C. Sarda</i></td>
-		</tr>
-		
-		<tr>
-			<td>05:00 PM</td>
-			<td>Departure for "VISARJAN" of Ganesh Idol</td>
-			<td><i></i></td>
-		</tr>
-		
-		<tr>
-			<td rowspan="2">08:00 PM</td>
-			<td>Dinner</td>
-			<td><i>Society</i></td>
-		</tr>
-		
-		<tr>
+			<td>Sunday, September 23, 2018</td>
+			<td>01:00 PM</td>
 			<td>Prize Distribution</td>
-			<td></td>
+			<td><i>Festival Committee</i></td>
+			<td><i></i></td>
 		</tr>
 				
 	</tbody>

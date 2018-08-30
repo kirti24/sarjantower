@@ -27,14 +27,12 @@
 	crossorigin="anonymous"></script>
 </head>
 <body>
+	<div class="page-header">
+    	<h1>Sarjan Tower <small>Ganpati Festival 2018</small></h1>
+	</div>
 	<div class="container">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="page-header">
-					<h1 style="font-family:\"Helvetica Neue\",Helvetica,Arial,sans-serif, cursive;">
-						Sarjan Tower <small>Ganpati Festival 2018</small>
-					</h1>
-				</div>
 				<div class="col-md-10 col-xs-10" id="update2018">
 					<div id="update2018">
 						<!-- need to remove later -->
