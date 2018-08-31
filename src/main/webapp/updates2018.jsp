@@ -44,7 +44,7 @@
 					</div>
 					<div class="col-md-8 col-xs-8">
 					<br/><br/>
-						<h1 style="font-family: 'Rock Salt'; text-align: left; color: maroon;"> Sarjan Tower 
+						<h1 style="font-family: 'Rock Salt'; text-align: left; color: maroon;"> Sarjan Complex 
 						<sub style="font-family: 'Cabin Sketch';"><b>Ganeshotsav
 								2018</b></sub>
 						</h1>
